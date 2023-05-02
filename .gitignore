@@ -19,7 +19,7 @@ node_modules/
 .npm
 
 # Optional private notes directory
-_notes/.ignored/
+**/_notes/.ignored/
 
 # Yarn
 .yarn/*
