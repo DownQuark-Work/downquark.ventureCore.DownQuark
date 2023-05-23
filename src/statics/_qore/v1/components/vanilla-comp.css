@@ -3,10 +3,10 @@
   max-width: max-content;
   background: white;
   padding: 10px;
-  border: 1px solid var(--red-3);
+  border: 1px solid red;
 }
 
 p {
   margin: 0;
-  color: var(--red-9);
+  color: brown;
 }
