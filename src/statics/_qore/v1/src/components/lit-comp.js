@@ -1,5 +1,5 @@
-import { LitElement, html } from "lit"
-import sheet from "./lit-comp.css" assert { type: "css" }
+import { LitElement, html } from 'lit'
+import sheet from './lit-comp.css' assert { type: 'css' }
 
 class LitComp extends LitElement {
   static styles = [sheet]
@@ -11,4 +11,4 @@ class LitComp extends LitElement {
   }
 }
 
-customElements.define("lit-comp", LitComp)
+customElements.define('lit-comp', LitComp)

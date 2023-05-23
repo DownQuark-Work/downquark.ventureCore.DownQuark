@@ -1,4 +1,4 @@
-import sheet from "./vanilla-comp.css" assert { type: "css" }
+import sheet from './vanilla-comp.css' assert { type: 'css' }
 
 class VanillaComp extends HTMLElement {
   static styles = [sheet]
@@ -6,7 +6,7 @@ class VanillaComp extends HTMLElement {
   constructor() {
     super()
 
-    this.attachShadow({ mode: "open" })
+    this.attachShadow({ mode: 'open' })
     this.shadowRoot.adoptedStyleSheets = this.constructor.styles
   }
 
@@ -17,4 +17,4 @@ class VanillaComp extends HTMLElement {
   }
 }
 
-customElements.define("vanilla-comp", VanillaComp)
+customElements.define('vanilla-comp', VanillaComp)
