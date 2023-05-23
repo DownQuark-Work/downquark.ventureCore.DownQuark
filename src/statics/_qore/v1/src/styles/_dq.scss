@@ -1,0 +1,6 @@
+:root {
+  --test:#900;
+  $saasVar: var(--test);
+
+  &.nested { background-color: $saasVar; }
+}
