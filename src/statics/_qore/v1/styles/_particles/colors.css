@@ -1,4 +1,257 @@
 :where(html) { 
   --dq: gray;
   --qrx: purple;
+
+  /*! reasonable colors v0.4.0 | MIT License | https://github.com/matthewhowell/reasonable-colors */
+
+/* ******
+
+Format for CSS variables: --color-COLORNAME-SHADE
+
+Available values for COLORNAME:
+	gray,
+	rose, raspberry, red, orange, cinnamon, amber, yellow, lime,
+	chartreuse, green, emerald, aquamarine, teal, cyan, powder, sky
+	cerulean, azure, blue, indigo, violet, purple, magenta, pink
+
+Available values for SHADE:
+	100, 200, 300, 400, 500, 600
+
+Minimum contrast can be inferred by the difference between two SHADE numbers
+
+- Difference of 2: (3:1)
+- Difference of 3: (4.5:1)
+- Difference of 4: (7:1)
+
+reasonable-colors.css uses hex values. HSL, LCH, and RGB color spaces are available.
+
+For .scss friendly variable declarations, FILENAME.scss for each color space are provided.
+
+More information available at: https://www.reasonable.work/colors 
+
+****** */
+
+	/* gray */
+	--color-gray-100: lch(97% 0 120);
+	--color-gray-200: lch(90% 0 120);
+	--color-gray-300: lch(58% 0 120);
+	--color-gray-400: lch(47% 0 120);
+	--color-gray-500: lch(26% 0 120);
+	--color-gray-600: lch(13% 0 120);
+
+	/* rose */
+	/* hue 1 */
+	--color-rose-100: lch(99% 162 2);
+	--color-rose-200: lch(92% 162 2);
+	--color-rose-300: lch(60% 162 2);
+	--color-rose-400: lch(49% 162 2);
+	--color-rose-500: lch(28% 162 2);
+	--color-rose-600: lch(16% 162 2);
+
+	/* raspberry */
+	/* hue 2 */
+	--color-raspberry-100: lch(99% 162 17);
+	--color-raspberry-200: lch(92% 162 17);
+	--color-raspberry-300: lch(60% 162 17);
+	--color-raspberry-400: lch(49% 162 17);
+	--color-raspberry-500: lch(28% 162 17);
+	--color-raspberry-600: lch(16% 162 17);
+
+	/* red */
+	/* hue 3 */
+	--color-red-100: lch(99% 162 32);
+	--color-red-200: lch(92% 162 32);
+	--color-red-300: lch(60% 162 32);
+	--color-red-400: lch(49% 162 32);
+	--color-red-500: lch(28% 162 32);
+	--color-red-600: lch(16% 162 32);
+
+	/* orange */
+	/* hue 4 */
+	--color-orange-100: lch(99% 162 47);
+	--color-orange-200: lch(92% 162 47);
+	--color-orange-300: lch(60% 162 47);
+	--color-orange-400: lch(48% 162 47);
+	--color-orange-500: lch(28% 162 47);
+	--color-orange-600: lch(15% 162 47);
+
+	/* cinnamon */
+	/* hue 5 */
+	--color-cinnamon-100: lch(98% 162 62);
+	--color-cinnamon-200: lch(91% 162 62);
+	--color-cinnamon-300: lch(59% 162 62);
+	--color-cinnamon-400: lch(48% 162 62);
+	--color-cinnamon-500: lch(27% 162 62);
+	--color-cinnamon-600: lch(15% 162 62);
+
+	/* amber */
+	/* hue 6 */
+	--color-amber-100: lch(98% 162 77);
+	--color-amber-200: lch(91% 162 77);
+	--color-amber-300: lch(59% 162 77);
+	--color-amber-400: lch(48% 162 77);
+	--color-amber-500: lch(27% 162 77);
+	--color-amber-600: lch(15% 162 77);
+
+	/* yellow */
+	/* hue 7 */
+	--color-yellow-100: lch(98% 162 92);
+	--color-yellow-200: lch(91% 162 92);
+	--color-yellow-300: lch(59% 162 92);
+	--color-yellow-400: lch(47% 162 92);
+	--color-yellow-500: lch(26% 162 92);
+	--color-yellow-600: lch(14% 162 92);
+
+	/* lime */
+	/* hue 8 */
+	--color-lime-100: lch(97% 162 107);
+	--color-lime-200: lch(90% 162 107);
+	--color-lime-300: lch(58% 162 107);
+	--color-lime-400: lch(47% 162 107);
+	--color-lime-500: lch(26% 162 107);
+	--color-lime-600: lch(14% 162 107);
+
+	/* chartreuse */
+	/* hue 9 */
+	--color-chartreuse-100: lch(97% 162 122);
+	--color-chartreuse-200: lch(90% 162 122);
+	--color-chartreuse-300: lch(58% 162 122);
+	--color-chartreuse-400: lch(47% 162 122);
+	--color-chartreuse-500: lch(26% 162 122);
+	--color-chartreuse-600: lch(14% 162 122);
+
+	/* green */
+	/* hue 10 */
+	--color-green-100: lch(97% 162 137);
+	--color-green-200: lch(90% 162 137);
+	--color-green-300: lch(58% 162 137);
+	--color-green-400: lch(47% 162 137);
+	--color-green-500: lch(26% 162 137);
+	--color-green-600: lch(13% 162 137);
+
+	/* emerald */
+	/* hue 11 */
+	--color-emerald-100: lch(97% 162 152);
+	--color-emerald-200: lch(90% 162 152);
+	--color-emerald-300: lch(58% 162 152);
+	--color-emerald-400: lch(47% 162 152);
+	--color-emerald-500: lch(26% 162 152);
+	--color-emerald-600: lch(13% 162 152);
+
+	/* aquamarine */
+	/* hue 12 */
+	--color-aquamarine-100: lch(97% 162 167);
+	--color-aquamarine-200: lch(90% 162 167);
+	--color-aquamarine-300: lch(58% 162 167);
+	--color-aquamarine-400: lch(47% 162 167);
+	--color-aquamarine-500: lch(25% 162 167);
+	--color-aquamarine-600: lch(13% 162 167);
+
+	/* teal */
+	/* hue 13 */
+	--color-teal-100: lch(96% 162 182);
+	--color-teal-200: lch(89% 162 182);
+	--color-teal-300: lch(57% 162 182);
+	--color-teal-400: lch(46% 162 182);
+	--color-teal-500: lch(25% 162 182);
+	--color-teal-600: lch(12% 162 182);
+
+	/* cyan */
+	/* hue 14 */
+	--color-cyan-100: lch(96% 162 197);
+	--color-cyan-200: lch(89% 162 197);
+	--color-cyan-300: lch(57% 162 197);
+	--color-cyan-400: lch(46% 162 197);
+	--color-cyan-500: lch(24% 162 197);
+	--color-cyan-600: lch(11% 162 197);
+
+	/* powder */
+	/* hue 15 */
+	--color-powder-100: lch(95% 162 212);
+	--color-powder-200: lch(88% 162 212);
+	--color-powder-300: lch(56% 162 212);
+	--color-powder-400: lch(45% 162 212);
+	--color-powder-500: lch(23% 162 212);
+	--color-powder-600: lch(9% 162 212);
+
+	/* sky */
+	/* hue 16 */
+	--color-sky-100: lch(95% 162 227);
+	--color-sky-200: lch(87% 162 227);
+	--color-sky-300: lch(55% 162 227);
+	--color-sky-400: lch(43% 162 227);
+	--color-sky-500: lch(21% 162 227);
+	--color-sky-600: lch(6% 162 227);
+
+	/* cerulean */
+	/* hue 17 */
+	--color-cerulean-100: lch(94% 162 242);
+	--color-cerulean-200: lch(87% 162 242);
+	--color-cerulean-300: lch(54% 162 242);
+	--color-cerulean-400: lch(42% 162 242);
+	--color-cerulean-500: lch(19% 162 242);
+	--color-cerulean-600: lch(3% 162 242);
+
+	/* azure */
+	/* hue 18 */
+	--color-azure-100: lch(94% 162 257);
+	--color-azure-200: lch(87% 162 257);
+	--color-azure-300: lch(54% 162 257);
+	--color-azure-400: lch(42% 162 257);
+	--color-azure-500: lch(18% 162 257);
+	--color-azure-600: lch(3% 162 257);
+
+	/* blue */
+	/* hue 19 */
+	--color-blue-100: lch(94% 162 272);
+	--color-blue-200: lch(87% 162 272);
+	--color-blue-300: lch(54% 162 272);
+	--color-blue-400: lch(42% 162 272);
+	--color-blue-500: lch(17% 162 272);
+	--color-blue-600: lch(3% 162 272);
+
+	/* indigo */
+	/* hue 20 */
+	--color-indigo-100: lch(94% 162 287);
+	--color-indigo-200: lch(87% 162 287);
+	--color-indigo-300: lch(54% 162 287);
+	--color-indigo-400: lch(42% 162 287);
+	--color-indigo-500: lch(18% 162 287);
+	--color-indigo-600: lch(3% 162 287);
+
+	/* violet */
+	/* hue 21 */
+	--color-violet-100: lch(95% 162 302);
+	--color-violet-200: lch(88% 162 302);
+	--color-violet-300: lch(55% 162 302);
+	--color-violet-400: lch(44% 162 302);
+	--color-violet-500: lch(21% 162 302);
+	--color-violet-600: lch(5% 162 302);
+
+	/* purple */
+	/* hue 22 */
+	--color-purple-100: lch(96% 162 317);
+	--color-purple-200: lch(89% 162 317);
+	--color-purple-300: lch(57% 162 317);
+	--color-purple-400: lch(45% 162 317);
+	--color-purple-500: lch(23% 162 317);
+	--color-purple-600: lch(9% 162 317);
+
+	/* magenta */
+	/* hue 23 */
+	--color-magenta-100: lch(97% 162 332);
+	--color-magenta-200: lch(90% 162 332);
+	--color-magenta-300: lch(58% 162 332);
+	--color-magenta-400: lch(47% 162 332);
+	--color-magenta-500: lch(26% 162 332);
+	--color-magenta-600: lch(13% 162 332);
+
+	/* pink */
+	/* hue 24 */
+	--color-pink-100: lch(98% 162 347);
+	--color-pink-200: lch(91% 162 347);
+	--color-pink-300: lch(59% 162 347);
+	--color-pink-400: lch(48% 162 347);
+	--color-pink-500: lch(27% 162 347);
+	--color-pink-600: lch(15% 162 347);
 }
