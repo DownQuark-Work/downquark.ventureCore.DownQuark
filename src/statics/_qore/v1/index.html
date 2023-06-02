@@ -1,12 +1,27 @@
 <!doctype html>
-<html>
-  <head>
-    <title>downquark</title>
+<html class="no-js" lang="">
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="utf-8">
+  <title>downquark</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="/styles/dq.css" rel="stylesheet" />
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="styles/_particles/_base/normalize.css" />
+  <link rel="stylesheet" href="styles/_particles/_base/opinionate.css" />
+  <link rel="stylesheet" href="/styles/dq.css" />
 
     <!-- Polyfill CSS/JSON module imports -->
     <script>window.esmsInitOptions = { polyfillEnable: ['css-modules', 'json-modules'] }</script>
@@ -28,30 +43,44 @@
         }
       }
     </script>
+    
+    <script src="components/_dq.js" type="module"></script>
+</head>
 
-    <script src="/components/_dq.js" type="module"></script>
-  </head>
-  <body>
-    <header>
-      <h1>DownQuark Initial Test</h1>
-    </header>
+<body>
 
-    <main>
-      <p>Hello world.</p>
+  
+  <header>
+    <h1>DownQuark Initial Test</h1>
+  </header>
 
-      <lit-comp style="margin-block-end: 15px">🎉</lit-comp>
+  <main>
+    <p>Hello world.</p>
 
-      <vanilla-comp>🙌</vanilla-comp>
-    </main>
+    <lit-comp style="margin-block-end: 15px">🎉</lit-comp>
 
-    <footer>
-      <p>
-        <a href="#abc">Abc</a>
-      </p>
+    <vanilla-comp>🙌</vanilla-comp>
+  </main>
 
-      <p>
-        <a href="#123">123</a>
-      </p>
-    </footer>
-  </body>
+  <ul>
+    <li>a</li>
+    <li></li>
+    <li>b</li>
+  </ul>
+
+  <footer>
+    <p>
+      <a href="#abc">Abc</a>
+    </p>
+
+    <p>
+      <a href="#123">123</a>
+    </p>
+  </footer>
+
+
+  <script src="scripts/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="scripts/dq.js"></script>
+</body>
+
 </html>
