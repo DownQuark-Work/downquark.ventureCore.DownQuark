@@ -26,6 +26,9 @@ For .scss friendly variable declarations, FILENAME.scss for each color space are
 
 More information available at: https://www.reasonable.work/colors 
 - https://reasonable.work/colors/raspberry/ <-- to find complementary / analgous / etc
+- https://unpkg.com/reasonable-colors@0.4.0/reasonable-colors.css << to get hex values
+- https://meodai.github.io/color-names/ <<- use hex values to get abstraction
+- https://github.com/meodai/color-namer <<<--batchable :D
 ****** */
 
 	/* gray */
