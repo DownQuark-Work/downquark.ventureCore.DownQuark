@@ -1,25 +1,25 @@
 <html lang="en">
 	<head>	
 		<meta charset="utf-8">
-		<title>Reasonable.html – A single HTML document that contains a reasonably complete set of example HTML elements.</title>
+		<title>A single HTML document that contains a reasonably complete set of example HTML elements.</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles/reasonable-classless.css" />
+		<link rel="stylesheet" href="/styles/_particles/_base/downquark-classless.css" />
 	</head>
 	<body>
 		<main>
-			<h1>Reasonable.html</h1>
-			<p>Reasonable.html is a single HTML document that contains a reasonably complete set of example HTML elements. It includes most commonly used HTML elements and attempts to use them in common and expected ways.</p>
+			<h1>Base HTML</h1>
+			<p>Forked from <a href="https://reasonable.work/">Reasonable.html</a> is a single HTML document that contains a reasonably complete set of example HTML elements. It includes most commonly used HTML elements and attempts to use them in common and expected ways.</p>
 			
 			<article>
 				<h2>Why does this exist?</h2>
-				<p>Reasonable.html was purpose-built to test the classless CSS rules defined in <a href="https://github.com/matthewhowell/reasonable.css">reasonable.css</a>.</p>
+				<p>Base HTML was purpose-built to test the classless CSS rules defined in <a href="/styles/_particles/_base/downquark-classless.css">downquark-classless.css</a>.</p>
 
 				<h3>Can I use this?</h3>
-				<p>Reasonable.html is free software. The full source code is available and released here under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
+				<p>Base HTML is free software. The full source code is available and released here under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.</p>
 
 				<h3>How might I use this?</h3>
-				<p>Reasonable.html has two obvious uses:</p>
+				<p>Base HTML has two obvious uses:</p>
 				<ol>
 					<li>Testing browser default rendering of HTML elements</li>
 					<li>Testing classless CSS rules for styling those HTML elements</li>
@@ -34,7 +34,7 @@
 				</ul>
 
 				<h3>Who made this?</h3>
-				<p>Reasonable.html was created by <a href="https://www.matthewhowell.net">Matthew Howell</a>, a human, trying his best.</p>
+				<p>Base HTML was created by <a href="https://www.matthewhowell.net">Matthew Howell</a>, a human, trying his best.</p>
 				<p>Like everything in life, it couldn't exist without the help and generosity of others, find a <a href="#acknowledgements">full list of acknowledgements here.</a></p>
 			</article>
 		</main>
@@ -43,8 +43,8 @@
 		<!-- elements -->
 		<section>
 			<a name="example-html-elements"></a>
-			<h2>Example HTML Elements</h2>
-			<p>Reasonable.html includes examples of most HTML elments listed in <a title="Mozilla HTML Element Reference" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla's HTML Element Reference</a>, which mirrors the <a title="W3C HTML 5.2 specification" href="https://www.w3.org/TR/html52/">W3C HTML 5.2 specification</a>. Each is presented below, ordered alphabetically.</p>
+			<h2>HTML Elements</h2>
+			<p>Base HTML includes examples of most HTML elments listed in <a title="Mozilla HTML Element Reference" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla's HTML Element Reference</a>, which mirrors the <a title="W3C HTML 5.2 specification" href="https://www.w3.org/TR/html52/">W3C HTML 5.2 specification</a>. Each is presented below, ordered alphabetically.</p>
 
 			<p>There are also a handful of ommitted HTML elements, which are <a href="#omitted-elements">detailed here</a>.</p>
 
@@ -212,7 +212,7 @@
 						  <h5>A Reasonable Article</h5>
 						</header>
 						<section>
-						  <p>A Reasonable Article is a tiny example <code>&lt;article&gt;</code> element that contains a reasonable set of other example elements. It was purpose-built for appearing within the example <code>&lt;article&gt;</code> element (hello!) in <a href="https://github.com/matthewhowell/reasonable.html">reasonable.html</a>, which was purpose-built to test a set of classless CSS rules (<a href="https://github.com/matthewhowell/reasonable.css">reasonable.css</a>).</p>
+						  <p>A Reasonable Article is a tiny example <code>&lt;article&gt;</code> element that contains a reasonable set of other example elements. It was purpose-built for appearing within the example <code>&lt;article&gt;</code> element (hello!) in <a href="https://github.com/matthewhowell/Base HTML">Base HTML</a>, which was purpose-built to test a set of classless CSS rules (<a href="https://github.com/matthewhowell/reasonable.css">reasonable.css</a>).</p>
 						</section>
 					</article>
 				</section>
@@ -344,6 +344,7 @@
 					<button>A button element</button>
 				</section>
 			</details>
+			<button>A button element on the primary background</button><br/><br/>
 			<hr />
 			
 			<!-- cite -->
@@ -1821,11 +1822,11 @@
 						<caption>A table caption element</caption>
 						<thead>
 							<tr>
-							  <th>th 1</th>
-							  <th>th2</th>
-							  <th>th3</th>
-							  <th>th2</th>
-							  <th>th2</th>
+								<th>th 1</th>
+								<th>th2</th>
+								<th>th3</th>
+								<th>th2</th>
+								<th>th2</th>
 							</tr>
 						</thead>
 						<colgroup>
@@ -1834,11 +1835,18 @@
 							<col span="2" class="flash">
 						</colgroup>
 						<tr>
-							<td> </td>
+							<td></td>
 							<th scope="col">Batman</th>
 							<th scope="col">Robin</th>
 							<th scope="col">The Flash</th>
 							<th scope="col">Kid Flash</th>
+						</tr>
+						<tr>
+							<th scope="col">Joker</th>
+							<th scope="col">Riddler</th>
+							<td></td>
+							<th scope="col">Venom</th>
+							<th scope="col">Wario</th>
 						</tr>
 						<tbody>
 							<tr>
@@ -1851,10 +1859,13 @@
 						</tbody>
 						<tfoot>
 							<tr>
-							  <td>Footer content 1</td>
-							  <td>Footer content 2</td>
+								<td>Footer content 1</td>
+								<td>Footer content 2</td>
+								<td></td>
+								<td></td>
+								<td></td>
 							</tr>
-						  </tfoot>
+						</tfoot>
 					</table>					
 				</section>
 			</details>
@@ -1917,6 +1928,10 @@
 						<li>SpaceShipOne (2004)</li>
 						<li>SpaceShipTwo (2018)</li>
 						<li>Crew Dragon (2020)</li>
+						<li>with nesting<ul><li>nested 1</li>
+						<li>nested 2<ol><li>double nested 1</li>
+						<li>double nested 2</li></ol></li>
+						<li>nested 2</li></ul></li>
 					</ul>
 				</section>
 			</details>
@@ -1981,7 +1996,7 @@
 
 			<a name="omitted-elements"></a>
 			<h3>Omitted Elements</h3>
-			<p>Reasonable.html omits a handful of HTML elements, the reason for each omission is stated here. Mostly though, since it was built to test CSS rules, elements which need no styling were not included.</p>
+			<p>Base HTML omits a handful of HTML elements, the reason for each omission is stated here. Mostly though, since it was built to test CSS rules, elements which need no styling were not included.</p>
 			<p>If you disagree with any of the omissions, please file an issue and make your case.</p>
 			<ul>
 				<li>br - Not an element that should be styled.</li>
