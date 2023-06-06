@@ -1,0 +1,14 @@
+/* overrides, additions, and extensions to obtain the desired look and feel for DownQuark's Design System layout */
+body {
+  inline-size: 80vi;
+  margin:0 5vi;
+  max-inline-size: unset;
+  padding:0 5vi;
+  box-sizing: content-box;
+  text-wrap: unset;
+}
+
+/* balance nested text */
+* * p {
+  text-wrap: balance;
+}

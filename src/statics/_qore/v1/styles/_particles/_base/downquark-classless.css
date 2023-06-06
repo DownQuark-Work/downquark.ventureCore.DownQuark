@@ -83,7 +83,7 @@ body {
   font-size: var(--downquark-size-font-primary);
   line-height: 1.75;
   margin: auto;
-  max-width: 75ch;
+  max-inline-size: 75ch;
   overflow-wrap: break-word;
   padding: 0 1rem;
   tab-size: 4;
@@ -119,6 +119,7 @@ video {
 
 a {
   color: var(--downquark-color-text-accent);
+  cursor: pointer;
   text-decoration: none;
   padding-inline: .25ch;
 }
@@ -138,18 +139,18 @@ h6 {
   color: var(--downquark-theme-color-text-headers);
   font-family: var(--downquark-font-family-serif);
   line-height: 2ch;
-  margin: 0 1.38rem;
+  margin: 0 1.38rem 1.38rem;
   padding-bottom: .15ch;
   padding-left: .25ch;
   position: relative;
 }
 
-h1:after,
-h2:after,
-h3:after,
-h4:after,
-h5:after,
-h6:after {
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
   block-size: 100%;
   border-color: var(--downquark-color-background-secondary) transparent transparent transparent;
   border-style: solid;
@@ -161,12 +162,12 @@ h6:after {
   position: absolute;
 }
 
-h1:before,
-h2:before,
-h3:before,
-h4:before,
-h5:before,
-h6:before {
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
   block-size: 100%;
   border-color: transparent transparent var(--downquark-color-background-secondary) transparent;
   border-style: solid;
@@ -178,7 +179,7 @@ h6:before {
   position: absolute;
 }
 
-h1:before {
+h1::before {
   border-color: transparent var(--downquark-color-background-secondary) transparent transparent;
   border-width: 0 1.5ch 2.15ch 0;
 }
@@ -237,7 +238,7 @@ footer h6 {
   float: right;
   font-size: smaller;
 }
-footer h6:after {
+footer h6::after {
   border-color: transparent transparent transparent var(--downquark-color-background-secondary);
   border-width: 2.15ch 0 0 1.5ch;
 }
@@ -325,6 +326,37 @@ var {
   font-size: .875rem
 }
 
+span>span {
+  background-color: var(--downquark-color-text-accent);
+  color: var(--downquark-color-background-primary);
+  display: inline-block;
+  margin:0 1.25ch;
+  position: relative;
+}
+span>span::after {
+  block-size: 100%;
+  border-color: var(--downquark-color-text-accent) transparent transparent transparent;
+  border-style: solid;
+  border-width: 3ch 1.5ch 0 0;
+  bottom: 0;
+  content: " ";
+  inline-size: 1.5ch;
+  right: -1.5ch;
+  position: absolute;
+}
+span>span::before {
+  block-size: 100%;
+  border-color: transparent transparent var(--downquark-color-text-accent) transparent;
+  border-style: solid;
+  border-width: 0 0 3ch 1.5ch;
+  bottom: 0;
+  content: " ";
+  inline-size: 1.5ch;
+  left: -1.5ch;
+  position: absolute;
+}
+strong>span,em>span,i>span,b>span{ color: var(--downquark-color-background-secondary)}
+
 pre {
   padding: 1rem;
   overflow: auto;
@@ -409,6 +441,13 @@ dd {
 li>ul,
 li>ol {
   margin-bottom: 0
+}
+
+ul>label,
+ol>label {
+  cursor:default;
+  margin-left:-2rem;
+  font-size: large;
 }
 
 ul li:has(> :is(h1,h2,h3,h4,h5,h6)) {
