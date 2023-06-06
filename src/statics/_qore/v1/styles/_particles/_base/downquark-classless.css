@@ -74,21 +74,22 @@ html:focus-within {
 }
 
 body {
-  max-width: 75ch;
-  padding: 0 1rem;
-  margin: auto;
+  -moz-tab-size: 4;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
   background: var(--downquark-color-background-primary);
+  color: var(--downquark-color-text-primary);
   font-family: var(--downquark-font-family-primary);
   font-size: var(--downquark-size-font-primary);
-  text-rendering: optimizeSpeed;
   line-height: 1.75;
-  color: var(--downquark-color-text-primary);
-  -moz-tab-size: 4;
-  tab-size: 4;
-  word-break: break-word;
+  margin: auto;
+  max-width: 75ch;
   overflow-wrap: break-word;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-text-size-adjust: 100%
+  padding: 0 1rem;
+  tab-size: 4;
+  text-rendering: optimizeSpeed;
+  text-wrap: balance;
+  word-break: break-word;
 }
 
 h1,
@@ -254,9 +255,7 @@ object {
   max-width: 100%
 }
 
-iframe {
-  border-style: none
-}
+iframe { border-style: none }
 
 abbr[title] {
   text-decoration: underline dotted
@@ -373,13 +372,14 @@ table caption {
   margin-bottom: .5rem
 }
 
-table thead { background-color: var(--downquark-color-background-secondary); }
-table thead th { color: var(--downquark-theme-color-text-headers); }
-
 tr {
   border-bottom: 1px solid var(--downquark-color-text-accent)
 }
 tr:nth-child(even) { background-color: var(--downquark-color-background-primary);}
+tr:nth-child(odd) { background-color: var(--downquark-color-background-accent);}
+
+table thead tr:nth-child(odd) { background-color: var(--downquark-color-background-secondary); }
+table thead th { color: var(--downquark-theme-color-text-headers); }
 
 td,
 th {
@@ -395,7 +395,10 @@ th:first-child {
 
 tfoot { background-color: var(--downquark-color-text-primary); }
 tfoot td { color: var(--downquark-color-background-primary) }
-tfoot tr { border-color:var(--downquark-color-background-primary); }
+tfoot tr:nth-child(odd) {
+  background-color: var(--downquark-color-text-primary);
+  border-color:var(--downquark-color-background-primary);
+}
 
 ul,
 ol,
@@ -406,6 +409,11 @@ dd {
 li>ul,
 li>ol {
   margin-bottom: 0
+}
+
+ul li:has(> :is(h1,h2,h3,h4,h5,h6)) {
+  margin-left:-2rem;
+  list-style: none;
 }
 
 fieldset {
