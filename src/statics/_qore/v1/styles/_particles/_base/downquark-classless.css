@@ -430,7 +430,7 @@ th:first-child {
 }
 
 tfoot { background-color: var(--downquark-color-text-primary); }
-tfoot td { color: var(--downquark-color-background-primary) }
+tfoot td, tfoot th { color: var(--downquark-color-background-primary) }
 tfoot tr:nth-child(odd) {
   background-color: var(--downquark-color-text-primary);
   border-color:var(--downquark-color-background-primary);
