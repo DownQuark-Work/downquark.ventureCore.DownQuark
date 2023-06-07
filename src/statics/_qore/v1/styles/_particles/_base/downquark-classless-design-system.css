@@ -19,6 +19,7 @@ details:focus-within {
 section>details:has(>summary) {
   background: none;
   border: none;
+  display: flex;
   padding: 0;
 }
 section>details>summary {
@@ -60,3 +61,37 @@ section>details[open]>summary::marker{
 }
 section>details>summary:hover::marker { content:"▼ "; }
 section>details[open]>summary:hover::marker { content:"▲ "; }
+
+section>details>fieldset {
+  color: orange;
+  /* display: inherit; */
+  display: inline-block;
+  height: 0;
+  width: 50%;
+  overflow: hidden;
+
+  & legend {
+    display: inherit;
+
+    & input[type="radio"] { 
+      background-color: red;
+      width: 2rem;
+      cursor: pointer;
+      aspect-ratio: 1;
+      clip-path: polygon(93.30% 75.00%,50.00% 100.00%,6.70% 75.00%,6.70% 25.00%,50.00% 0.00%,93.30% 25.00%,93.30% 75.00%);
+      display: inline;
+    }
+  }
+  & p { display: none; }
+}
+section>details>fieldset:has(input[type="radio"]:checked) {
+  display: inline-block;
+  /* height: unset;
+  width: unset; */
+  overflow: unset;
+
+  & legend {
+    display: table;
+  }
+  & p { display: block; }
+}
