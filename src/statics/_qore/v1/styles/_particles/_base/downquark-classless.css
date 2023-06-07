@@ -327,7 +327,7 @@ var {
   font-size: .875rem
 }
 
-span>span {
+span>span,mark {
   background-color: var(--downquark-color-text-accent);
   color: var(--downquark-color-background-primary);
   display: inline-block;
