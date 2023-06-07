@@ -327,14 +327,14 @@ var {
   font-size: .875rem
 }
 
-span>span,mark {
+mark {
   background-color: var(--downquark-color-text-accent);
   color: var(--downquark-color-background-primary);
   display: inline-block;
   margin:0 1.25ch;
   position: relative;
 }
-span>span::after {
+mark::after {
   block-size: 100%;
   border-color: var(--downquark-color-text-accent) transparent transparent transparent;
   border-style: solid;
@@ -345,7 +345,7 @@ span>span::after {
   right: -1.5ch;
   position: absolute;
 }
-span>span::before {
+mark::before {
   block-size: 100%;
   border-color: transparent transparent var(--downquark-color-text-accent) transparent;
   border-style: solid;
