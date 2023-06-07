@@ -19,7 +19,7 @@ details:focus-within {
 section>details:has(>summary) {
   background: none;
   border: none;
-  display: flex;
+  /* display: flex; */
   padding: 0;
 }
 section>details>summary {
@@ -64,10 +64,9 @@ section>details[open]>summary:hover::marker { content:"▲ "; }
 
 section>details>fieldset {
   color: orange;
-  /* display: inherit; */
-  display: inline-block;
+  display: inherit;
   height: 0;
-  width: 50%;
+  width: 0;
   overflow: hidden;
 
   & legend {
@@ -76,22 +75,52 @@ section>details>fieldset {
     & input[type="radio"] { 
       background-color: red;
       width: 2rem;
-      cursor: pointer;
       aspect-ratio: 1;
       clip-path: polygon(93.30% 75.00%,50.00% 100.00%,6.70% 75.00%,6.70% 25.00%,50.00% 0.00%,93.30% 25.00%,93.30% 75.00%);
-      display: inline;
+      /* display: inline; */
     }
   }
   & p { display: none; }
 }
 section>details>fieldset:has(input[type="radio"]:checked) {
-  display: inline-block;
-  /* height: unset;
-  width: unset; */
+  display: inline;
+  height: unset;
+  width: unset;
   overflow: unset;
 
   & legend {
     display: table;
   }
   & p { display: block; }
+}
+
+section>details>article {
+  color: orange;
+  display: inline-block;
+  overflow: hidden;
+
+  & aside {
+    /* display: inherit; */
+
+    & input[type="radio"] { 
+      background-color: red;
+      width: 2rem;
+      aspect-ratio: 1;
+      clip-path: polygon(93.30% 75.00%,50.00% 100.00%,6.70% 75.00%,6.70% 25.00%,50.00% 0.00%,93.30% 25.00%,93.30% 75.00%);
+      /* display: inline; */
+    }
+  }
+  & p { display: none; }
+}
+section>details>article:has(input[type="radio"]:checked) {
+  display: inline;
+  /* height: unset;
+  width: unset; */
+  overflow: unset;
+
+  & aside {
+    display: inline;
+    /* display: table; */
+  }
+  & p { display: inline; }
 }
