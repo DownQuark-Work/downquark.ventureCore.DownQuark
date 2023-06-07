@@ -25,7 +25,7 @@ section>details>summary {
   background-color:var(--downquark-color-background-secondary);
   color: var(--downquark-theme-color-text-headers);
   font-family: var(--downquark-font-family-serif);
-  font-size: var(--downquark-size-font-ramp-2);
+  font-size: var(--downquark-size-font-ramp-1);
   line-height: 2ch;
   list-style-type:none;
   margin: 0 1.38rem 1.38rem;
