@@ -1,6 +1,6 @@
 :where(html),:root {
   /* in classless file all fonts should be system: from https://modernfontstacks.com/ */
-  --donwquark-font-family-mono: 'Nimbus Mono PS', 'Courier New', monospace;
+  --downquark-font-family-mono: 'Nimbus Mono PS', 'Courier New', monospace;
   --downquark-font-family-sans: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
   --downquark-font-family-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   --downquark-font-family-slab: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
@@ -234,9 +234,10 @@ hgroup > :is(h1,h2,h3,h4,h5,h6) {
 }
 
 footer h6 {
-  display: inlnie-block;
+  bottom: 0;
   float: right;
   font-size: smaller;
+  margin: 0;
 }
 footer h6::after {
   border-color: transparent transparent transparent var(--downquark-color-background-secondary);
@@ -358,9 +359,12 @@ span>span::before {
 strong>span,em>span,i>span,b>span{ color: var(--downquark-color-background-secondary)}
 
 pre {
+  display: block;
+  font-family: var(--downquark-font-family-mono);
+  line-height: 1rem;
+  margin: 1rem 0;
   padding: 1rem;
-  overflow: auto;
-  white-space: pre
+  white-space: pre;
 }
 
 pre code {
