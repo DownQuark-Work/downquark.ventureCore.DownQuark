@@ -123,7 +123,7 @@ section>details>fieldset:has(input[type="radio"]:hover) {
 }
 
 /* section>details:has(article input[type="radio"]:hover), */
-section>details:has(article input[type="radio"]:checked) {
+section>details[open]:has(article input[type="radio"]:checked) {
   padding-bottom:9rem;
 }
 
