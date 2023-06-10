@@ -133,14 +133,16 @@ section>details>article {
   color: orange;
   display: inline-block;
   overflow: hidden;
+  width: calc(100% / var(--items-per-line));
 
   & aside {
+
     & input[type="radio"] { 
       aspect-ratio: 1;
       clip-path: polygon(93.30% 75.00%,50.00% 100.00%,6.70% 75.00%,6.70% 25.00%,50.00% 0.00%,93.30% 25.00%,93.30% 75.00%);
       cursor: pointer;
       position: relative;
-      width: 90px;
+      width: 100%;
       &::after {
         background: var(--ramp-gradient);
         content: " ";
