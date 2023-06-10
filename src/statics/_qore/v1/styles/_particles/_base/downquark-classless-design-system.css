@@ -1,3 +1,7 @@
+@import url('../colors.css?nocache');
+:root {
+  --ramp-gradient: var(--downquark-color-text-primary);
+}
 /* overrides, additions, and extensions to obtain the desired look and feel for DownQuark's Design System layout */
 body {
   inline-size: 80vi;
@@ -21,6 +25,7 @@ section>details:has(>summary) {
   border: none;
   /* display: flex; */
   padding: 0;
+  position: relative;
 }
 section>details>summary {
   background-color:var(--downquark-color-background-secondary);
@@ -53,17 +58,17 @@ section>details>summary {
   &::marker {
     color:var(--downquark-theme-color-text-headers);
     font-size:smaller;
-    content:"▽ ";
+    content:"▷ ";
   }
 }
-section>details[open]>summary::marker{
-  content: "△ ";
+section>[open]>summary::marker{
+  content: "▽ ";
 }
-section>details>summary:hover::marker { content:"▼ "; }
-section>details[open]>summary:hover::marker { content:"▲ "; }
+section>details>summary:hover::marker { content:"▶︎ "; }
+section>details[open]>summary:hover::marker { content:"▼ "; }
 
 section>details>fieldset {
-  color: orange;
+  color: var(--downquark-color-text-accent);
   display: inherit;
   height: 0;
   width: 0;
@@ -73,25 +78,55 @@ section>details>fieldset {
     display: inherit;
 
     & input[type="radio"] { 
-      background-color: red;
-      width: 2rem;
       aspect-ratio: 1;
       clip-path: polygon(93.30% 75.00%,50.00% 100.00%,6.70% 75.00%,6.70% 25.00%,50.00% 0.00%,93.30% 25.00%,93.30% 75.00%);
-      /* display: inline; */
+      cursor: pointer;
+      position: relative;
+      width: calc(100% / var(--items-per-line));
+      &::after {
+        content: " ";
+        height:100%;
+        left:0;
+        position: absolute;
+        top:0;
+        width: 100%;
+      }
+      & + label {
+        color: var(--downquark-color-text-primary);
+        display: inline-block;
+        display: none;
+        width: calc(100% - 2rem);
+      }
     }
   }
   & p { display: none; }
 }
-section>details>fieldset:has(input[type="radio"]:checked) {
+
+/* content boxed, below */
+section>details>fieldset:has(input[type="radio"]:checked),
+section>details>fieldset:has(input[type="radio"]:hover) {
   display: inline;
   height: unset;
   width: unset;
   overflow: unset;
-
   & legend {
     display: table;
   }
-  & p { display: block; }
+  & label {
+    background: var(--ramp-gradient);
+    padding-inline-end: 1rem;
+    text-align: right;
+  }
+  & p {
+    color: var(--downquark-color-text-primary);
+    display: block;
+  }
+}
+section>details:has(fieldset input[type="radio"]:checked),
+section>details:has(fieldset input[type="radio"]:hover),
+section>details:has(article input[type="radio"]:checked),
+section>details:has(article input[type="radio"]:hover) {
+  padding-bottom:9rem;
 }
 
 section>details>article {
@@ -100,27 +135,46 @@ section>details>article {
   overflow: hidden;
 
   & aside {
-    /* display: inherit; */
-
     & input[type="radio"] { 
-      background-color: red;
-      width: 2rem;
       aspect-ratio: 1;
       clip-path: polygon(93.30% 75.00%,50.00% 100.00%,6.70% 75.00%,6.70% 25.00%,50.00% 0.00%,93.30% 25.00%,93.30% 75.00%);
-      /* display: inline; */
+      cursor: pointer;
+      position: relative;
+      width: 90px;
+      &::after {
+        background: var(--ramp-gradient);
+        content: " ";
+        height:100%;
+        left:0;
+        position: absolute;
+        top:0;
+        width: 100%;
+      }
+      & + label {
+        color: var(--downquark-color-text-primary);
+        display: inline-block;
+        display: none;
+        width: calc(100% - 2rem);
+      }
     }
   }
   & p { display: none; }
 }
-section>details>article:has(input[type="radio"]:checked) {
-  display: inline;
-  /* height: unset;
-  width: unset; */
-  overflow: unset;
 
-  & aside {
-    display: inline;
-    /* display: table; */
+/* content unboxed, to the right */
+section>details>article:has(input[type="radio"]:checked),
+section>details>article:has(input[type="radio"]:hover) {
+  & p {
+    background: blue;
+    bottom: 0;
+    color: var(--downquark-color-text-primary);
+    display: block;
+    height: 8rem;
+    inline-size: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: right;
   }
-  & p { display: inline; }
 }
