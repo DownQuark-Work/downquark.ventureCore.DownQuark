@@ -26,4 +26,5 @@
 
   /* Custom pairs */
   --downquark-scale-size-s-l: clamp(var(--downquark-size-base), calc(0.57rem + 2.17vi), 2.25rem);
+  --downquark-scale-size-3xs-3xl: clamp(0.25rem, calc(-2.01rem + 11.30vi), 6.75rem);
 }
