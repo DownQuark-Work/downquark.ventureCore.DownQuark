@@ -101,6 +101,14 @@ section>details>fieldset {
   & p { display: none; }
 }
 
+section>details+div,
+section>details+p {
+  margin:-1.75rem 1rem 1rem;
+}
+section>details[open]+div,
+section>details[open]+p {
+  display: none;
+}
 /* content boxed, below */
 section>details>fieldset:has(input[type="radio"]:checked),
 section>details>fieldset:has(input[type="radio"]:hover) {
