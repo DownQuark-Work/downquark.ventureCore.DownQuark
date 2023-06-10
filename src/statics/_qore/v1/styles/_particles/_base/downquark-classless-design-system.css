@@ -23,7 +23,6 @@ details:focus-within {
 section>details:has(>summary) {
   background: none;
   border: none;
-  /* display: flex; */
   padding: 0;
   position: relative;
 }
@@ -42,7 +41,7 @@ section>details>summary {
     block-size: 4ch; /* 2ch line-heigh + 1ch padding-bottom + 1ch padding-top */
     border-color: var(--downquark-color-background-secondary) transparent transparent transparent;
     border-style: solid;
-    border-width: 4ch 2.5ch 0 0;
+    border-width: 4.15ch 2.5ch 0 0;
     bottom: 0;
     content: " ";
     inline-size: 2.5ch;
@@ -122,10 +121,9 @@ section>details>fieldset:has(input[type="radio"]:hover) {
     display: block;
   }
 }
-section>details:has(fieldset input[type="radio"]:checked),
-section>details:has(fieldset input[type="radio"]:hover),
-section>details:has(article input[type="radio"]:checked),
-section>details:has(article input[type="radio"]:hover) {
+
+/* section>details:has(article input[type="radio"]:hover), */
+section>details:has(article input[type="radio"]:checked) {
   padding-bottom:9rem;
 }
 
@@ -166,6 +164,16 @@ section>details>article {
 /* content unboxed, to the right */
 section>details>article:has(input[type="radio"]:checked),
 section>details>article:has(input[type="radio"]:hover) {
+  &::before {
+    content: attr(title);
+    font-size: smaller;
+    position: absolute;
+    right: 3rem;
+    top:.8rem;
+    z-index: 10;
+  }
+}
+section>details>article:has(input[type="radio"]:checked) {
   & p {
     background: blue;
     bottom: 0;
@@ -179,4 +187,11 @@ section>details>article:has(input[type="radio"]:hover) {
     position: absolute;
     text-align: right;
   }
+}
+
+section>details>article:has(input[type="radio"]:hover)::before {
+  margin-top: -0.75rem;
+  padding: 0.75rem 0 0.75rem 20%;
+  background-color: var(--downquark-color-background-secondary);
+  z-index: 12;
 }
