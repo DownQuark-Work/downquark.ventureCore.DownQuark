@@ -175,10 +175,10 @@ section>details>article:has(input[type="radio"]:hover) {
 }
 section>details>article:has(input[type="radio"]:checked) {
   & p {
-    background: blue;
+    border: 1px solid var(--downquark-color-text-accent);
     bottom: 0;
     color: var(--downquark-color-text-primary);
-    display: block;
+    display: flex;
     height: 8rem;
     inline-size: 100%;
     left: 0;
@@ -186,6 +186,19 @@ section>details>article:has(input[type="radio"]:checked) {
     padding: 0;
     position: absolute;
     text-align: right;
+
+    &::after {
+      content: attr(data-title);
+      position: absolute;
+      top: -2rem;
+      right: 0;
+    }
+
+    & span {
+      display: block;
+      font-size: smaller;
+      padding: 1rem;
+    }
   }
 }
 
