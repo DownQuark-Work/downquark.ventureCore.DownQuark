@@ -1,0 +1,7 @@
+@import "../_particles/_dq.css";
+
+/* CUBE CSS METHODOLOGY */
+/* Composition */
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}

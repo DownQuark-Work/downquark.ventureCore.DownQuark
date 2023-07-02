@@ -245,11 +245,16 @@ footer h6::after {
 }
 
 img,
-video,
-svg {
+picture,
+svg,
+video {
+  display: block;
   max-width: 100%;
   height: auto
 }
+
+/* blur images with no alt tag */
+img:not([alt]) { filter: blur(10px); }
 
 embed,
 iframe,

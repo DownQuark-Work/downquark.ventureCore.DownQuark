@@ -1,6 +1,9 @@
 @import url('../colors.css');
+@import url('../scales.css');
+@import url('../typography.css');
+@import url('../utils.css');
+
 :root {
-  --downquark-clip-path-polygon: polygon(93.30% 75.00%,50.00% 100.00%,6.70% 75.00%,6.70% 25.00%,50.00% 0.00%,93.30% 25.00%,93.30% 75.00%);
   --ramp-gradient: var(--downquark-color-text-primary);
 }
 /* overrides, additions, and extensions to obtain the desired look and feel for DownQuark's Design System layout */
