@@ -17,13 +17,46 @@
     </p>
   </hgroup>
   <h4>Composition</h4>
+  <!-- https://web.dev/design-system/css-compositions/ -->
   <details><summary>about</summary>
-  <p>From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:</p>
+  From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
   <blockquote>
     Even if you break your design system into tiny molecules, it&rsquo;s still going to be applied in a larger context at some point and that should never be forgotten, but so often is. I’ve found over many approaches, within many projects over the years, that wider composition often trumps micro-optimisations and the composition layer of CUBE CSS exists because of this.
     <br/>...<br/>
     Think of the composition as a skeleton.
   </blockquote>
+  Luckily, a lot of these are inherited from the classless styling previously completed.
   </details>
+  <p><mark>TLDR:</mark> most composition styles are handled by the classless rulesets</p>
+  <hr />
+
+  <h4>Utilities</h4>
+  <!-- https://web.dev/design-system/css-utilities/ -->
+  <details><summary>about</summary>
+  From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
+  <blockquote>
+    <strong>What should Utilities do?</strong>
+    <ol>
+      <li>Apply a single CSS property, or a concise group of related properties to create re-usable helpers</li>
+      <li>Extend design tokens to maintain a single source of truth</li>
+      <li>Abstract repeatability away from the CSS and apply it in the HTML instead</li>
+    </ol>
+  </blockquote>
+  </details>
+  <p><mark>TLDR:</mark> a utility does one job and does it well.</p>
+  <hr />
+
+  <!-- wrapper -->
+  <a name="wrapper"></a>
+  <h4><a href="#wrapper"><code>&lt;wrapper&gt;</code></a></h4>
+  <details open>
+    <summary>Example</summary>
+    <section class="[ wrapper ]">
+      <button>A wrapped element</button>
+    </section>
+  </details>
+  <button>A button element on the primary background</button><br/><br/>
+  <hr />
+
 </body>
 </html>
