@@ -361,6 +361,47 @@
   </details>
   </div><!-- end utility wrapper -->
 
+  <a name="cube-block"></a>
+  <h4>Block Styles</h4>
+  <!-- https://cube.fyi/block.html -->
+  <details>
+    <summary>about</summary>
+    From the <a href="https://cube.fyi/block.html" target="_blank" rel="noopener noreferrer">docs</a>:
+    <blockquote>
+      <strong>What should a Block do?</strong>
+      <ol>
+        <li>Extend the work already done by the global CSS, composition and utility layers</li>
+        <li>Apply a collection of design tokens within a concise group</li>
+        </li>Create a namespace or specificity boost to control a specific context</li>
+      </ol>
+      <strong>What shouldn&rsquo;t a Block do?</strong>
+      <ol>
+        <li>Grow to anything larger than a handful of CSS rules (max 80-100 lines)</li>
+        <li>Solve more than one contextual problem. For example: styling a card and a button in one file</li>
+      </ol>
+    </blockquote>
+    Think of the composition as a skeleton.
+  </details>
+  <p><mark>TLDR:</mark> A <strong>block</strong> is a <strong>skeletal component or organisational structure</strong>.<br/>Making it too linear for the <code>dq</code> namespace, but including the description for completeness.</strong></p>
+
+  <a name="cube-composition"></a>
+  <h4>Composition Styles</h4>
+  <!-- https://web.dev/design-system/css-compositions/ -->
+  <details>
+    <summary>about</summary>
+    From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
+    <blockquote>
+      Even if you break your design system into tiny molecules, it&rsquo;s still going to be applied in a larger context
+      at some point and that should never be forgotten, but so often is. I’ve found over many approaches, within many
+      projects over the years, that wider composition often trumps micro-optimisations and the composition layer of CUBE
+      CSS exists because of this.
+      <br />...<br />
+      Think of the composition as a skeleton.
+    </blockquote>
+    Luckily, a lot of these are inherited from the classless styling previously completed.
+  </details>
+  <p><mark>TLDR:</mark> most composition styles are handled by the classless rulesets</p>
+
     <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
 
 </body>
