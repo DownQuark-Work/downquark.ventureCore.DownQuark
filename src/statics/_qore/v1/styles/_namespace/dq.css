@@ -1,7 +1,7 @@
 @import "../_particles/_dq.css";
 
 /* CUBE CSS METHODOLOGY */
-/* Composition */
+/* Utility */
 .cube.wrapper {
   max-inline-size: 75rem;
   margin-inline-end: auto;
@@ -31,3 +31,19 @@
 */
 .cube.stack.large > * + * { margin-block-start: calc(var(--dq-stack-sizing-large, var(--dq-stack-sizing, var(--downquark-scale-size-m))) * var(--dq-stack-sizing-mutator-large, var(--dq-stack-sizing-mutator, 2))); }
 .cube.stack.small > * + * { margin-block-start: calc(var(--dq-stack-sizing-small, var(--dq-stack-sizing, var(--downquark-scale-size-m))) * var(--dq-stack-sizing-mutator-small, var(--dq-stack-sizing-mutator, .25))); }
+
+.cube.center {
+  box-sizing: content-box;
+  max-width: var(--dq-center-sizing, 60ch);
+  margin-left: auto;
+  margin-right: auto;
+}
+.cube.center:not(.intrinsic) {
+  padding-left: var(--s1);
+  padding-right: var(--s1);
+}
+.cube.center.intrinsic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
