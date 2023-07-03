@@ -30,6 +30,7 @@
       overflow: auto;
       white-space: pre;
     }
+    details[open]:has(summary small) details:not([open]) { margin-bottom: 0 }
   </style>
 </head>
 
@@ -265,11 +266,12 @@
         </div>
       </section>
     </details>
-    <details>
-      <summary><small>show code</small></summary>
-      <code>/* CSS */</code>
-      <code>&lt;!--HTML--&gt;</code>
-    </details>
+  </details>
+  <details>
+    <summary><small>show code</small></summary>
+    <code>/* CSS */</code>
+    <code>&lt;!--HTML--&gt;</code>
+  </details>
 
     <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
 
