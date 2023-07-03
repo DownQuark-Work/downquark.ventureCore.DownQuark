@@ -1,39 +1,33 @@
 @import "../_particles/_dq.css";
 
-/* classless adjustments */
-h4:has(code) {
-  &::after { border-width: 2.5ch 1.5ch 0 0; }
-  &::before { border-width: 0 0 2.5ch 1.5ch; }
-}
-
 /* CUBE CSS METHODOLOGY */
 /* Composition */
-.wrapper {
+.cube.wrapper {
   max-inline-size: 75rem;
   margin-inline-end: auto;
   margin-inline-start: auto;
   padding: var(--dq-wrapper-sizing, var(--downquark-scale-size-m));
 }
 
-.flow > * + * {
+.cube.flow > * + * {
   margin-top: var(--dq-flow-sizing, var(--downquark-scale-size-s));
 }
 
-.stack {
+.cube.stack {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
 
-  &.recursive * {
-    margin-block: 0;
-    & + * {
-      margin-block-start: var(--dq-stack-sizing, var(--downquark-scale-size-m));
-    }
+.cube.stack.recursive * {
+  margin-block: 0;
+  & + * {
+    margin-block-start: var(--dq-stack-sizing, var(--downquark-scale-size-m));
   }
-  &:not(.recursive) > * {
-    margin-block: 0;
-    & + * {
-      margin-block-start: var(--dq-stack-sizing, var(--downquark-scale-size-m));
-    }
+}
+.cube.stack:not(.recursive) > * {
+  margin-block: 0;
+  & + * {
+    margin-block-start: var(--dq-stack-sizing, var(--downquark-scale-size-m));
   }
 }

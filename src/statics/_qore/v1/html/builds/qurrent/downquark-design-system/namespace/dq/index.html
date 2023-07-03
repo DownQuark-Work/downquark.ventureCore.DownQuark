@@ -5,18 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>dq namespace</title>
   <link rel="stylesheet" href="/styles/_namespace/dq.css" />
+  <style>
+    /* 
+    * Overrides for the styleguide page to render correctly.
+    * These are specific to this page alone and
+    * _should **NOT**_ be included in any heirarchical import 
+    */
+    h4:has(code) {
+      &::after { border-width: 2.5ch 1.5ch 0 0; }
+      &::before { border-width: 0 0 2.5ch 1.5ch; }
+    }
+    details:has(code:nth-child(2)) code {
+      background-color: var(--downquark-color-background-primary);
+      display: inline-block;
+      inline-size: calc(50% - .155rem);
+      block-size: 12rem;
+      overflow: auto;
+      white-space: pre;
+    }
+  </style>
 </head>
 <body>
-  <hgroup>
-    <h1>namespace: dq</h1>
-    <h3><a href="https://andy-bell.co.uk/cube-css/" target="_blank" rel="noopener noreferrer">Cube CSS</a></h3>
-    <p>
-      At this level  of the namespaced stlyling we will be introducing our first classes!
-      <br/>We will be utilizing the methodolgies and patterns associated with <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">Cube CSS</a> as much as possible.
-      <br/><small>(although there will almost certainly be others incorporated as well at a later point)</small>
-    </p>
-  </hgroup>
-  <h4>Composition</h4>
+  <h1>namespace: dq</h1>
+  <blockquote>The following contains common classes that will likely be used reused in a majority of the DownQuark builds.</blockquote>
+  <p>
+    At this level  of the heirarchical/namespaced styling we will be introducing our first classes!
+    <br/>The imported <code>css</code> file will include high level, reusable, classes which were originally defined
+    in the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">Cube CSS Methodology</a>, and as
+    <a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a> snippets.
+  </p>
+  <h3><a href="https://andy-bell.co.uk/cube-css/" target="_blank" rel="noopener noreferrer">Cube CSS</a></h3>
+  <p>
+    To continue building on our namespaced organization, we will take inspiration from the Cube CSS recommendation of <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">grouping classes</a> when they
+    are specified on <mark>HTML Elements.</mark>
+  </p>
+  <h4>Composition Styles</h4>
   <!-- https://web.dev/design-system/css-compositions/ -->
   <details><summary>about</summary>
   From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
@@ -30,8 +53,9 @@
   <p><mark>TLDR:</mark> most composition styles are handled by the classless rulesets</p>
   <hr />
 
-  <h4>Utilities</h4>
+  <h4>Utility Styles</h4>
   <!-- https://web.dev/design-system/css-utilities/ -->
+  <!-- https://every-layout.dev/layouts/ -->
   <details><summary>about</summary>
   From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
   <blockquote>
@@ -45,18 +69,65 @@
   </details>
   <p><mark>TLDR:</mark> a utility does one job and does it well.</p>
   <hr />
-
   <!-- wrapper -->
   <a name="wrapper"></a>
   <h4><a href="#wrapper"><code>&lt;wrapper&gt;</code></a></h4>
   <details open>
-    <summary>Example</summary>
-    <section class="[ wrapper ]">
-      <button>A wrapped element</button>
+    <summary>display</summary>
+    <section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]">
+      <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with default padding</div>
+    </section>
+    &nbsp;
+    <hr/>
+    <style>
+      details section:last-child.cube.wrapper { --dq-wrapper-sizing: .25rem }
+    </style>
+    <section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]">
+      <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with custom padding</div>
     </section>
   </details>
-  <button>A button element on the primary background</button><br/><br/>
+  <details>
+    <summary><small>show code</small></summary>
+    <code>/* CSS */
+.wrapper {
+  max-inline-size: 75rem;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  padding: var(--dq-wrapper-sizing, var(--downquark-scale-size-m));
+}   </code>
+    <code>&lt;!--HTML--&gt;
+      &lt;section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]"&gt;
+      &lt;div style="background-color: var(--downquark-color-base-raspberry-600);"&gt;A wrapped element with default padding&lt;/div&gt;
+    &lt;/section&gt;
+    &nbsp;
+    &lt;hr/&gt;
+    &lt;style&gt;
+      details section:last-child.cube.wrapper { --dq-wrapper-sizing: .25rem }
+    &lt;/style&gt;
+    &lt;section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]"&gt;
+      &lt;div style="background-color: var(--downquark-color-base-raspberry-600);"&gt;A wrapped element with custom padding&lt;/div&gt;
+    &lt;/section&gt;
+    </code>
+  </details>
   <hr />
+
+  <!-- flow -->
+<a name="flow"></a>
+<h4><a href="#flow"><code>&lt;flow&gt;</code></a></h4>
+<details open>
+  <summary>Rendered</summary>
+  <section class="[ cube :: CLASS_NAME ]">
+    <div>A wrapped element with default padding</div>
+  </section>
+</details>
+<details>
+  <summary><small>show code</small></summary>
+  <code>/* CSS */</code>
+  <code>&lt;!--HTML--&gt;</code>
+</details>
+<hr />
+
+  <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
 
 </body>
 </html>
