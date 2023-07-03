@@ -16,13 +16,12 @@
       &::after {
         border-width: 2.5ch 1.5ch 0 0;
       }
-
       &::before {
         border-width: 0 0 2.5ch 1.5ch;
       }
     }
-
-    details:has(code:nth-child(2)) code {
+    details blockquote code { background-color: var(--downquark-color-background-primary); }
+    details:has(code:nth-child(2)) :not(blockquote) code {
       background-color: var(--downquark-color-background-primary);
       display: inline-block;
       inline-size: calc(50% - .155rem);
@@ -382,25 +381,39 @@
     </blockquote>
     Think of the composition as a skeleton.
   </details>
-  <p><mark>TLDR:</mark> A <strong>block</strong> is a <strong>skeletal component or organisational structure</strong>.<br/>Making it too linear for the <code>dq</code> namespace, but including the description for completeness.</strong></p>
+  <p><mark>TLDR:</mark> A <strong>block</strong> is a <strong>skeletal component or organisational structure</strong>.
+    <br/>Making it too linear for the <code>dq</code> namespace, but including the description for completeness.</strong></p>
 
-  <a name="cube-composition"></a>
-  <h4>Composition Styles</h4>
-  <!-- https://web.dev/design-system/css-compositions/ -->
+  <a name="cube-exception"></a>
+  <h4>Exception Styles</h4>
+  <!-- https://cube.fyi/exception.html -->
   <details>
     <summary>about</summary>
-    From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
+    From the <a href="https://cube.fyi/exception.html" target="_blank" rel="noopener noreferrer">docs</a>:
     <blockquote>
-      Even if you break your design system into tiny molecules, it&rsquo;s still going to be applied in a larger context
-      at some point and that should never be forgotten, but so often is. I’ve found over many approaches, within many
-      projects over the years, that wider composition often trumps micro-optimisations and the composition layer of CUBE
-      CSS exists because of this.
+      Exceptions are often caused by outside influences (such as JavaScript),
+      and using <em>only</em> <code>data attribute</code> selectors
+      (that both CSS and JavaScript can use efficiently) makes sense.
+      <br/>For example: you might have a &ldquo;reversed&rdquo; state or an &ldquo;inactive&rdquo; state.
+      We use data attributes because an exception should only occur in exceptional circumstances (the clue is in the name).
       <br />...<br />
-      Think of the composition as a skeleton.
+      <strong>What should an exception do?</strong>
+      <ol>
+        <li>Provide a concise variation to a block</li>
+        <li>Use data attributes</li>
+      </ol>
+      <strong>What shouldn&rsquo;t an exception do?</strong>
+      <ol>
+        <li>Variate a block to the point where it isn&rsquo;t recognisable anymore.
+          <ul><li>This is where a new block should be created</li></ul>
+        </li>
+        <li>Use CSS classes</li>
+      </ol>
     </blockquote>
-    Luckily, a lot of these are inherited from the classless styling previously completed.
+    Usually, an exception is related to a state change
   </details>
-  <p><mark>TLDR:</mark> most composition styles are handled by the classless rulesets</p>
+  <p><mark>TLDR:</mark>  An exception is a deviation from the rules outlined in a block.
+    <br/>Making it too linear for the <code>dq</code> namespace, but including the description for completeness.</strong></p>
 
     <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
 
