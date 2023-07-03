@@ -31,6 +31,22 @@
       white-space: pre;
     }
     details[open]:has(summary small) details:not([open]) { margin-bottom: 0 }
+    input[name^="visible"] { visibility: hidden; pointer-events: none;}
+    input[name^="visible"]:checked { margin-bottom:2.75rem; }
+    input[name^="visible"]:checked + div[data-is-visible^="visible"] { display: none; }
+    label[for^="visible"] {
+      background-color: var(--downquark-color-base-gray-300);
+      border-radius: .25rem;
+      display: inline;
+      padding:.5rem;
+    }
+    label[for^="visible"] span::before {
+      content: "Hide ";
+    }
+    label[for^="visible"]:has(+ input[name^="visible"]:checked) span::before {
+      content: "Show ";
+    }
+    /* </span> */
   </style>
 </head>
 
@@ -44,12 +60,31 @@
     in the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">Cube CSS Methodology</a>, and as
     <a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a> snippets.
   </p>
+  <nav>
+    <table>
+      <th><td colspan="3"><small>use below to jump directly to the content</small></td></th>
+      <tr>
+        <td>
+          <table>
+            <tr><th>CUBE</th></tr>
+            <tr><td><a href="#cube-composition">Composition</a></td></tr>
+            <tr><td><a href="#cube-utility">Utility</a></td></tr>
+            <tr><td><a href="#cube-block">Block</a></td></tr>
+            <tr><td><a href="#cube-exception">Exception</a></td></tr>
+          </table>
+        </td>
+        <th>SMOL</th>
+        <th>Google</th>
+      </tr>
+    </table>
+  </nav>
   <h3><a href="https://andy-bell.co.uk/cube-css/" target="_blank" rel="noopener noreferrer">Cube CSS</a></h3>
   <p>
     To continue building on our namespaced organization, we will take inspiration from the Cube CSS recommendation of <a
       href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">grouping classes</a> when they
     are specified on <mark>HTML Elements.</mark>
   </p>
+  <a name="cube-composition"></a>
   <h4>Composition Styles</h4>
   <!-- https://web.dev/design-system/css-compositions/ -->
   <details>
@@ -67,6 +102,7 @@
   </details>
   <p><mark>TLDR:</mark> most composition styles are handled by the classless rulesets</p>
 
+  <a name="cube-utility"></a>
   <h4>Utility Styles</h4>
   <!-- https://web.dev/design-system/css-utilities/ -->
   <!-- https://every-layout.dev/layouts/ -->
@@ -83,7 +119,10 @@
     </blockquote>
   </details>
   <p><mark>TLDR:</mark> a utility does one job and does it well.</p>
-  <hr />
+  <hr/>
+  <label for="visible-cube-utility"><span></span> Cube Utility Styling</label>
+  <input type="checkbox" name="visible-cube-utility" id="visible-cube-utility" checked />
+  <div data-is-visible="visible-cube-utility">
   <!-- wrapper -->
   <a name="wrapper"></a>
   <h4><a href="#wrapper"><code>&lt;wrapper&gt;</code></a></h4>
@@ -320,6 +359,7 @@
         &lt;/div&gt;
       &lt;/div&gt;</code>
   </details>
+  </div><!-- end utility wrapper -->
 
     <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
 
