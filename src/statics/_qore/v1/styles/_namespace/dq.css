@@ -19,12 +19,15 @@
   justify-content: flex-start;
   margin-block: 0;
 }
-
+.cube.stack:only-child { block-size: 100%; } /* ↓ `height` in horizontal-tb writing mode */
 .cube.stack > * + * { margin-block-start: var(--dq-stack-sizing, var(--downquark-scale-size-m)); } /* not recursive by default */
 .cube.stack.recursive * + * { margin-block-start: var(--dq-stack-sizing, var(--downquark-scale-size-m)); }
-.cube.stack:only-child { /* ↓ `height` in horizontal-tb writing mode */
-  block-size: 100%;
-}
-/* variants */
-.cube.stack.large > * + * { margin-block-start: calc(var(--dq-stack-sizing, var(--downquark-scale-size-m)) * var(--dq-stack-sizing-variant, 2)); }
-.cube.stack.small > * + * { margin-block-start: calc(var(--dq-stack-sizing, var(--downquark-scale-size-m)) * var(--dq-stack-sizing-variant, .25)); }
+/** Variants
+* allows custom props:
+* • --dq-stack-sizing-large                                         * • --dq-stack-mutator-large
+* • --dq-stack-sizing-small                                         * • --dq-stack-mutator-small
+*  • --dq-stack-sizing (will be applied if exists and above DNE)    *  • --dq-stack-mutator (will be applied if exists and above DNE)
+*    • --downquark-scale-size-m (default if above DNE)              *    • 2 || .25 (default if above DNE)
+*/
+.cube.stack.large > * + * { margin-block-start: calc(var(--dq-stack-sizing-large, var(--dq-stack-sizing, var(--downquark-scale-size-m))) * var(--dq-stack-sizing-mutator-large, var(--dq-stack-sizing-mutator, 2))); }
+.cube.stack.small > * + * { margin-block-start: calc(var(--dq-stack-sizing-small, var(--dq-stack-sizing, var(--downquark-scale-size-m))) * var(--dq-stack-sizing-mutator-small, var(--dq-stack-sizing-mutator, .25))); }
