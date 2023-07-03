@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,60 +13,73 @@
     * _should **NOT**_ be included in any heirarchical import 
     */
     h4:has(code) {
-      &::after { border-width: 2.5ch 1.5ch 0 0; }
-      &::before { border-width: 0 0 2.5ch 1.5ch; }
+      &::after {
+        border-width: 2.5ch 1.5ch 0 0;
+      }
+
+      &::before {
+        border-width: 0 0 2.5ch 1.5ch;
+      }
     }
+
     details:has(code:nth-child(2)) code {
       background-color: var(--downquark-color-background-primary);
       display: inline-block;
       inline-size: calc(50% - .155rem);
-      block-size: 12rem;
+      max-block-size: 12rem;
       overflow: auto;
       white-space: pre;
     }
   </style>
 </head>
+
 <body>
   <h1>namespace: dq</h1>
-  <blockquote>The following contains common classes that will likely be used reused in a majority of the DownQuark builds.</blockquote>
+  <blockquote>The following contains common classes that will likely be used reused in a majority of the DownQuark
+    builds.</blockquote>
   <p>
-    At this level  of the heirarchical/namespaced styling we will be introducing our first classes!
-    <br/>The imported <code>css</code> file will include high level, reusable, classes which were originally defined
+    At this level of the heirarchical/namespaced styling we will be introducing our first classes!
+    <br />The imported <code>css</code> file will include high level, reusable, classes which were originally defined
     in the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">Cube CSS Methodology</a>, and as
     <a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a> snippets.
   </p>
   <h3><a href="https://andy-bell.co.uk/cube-css/" target="_blank" rel="noopener noreferrer">Cube CSS</a></h3>
   <p>
-    To continue building on our namespaced organization, we will take inspiration from the Cube CSS recommendation of <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">grouping classes</a> when they
+    To continue building on our namespaced organization, we will take inspiration from the Cube CSS recommendation of <a
+      href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">grouping classes</a> when they
     are specified on <mark>HTML Elements.</mark>
   </p>
   <h4>Composition Styles</h4>
   <!-- https://web.dev/design-system/css-compositions/ -->
-  <details><summary>about</summary>
-  From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
-  <blockquote>
-    Even if you break your design system into tiny molecules, it&rsquo;s still going to be applied in a larger context at some point and that should never be forgotten, but so often is. I’ve found over many approaches, within many projects over the years, that wider composition often trumps micro-optimisations and the composition layer of CUBE CSS exists because of this.
-    <br/>...<br/>
-    Think of the composition as a skeleton.
-  </blockquote>
-  Luckily, a lot of these are inherited from the classless styling previously completed.
+  <details>
+    <summary>about</summary>
+    From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
+    <blockquote>
+      Even if you break your design system into tiny molecules, it&rsquo;s still going to be applied in a larger context
+      at some point and that should never be forgotten, but so often is. I’ve found over many approaches, within many
+      projects over the years, that wider composition often trumps micro-optimisations and the composition layer of CUBE
+      CSS exists because of this.
+      <br />...<br />
+      Think of the composition as a skeleton.
+    </blockquote>
+    Luckily, a lot of these are inherited from the classless styling previously completed.
   </details>
   <p><mark>TLDR:</mark> most composition styles are handled by the classless rulesets</p>
-  <hr />
 
   <h4>Utility Styles</h4>
   <!-- https://web.dev/design-system/css-utilities/ -->
   <!-- https://every-layout.dev/layouts/ -->
-  <details><summary>about</summary>
-  From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
-  <blockquote>
-    <strong>What should Utilities do?</strong>
-    <ol>
-      <li>Apply a single CSS property, or a concise group of related properties to create re-usable helpers</li>
-      <li>Extend design tokens to maintain a single source of truth</li>
-      <li>Abstract repeatability away from the CSS and apply it in the HTML instead</li>
-    </ol>
-  </blockquote>
+  <details>
+    <summary>about</summary>
+    From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
+    <blockquote>
+      <strong>What should Utilities do?</strong>
+      <ol>
+        <li>Apply a single CSS property, or a concise group of related properties to create re-usable helpers</li>
+        <li>Extend design tokens to maintain a single source of truth</li>
+        <li>Abstract repeatability away from the CSS and apply it in the HTML instead</li>
+      </ol>
+    </blockquote>
   </details>
   <p><mark>TLDR:</mark> a utility does one job and does it well.</p>
   <hr />
@@ -75,15 +89,19 @@
   <details open>
     <summary>display</summary>
     <section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]">
-      <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with default padding</div>
+      <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with default padding
+      </div>
     </section>
     &nbsp;
-    <hr/>
+    <hr />
     <style>
-      details section:last-child.cube.wrapper { --dq-wrapper-sizing: .25rem }
+      details section:last-child.cube.wrapper {
+        --dq-wrapper-sizing: .25rem
+      }
     </style>
     <section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]">
-      <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with custom padding</div>
+      <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with custom padding
+      </div>
     </section>
   </details>
   <details>
@@ -99,7 +117,6 @@
       &lt;section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]"&gt;
       &lt;div style="background-color: var(--downquark-color-base-raspberry-600);"&gt;A wrapped element with default padding&lt;/div&gt;
     &lt;/section&gt;
-    &nbsp;
     &lt;hr/&gt;
     &lt;style&gt;
       details section:last-child.cube.wrapper { --dq-wrapper-sizing: .25rem }
@@ -109,25 +126,154 @@
     &lt;/section&gt;
     </code>
   </details>
-  <hr />
 
   <!-- flow -->
-<a name="flow"></a>
-<h4><a href="#flow"><code>&lt;flow&gt;</code></a></h4>
-<details open>
-  <summary>Rendered</summary>
-  <section class="[ cube :: CLASS_NAME ]">
-    <div>A wrapped element with default padding</div>
-  </section>
-</details>
-<details>
-  <summary><small>show code</small></summary>
-  <code>/* CSS */</code>
-  <code>&lt;!--HTML--&gt;</code>
-</details>
-<hr />
+  <a name="flow"></a>
+  <h4><a href="#flow"><code>&lt;flow&gt;</code></a></h4>
+  <details open>
+    <summary>Rendered<br /><small style="font-weight:400">adds space <em>between</em> first and last components</small>
+    </summary>
+    <style>
+      .flow.content {
+        border: 1px dashed
+      }
+    </style>
+    <article>
+      <div class="[ cube :: flow ] [ content ]">
+        <section style="background-color: var(--downquark-color-base-gray-300);">dq</section>
+        <section style="background-color: var(--downquark-color-base-gray-300);">flowing</section>
+        <section style="background-color: var(--downquark-color-base-gray-300);">content</section>
+      </div>
+    </article>
+    &nbsp;
+    <hr />
+    <style>
+      .flow.content.custom.layout {
+        --dq-flow-sizing: 1px
+      }
+    </style>
+    <article>
+      <div class="[ cube :: flow ] [ content ] [ custom layout ]">
+        <section style="background-color: var(--downquark-color-base-gray-300);">dq</section>
+        <section style="background-color: var(--downquark-color-base-gray-300);">flowing</section>
+        <section style="background-color: var(--downquark-color-base-gray-300);">content</section>
+      </div>
+    </article>
+  </details>
+  <details>
+    <summary><small>show code</small></summary>
+    <code>/* CSS */
+.cube.flow > * + * {
+  margin-top: var(--dq-flow-sizing, var(--downquark-scale-size-s));
+}</code>
+    <code>&lt;!--HTML--&gt;
+    &lt;style&gt;.flow.content { border: 1px dashed }&lt;/style&gt;
+  &lt;article&gt;
+    &lt;div class="[ cube :: flow ] [ content ]"&gt;
+      &lt;section style="background-color: var(--downquark-color-base-gray-300);"&gt;dq&lt;/section&gt;
+      &lt;section style="background-color: var(--downquark-color-base-gray-300);"&gt;flowing&lt;/section&gt;
+      &lt;section style="background-color: var(--downquark-color-base-gray-300);"&gt;content&lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;
+  &nbsp;
+  &lt;hr/&gt;
+  &lt;style&gt;.flow.content.custom.layout { --dq-flow-sizing: 1px }&lt;/style&gt;
+  &lt;article&gt;
+    &lt;div class="[ cube :: flow ] [ content ] [ custom layout ]"&gt;
+      &lt;section style="background-color: var(--downquark-color-base-gray-300);"&gt;dq&lt;/section&gt;
+      &lt;section style="background-color: var(--downquark-color-base-gray-300);"&gt;flowing&lt;/section&gt;
+      &lt;section style="background-color: var(--downquark-color-base-gray-300);"&gt;content&lt;/section&gt;
+    &lt;/div&gt;
+  &lt;/article&gt;</code>
+  </details>
 
-  <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
+  <!-- stack -->
+  <a name="stack"></a>
+  <h4><a href="#stack"><code>&lt;stack&gt;</code></a></h4>
+  <details open>
+    <summary>Rendered<br /><small style="font-weight:400">extends functionality of <code>flow</code> utility
+        class</small></summary>
+    <style>
+      .cube.stack * {
+        background-color: rgba(10, 10, 10, .3);
+      }
+    </style>
+    <!-- no recursion -->
+    <details open style="border:0">
+      <summary style="font-weight:400;margin-bottom:0;">with no recursion</summary>
+      <section style="border:1px dashed" class="[ cube :: stack ]">
+        <div>top-level child</div>
+        <div>
+          <section>
+            <div>- nested children do not have spacing applied</div>
+            <div>- nested child</div>
+            <div>
+              <section style="background-color: brown;" class="[ cube :: stack ]">
+                <div>-- unless class is reapplied</div>
+                <div>-- 2nd level nested child has class and spacing applied</div>
+                <div>-- nested etc</div>
+              </section>
+            </div>
+            <div>- nested etc</div>
+          </section>
+        </div>
+        <div>etc</div>
+      </section>
+    </details>
+    <!-- recursion -->
+    <details style="border:0">
+      <summary style="font-weight:400;margin-bottom:0;">with recursion</summary>
+      <section style="border:1px dashed" class="[ cube :: stack > recursive ]">
+        <div>all children have spacing appllied</div>
+        <div>
+          <section>
+            <div>- even nested children without the stack class</div>
+            <div>- nested child</div>
+            <div>
+              <section style="background-color: brown;">
+                <div>-- 2nd level nested child does not have class applied</div>
+                <div>-- BUT does have spacing due to recursion</div>
+                <div>-- nested etc</div>
+              </section>
+            </div>
+            <div>- nested etc</div>
+          </section>
+          <div>etc</div>
+      </section>
+    </details>
+
+    <!-- variants -->
+    <details style="border:0">
+      <summary style="font-weight:400;margin-bottom:0;">with variants</summary>
+      <section style="border:1px dashed" class="[ cube :: stack > large ]">
+        <div class="[ cube :: stack > small ]">
+          <span>each top-level group has large spacing between them</span>
+          <label for="a">this is a label</label>
+          <input style="background-color: gray;" type="text" placeholder="this is an input field" />
+          <span>while each nested group has small spacing between them</span>
+        </div>
+        <div class="[ cube :: stack > small ]">
+          <span>each top-level group has large spacing between them</span>
+          <label for="b">this is a label</label>
+          <input style="background-color: gray;" type="text" placeholder="this is an input field" />
+          <span>while each nested group has small spacing between them</span>
+        </div>
+        <div class="[ cube :: stack > small ]">
+          <span>each top-level group has large spacing between them</span>
+          <label for="c">this is a label</label>
+          <button type="button">this is a button</button>
+          <span>while each nested group has small spacing between them</span>
+        </div>
+      </section>
+    </details>
+    <details>
+      <summary><small>show code</small></summary>
+      <code>/* CSS */</code>
+      <code>&lt;!--HTML--&gt;</code>
+    </details>
+
+    <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
 
 </body>
+
 </html>
