@@ -12,6 +12,10 @@
     * These are specific to this page alone and
     * _should **NOT**_ be included in any heirarchical import 
     */
+    [data-can-resize] {
+      position: relative; resize: horizontal; overflow: auto;
+      &::after { bottom:-.5rem; color:var(--downquark-color-base-amber-200); content: "↔︎"; font-size:x-large; padding:0 .1rem; position:absolute; right:.2rem; }
+    }
     h4:has(code) {
       &::after {
         border-width: 2.5ch 1.5ch 0 0;
@@ -455,7 +459,10 @@
       }
     }
   </style>
-  <p>Open the developer inspector and adjust the size of the outer section&rsquo;s width to see this in action</p>
+  <small>
+    <blockquote>to see the effect use the handle in the bottom right to resize the content</blockquote>
+  </small>
+  <div data-can-resize>
   <section style="border:1px dashed; width:100%" class="[ cube :: cluster ] [ custom outer ]">
     <div style="background-color:purple;width:250px;height:100px"></div>
     <section role="list" style="border:1px dashed" class="[ cube :: cluster ] [ custom inner ]">
@@ -466,6 +473,7 @@
       <div role="listitem"><a href="#">Accessibility</a></div>
     </section>
   </section>
+</div>
 </details>
 <details>
   <summary><small>show code</small></summary>
