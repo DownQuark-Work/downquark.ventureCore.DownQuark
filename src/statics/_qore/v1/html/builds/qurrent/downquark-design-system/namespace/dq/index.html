@@ -438,6 +438,61 @@
   */</code>
 </details>
 
+<!-- cluster -->
+<a name="cluster"></a>
+<h4><a href="#cluster"><code>&lt;cluster&gt;</code></a></h4>
+<details open>
+  <summary>Rendered<br /><small style="font-weight:400">specify how content reacts on line break</small></summary>
+  <style>
+    .cube.cluster.custom {
+      &.outer {
+        --dq-cluster-justify: space-between;
+        --dq-cluster-align: center;
+      }
+      &.inner {
+          --dq-cluster-justify: flex-start;
+          --dq-cluster-align: flex-start;
+      }
+    }
+  </style>
+  <p>Open the developer inspector and adjust the size of the outer section&rsquo;s width to see this in action</p>
+  <section style="border:1px dashed; width:100%" class="[ cube :: cluster ] [ custom outer ]">
+    <div style="background-color:purple;width:250px;height:100px"></div>
+    <section role="list" style="border:1px dashed" class="[ cube :: cluster ] [ custom inner ]">
+      <div role="listitem"><a href="#">About</a></div>
+      <div role="listitem"><a href="#">Blog</a></div>
+      <div role="listitem"><a href="#">Shop</a></div>
+      <div role="listitem"><a href="#">Contact</a></div>
+      <div role="listitem"><a href="#">Accessibility</a></div>
+    </section>
+  </section>
+</details>
+<details>
+  <summary><small>show code</small></summary>
+  <code>/* CSS */
+    .cube.cluster {
+      align-items: var(--dq-cluster-align, flex-start);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--dq-cluster-sizing, var(--downquark-scale-size-s));
+      justify-content: var(--dq-cluster-justify, flex-start);
+    }</code>
+  <code>&lt;!--HTML--&gt;
+    &lt;section class="[ cube :: cluster ]"&gt;
+  &lt;div&gt;&lt;!--content--&gt;&lt;/div&gt;
+  &lt;section role="list" class="[ cube :: cluster ]"&gt;
+    &lt;div role="listitem"&gt;&lt;!--listitem--&gt;&lt;/div&gt;
+    &lt;div role="listitem"&gt;&lt;!--listitem--&gt;&lt;/div&gt;
+    &lt;div role="listitem"&gt;&lt;!--listitem--&gt;&lt;/div&gt;
+  &lt;/section&gt;
+&lt;/section&gt;</code>
+<code>/** allows custom props:
+  * • --dq-cluster-align
+  * • --dq-cluster-justify
+  * • --dq-cluster-sizing
+  */</code>
+</details>
+
   </div><!-- end utility wrapper -->
 
   <a name="cube-block"></a>
