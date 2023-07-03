@@ -167,6 +167,10 @@
       &lt;div style="background-color: var(--downquark-color-base-raspberry-600);"&gt;A wrapped element with custom padding&lt;/div&gt;
     &lt;/section&gt;
     </code>
+    <code style="width:100%">* Allows custom props:
+      * --dq-wrapper-sizing
+        * adjusts padding
+    </code>
   </details>
 
   <!-- flow -->
@@ -227,6 +231,10 @@
       &lt;section style="background-color: var(--downquark-color-base-gray-300);"&gt;content&lt;/section&gt;
     &lt;/div&gt;
   &lt;/article&gt;</code>
+  <code style="width:100%">* Allows custom props:
+    * --dq-flow-sizing
+      * adjusts top margin
+  </code>
   </details>
 
   <!-- stack -->
@@ -360,6 +368,11 @@
           &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;</code>
+      <code style="width:100%">* Allows custom props:
+        • --dq-stack-sizing-large                                         • --dq-stack-mutator-large
+        • --dq-stack-sizing-small                                         • --dq-stack-mutator-small
+          • --dq-stack-sizing (will be applied if exists and above DNE)     • --dq-stack-mutator (will be applied if exists and above DNE)
+            • --downquark-scale-size-m (default if above DNE)                 • 2 || .25 (default if above DNE)</code>
   </details>
 
   <!-- center -->
@@ -396,7 +409,7 @@
       margin-right: auto;
     }
     .cube.center:not(.intrinsic) {
-      padding-left: var(--s1);
+      padding-left: var(--dq-center-sizing-padding-left, var(--dq-center-sizing-padding, var(--dq-center-sizing)));
       padding-right: var(--s1);
     }
     .cube.center.intrinsic {
@@ -415,6 +428,13 @@
   &lt;button type="button"&gt;makes small elements look better&lt;/button&gt;
   &lt;p&gt;but small content look worse&lt;/p&gt;
 &lt;/section&gt;</code>
+<code style="width:100%">/** non-intrinsic
+  * allows custom props:
+  * • --dq-center-sizing-left
+  * • --dq-center-sizing-right
+  *  • --dq-center-sizing (will be applied if exists and above DNE)
+  *    • --downquark-scale-size-s (default if above DNE)
+  */</code>
 </details>
 
   </div><!-- end utility wrapper -->

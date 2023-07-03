@@ -38,9 +38,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+/** non-intrinsic
+* allows custom props:
+* • --dq-center-sizing-left
+* • --dq-center-sizing-right
+*  • --dq-center-sizing (will be applied if exists and above DNE)
+*    • --downquark-scale-size-s (default if above DNE)
+*/
 .cube.center:not(.intrinsic) {
-  padding-left: var(--s1);
-  padding-right: var(--s1);
+  padding-left: var(--dq-center-sizing-left, var(--dq-center-sizing, var(--downquark-scale-size-s)));
+  padding-right: var(--dq-center-sizing-right, var(--dq-center-sizing, var(--downquark-scale-size-s)));
 }
 .cube.center.intrinsic {
   display: flex;
