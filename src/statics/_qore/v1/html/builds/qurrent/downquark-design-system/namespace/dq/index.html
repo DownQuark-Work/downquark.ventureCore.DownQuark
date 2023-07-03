@@ -269,8 +269,56 @@
   </details>
   <details>
     <summary><small>show code</small></summary>
-    <code>/* CSS */</code>
-    <code>&lt;!--HTML--&gt;</code>
+    <code>/* CSS */
+      .cube.stack {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-block: 0;
+      }
+      .cube.stack:only-child { block-size: 100%; } /* ↓ `height` in horizontal-tb writing mode */
+      .cube.stack > * + * { margin-block-start: var(--dq-stack-sizing, var(--downquark-scale-size-m)); } /* not recursive by default */
+      .cube.stack.recursive * + * { margin-block-start: var(--dq-stack-sizing, var(--downquark-scale-size-m)); }
+      /** variants **/
+      .cube.stack.large > * + * { margin-block-start: calc(var(--dq-stack-sizing-large, var(--dq-stack-sizing, var(--downquark-scale-size-m))) * var(--dq-stack-sizing-mutator-large, var(--dq-stack-sizing-mutator, 2))); }
+      .cube.stack.small > * + * { margin-block-start: calc(var(--dq-stack-sizing-small, var(--dq-stack-sizing, var(--downquark-scale-size-m))) * var(--dq-stack-sizing-mutator-small, var(--dq-stack-sizing-mutator, .25))); }</code>
+    <code>&lt;!--HTML--&gt;
+      &lt;div class="[ cube :: stack ]"&gt;
+        &lt;div&gt;
+            &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;div class="[ cube :: stack &gt; large ]"&gt;
+              &lt;div class="[ cube :: stack &gt; small ]"&gt;
+                &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="[ cube :: stack &gt; small ]"&gt;
+                &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="[ cube :: stack &gt; small ]"&gt;
+                &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+                &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
+        &lt;div class="[ cube :: stack &gt; recursive ]"&gt;
+          &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+          &lt;div&gt;
+            &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;!-- child --&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;</code>
   </details>
 
     <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
