@@ -39,26 +39,29 @@
       display: inline;
       padding:.5rem;
     }
-    label[for^="visible"] span::before {
-      content: "Hide ";
+    label[for^="visible"] span::before { content: "Hide "; }
+    label[for^="visible"]:has(+ input[name^="visible"]:checked) span::before { content: "Show "; }
+    nav table a {
+      & span { float:right; margin-right:1rem; }
+      &:hover span { color: var(--downquark-color-text-primary)}
     }
-    label[for^="visible"]:has(+ input[name^="visible"]:checked) span::before {
-      content: "Show ";
-    }
-    /* </span> */
   </style>
 </head>
 
 <body>
   <h1>namespace: dq</h1>
   <blockquote>The following contains common classes that will likely be used reused in a majority of the DownQuark
-    builds.</blockquote>
+    builds.
+    <blockquote>
+      Included classes were originally defined in the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">Cube CSS Methodology</a>, and as
+        <a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a> snippets. Most classes have been mutated from their original state to better fit DownQuarkk&rsquo;s requirements.
+    </blockquote>
+  </blockquote>
   <p>
     At this level of the heirarchical/namespaced styling we will be introducing our first classes!
-    <br />The imported <code>css</code> file will include high level, reusable, classes which were originally defined
-    in the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">Cube CSS Methodology</a>, and as
-    <a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a> snippets.
+    <br />Our focus remains on keeping our coe as efficient as possible, nad at this level we are adhering to the <a href="https://en.wikipedia.org/wiki/Composition_over_inheritance" target="_blank" rel="noopener noreferrer"><em>Composition Over Inheritance</em></a> process.
   </p>
+  
   <nav>
     <table>
       <th><td colspan="3"><small>use below to jump directly to the content</small></td></th>
@@ -66,10 +69,10 @@
         <td>
           <table>
             <tr><th>CUBE</th></tr>
-            <tr><td><a href="#cube-composition">Composition</a></td></tr>
-            <tr><td><a href="#cube-utility">Utility</a></td></tr>
-            <tr><td><a href="#cube-block">Block</a></td></tr>
-            <tr><td><a href="#cube-exception">Exception</a></td></tr>
+            <tr><td><a href="#cube-composition">Composition<span>(0)</span></a></td></tr>
+            <tr><td><a href="#cube-utility">Utility <span>(3)</span></a></td></tr>
+            <tr><td><a href="#cube-block">Block<span>(n/a)</span></a></td></tr>
+            <tr><td><a href="#cube-exception">Exception<span>(n/a)</span></a></td></tr>
           </table>
         </td>
         <th>SMOL</th>
