@@ -86,7 +86,7 @@
   <!-- wrapper -->
   <a name="wrapper"></a>
   <h4><a href="#wrapper"><code>&lt;wrapper&gt;</code></a></h4>
-  <details open>
+  <details>
     <summary>display</summary>
     <section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]">
       <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with default padding
@@ -130,7 +130,7 @@
   <!-- flow -->
   <a name="flow"></a>
   <h4><a href="#flow"><code>&lt;flow&gt;</code></a></h4>
-  <details open>
+  <details>
     <summary>Rendered<br /><small style="font-weight:400">adds space <em>between</em> first and last components</small>
     </summary>
     <style>
@@ -190,16 +190,15 @@
   <!-- stack -->
   <a name="stack"></a>
   <h4><a href="#stack"><code>&lt;stack&gt;</code></a></h4>
-  <details open>
-    <summary>Rendered<br /><small style="font-weight:400">extends functionality of <code>flow</code> utility
-        class</small></summary>
+  <details>
+    <summary>Rendered<br /><small style="font-weight:400">extends functionality of <mark>flow</mark> utility class</small></summary>
     <style>
       .cube.stack * {
         background-color: rgba(10, 10, 10, .3);
       }
     </style>
     <!-- no recursion -->
-    <details open style="border:0">
+    <details style="border:0">
       <summary style="font-weight:400;margin-bottom:0;">with no recursion</summary>
       <section style="border:1px dashed" class="[ cube :: stack ]">
         <div>top-level child</div>
