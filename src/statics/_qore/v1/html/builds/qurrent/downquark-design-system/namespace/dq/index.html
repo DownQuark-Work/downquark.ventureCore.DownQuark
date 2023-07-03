@@ -29,6 +29,7 @@
       overflow: auto;
       white-space: pre;
     }
+    details:has(code:nth-child(4)):not(:has(blockquote)) code:last-child { inline-size: 100%; }
     details[open]:has(summary small) details:not([open]) { margin-bottom: 0 }
     input[name^="visible"] { visibility: hidden; pointer-events: none;}
     input[name^="visible"]:checked { margin-bottom:2.75rem; }
@@ -167,7 +168,7 @@
       &lt;div style="background-color: var(--downquark-color-base-raspberry-600);"&gt;A wrapped element with custom padding&lt;/div&gt;
     &lt;/section&gt;
     </code>
-    <code style="width:100%">* Allows custom props:
+    <code>* Allows custom props:
       * --dq-wrapper-sizing
         * adjusts padding
     </code>
@@ -231,7 +232,7 @@
       &lt;section style="background-color: var(--downquark-color-base-gray-300);"&gt;content&lt;/section&gt;
     &lt;/div&gt;
   &lt;/article&gt;</code>
-  <code style="width:100%">* Allows custom props:
+  <code>* Allows custom props:
     * --dq-flow-sizing
       * adjusts top margin
   </code>
@@ -368,7 +369,7 @@
           &lt;div&gt;&lt;!-- etc --&gt;&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;</code>
-      <code style="width:100%">* Allows custom props:
+      <code>* Allows custom props:
         • --dq-stack-sizing-large                                         • --dq-stack-mutator-large
         • --dq-stack-sizing-small                                         • --dq-stack-mutator-small
           • --dq-stack-sizing (will be applied if exists and above DNE)     • --dq-stack-mutator (will be applied if exists and above DNE)
@@ -428,7 +429,7 @@
   &lt;button type="button"&gt;makes small elements look better&lt;/button&gt;
   &lt;p&gt;but small content look worse&lt;/p&gt;
 &lt;/section&gt;</code>
-<code style="width:100%">/** non-intrinsic
+<code>/** non-intrinsic
   * allows custom props:
   * • --dq-center-sizing-left
   * • --dq-center-sizing-right
