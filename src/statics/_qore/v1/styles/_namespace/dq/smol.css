@@ -71,6 +71,20 @@
   }
 }
 
+.smol.visited a {
+  & span {
+    margin-right: 0.25em;
+    float: left;
+    &::after {
+      color:var(--dq-visited-link-background-color, var(--downquark-color-background-accent));
+      content: var(--dq-visited-link-content, "✔");
+    }
+  }
+  &:visited span::after {
+    color: var(--dq-visited-link-color, var(--downquark-coloxr-text-accent));
+  }
+}
+
 /* 
 * Included references for completeness but not implemented due to scope being too narrow for this level of abstraction:
 * - https://smolcss.dev/#smol-transitions
