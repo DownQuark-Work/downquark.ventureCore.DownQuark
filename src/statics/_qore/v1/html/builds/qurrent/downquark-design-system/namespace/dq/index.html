@@ -585,10 +585,10 @@
     <label for="visible-smol-utility"><span></span> Smol Utility Styling</label>
     <input type="checkbox" name="visible-smol-utility" id="visible-smol-utility"/>
     <div data-is-visible="visible-smol-utility">
-    <!-- zxcNAME -->
-    <a name="zxcNAME"></a>
-    <h4><a href="#zxcNAME"><code>&lt;zxcNAME&gt;</code></a></h4>
-    <details open>
+    <!-- simple grid -->
+    <a name="-grid"></a>
+    <h4><a href="#simple-grid"><code>&lt;simple grid&gt;</code></a></h4>
+    <details>
       <style>
         .smol.grid li {
           background-color: var(--downquark-color-base-gray-300);
@@ -617,7 +617,7 @@
     <details>
       <summary><small>show code</small></summary>
       <code>/* CSS */
-        .smol.grid {
+        .smol.grid:not(.flexbox) {
           display: grid;
           grid-gap: var(--dq-grid-gap-sizing,var(--downquark-scale-size-s));
           /* min() with 100% prevents overflow in extra narrow spaces */
@@ -630,10 +630,92 @@
   &lt;li&gt;Item 3&lt;/li&gt;
 &lt;/ul&gt;</code>
 <code>* Allows custom props:
-  * --dq-wrapper-sizing
-    * adjusts padding
+  * --dq-grid-gap-sizing    * --dq-grid-col-width-sizing
+    * adjusts gap amount      * adjusts width before &ldquo;breakpoint&rdquo;
 </code>
     </details>
+
+<!-- flexbox grid -->
+<a name="flexbox-grid"></a>
+<h4><a href="#flexbox-grid"><code>&lt;flexbox grid&gt;</code></a></h4>
+<details open>
+  <summary>Rendered<br /><small style="font-weight:400">simple (flexbox) grid</small></summary>
+  <small>
+    <blockquote>to see the effect use the handle in the bottom right to resize the content</blockquote>
+  </small>
+
+  <div data-can-resize>
+    <ul class="[ smol :: grid > flexbox ]">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+</details>
+<details>
+  <summary><small>show code</small></summary>
+  <code>/* CSS */
+  .smol.grid.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--dq-grid-gap-sizing,var(--downquark-scale-size-s));
+  
+  & > * {
+    flex: 1 1 var(--dq-grid-col-width-sizing,10ch);
+  }
+}</code>
+  <code>&lt;!--HTML--&gt;
+    &lt;ul class="[ smol :: grid &gt; flexbox ]"&gt;
+      &lt;li&gt;Item 1&lt;/li&gt;
+      &lt;li&gt;Item 2&lt;/li&gt;
+      &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  </code>
+  <code>* Allows custom props:
+    * --dq-grid-gap-sizing    * --dq-grid-col-width-sizing
+      * adjusts gap amount      * adjusts width before &ldquo;breakpoint&rdquo;
+  </code>
+</details>
+
+<!-- centered -->
+<style>
+  .smol.centered span {
+    background-color: var(--downquark-color-base-gray-300);
+    border: 1px dashed;
+    border-radius: 0.15em;
+    color: purple;
+    display: grid;
+    font-size: clamp(1.5rem,4vw,2rem);
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+    place-content: center;
+  }
+</style>
+<a name="centered"></a>
+<h4><a href="#centered"><code>&lt;centered&gt;</code></a></h4>
+<details open>
+  <summary>Rendered<br /><small style="font-weight:400">centered element</small></summary>
+  <div data-can-resize>
+    <section class="[ smol :: centered ]">
+      <span>Stuck in the middle</span>
+    </section>
+</div>
+</details>
+<details>
+  <summary><small>show code</small></summary>
+  <code>/* CSS */
+    .smol.centered {
+      display: grid;
+      place-content: center;
+    }</code>
+  <code>&lt;!--HTML--&gt;
+    &lt;section class="[ smol :: centered ]"&gt;
+      &lt;span&gt;Stuck in the middle&lt;/span&gt;
+    &lt;/section&gt;
+  </code>
+  <code>* no custom props</code>
+</details>
 
     </div><!-- end smol wrapper -->
 

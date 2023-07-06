@@ -1,6 +1,21 @@
-.smol.grid {
+.smol.centered {
+  display: grid;
+  place-content: center;
+}
+
+.smol.grid:not(.flexbox) {
   display: grid;
   grid-gap: var(--dq-grid-gap-sizing,var(--downquark-scale-size-s));
   /* min() with 100% prevents overflow in extra narrow spaces */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--dq-grid-col-width-sizing,15ch)), 1fr));
+}
+
+.smol.grid.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--dq-grid-gap-sizing,var(--downquark-scale-size-s));
+  
+  & > * {
+    flex: 1 1 var(--dq-grid-col-width-sizing,10ch);
+  }
 }
