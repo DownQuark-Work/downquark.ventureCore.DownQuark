@@ -3,9 +3,8 @@
   grid-template-columns: min-content auto;
   margin-top: 2em;
   position: relative;
-  /* You could pull this property out and
-  generalize it under the selector `[id]` as
-  it won't affect flow layout or regular margins */
+  /* You could pull this property out and generalize it under the selector `[id]` as
+    it won't affect flow layout or regular margins */
   scroll-margin-top: 2em;
 
   & a {
@@ -38,9 +37,7 @@
     font-style: italic;
     color: currentColor;
   }
-
-    /* Visually hidden while remaining accessible to
-  assistive tech like screen readers */
+  /* Visually hidden while remaining accessible to assistive tech like screen readers */
   &.hidden {
     width: 0;
     height: 0;

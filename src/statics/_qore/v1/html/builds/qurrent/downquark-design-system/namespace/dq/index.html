@@ -67,7 +67,8 @@
     <br />Our focus remains on keeping our coe as efficient as possible, nad at this level we are adhering to the <a href="https://en.wikipedia.org/wiki/Composition_over_inheritance" target="_blank" rel="noopener noreferrer"><em>Composition Over Inheritance</em></a> process.
   </p>
   
-  <nav>
+  <nav style="display:none">
+    <!-- not enough content yet to warrant this -->
     <table>
       <th><td colspan="3"><small>use below to jump directly to the content</small></td></th>
       <tr>
@@ -558,32 +559,13 @@
   <p><mark>TLDR:</mark>  An exception is a deviation from the rules outlined in a block.
     <br/>Making it too linear for the <code>dq</code> namespace, but including the description for completeness.</strong></p>
 
-    <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
-    <p>
-      To continue building on our namespaced organization, we will take inspiration from the Cube CSS recommendation of <a
-        href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">grouping classes</a> when they
-      are specified on <mark>HTML Elements.</mark>
-    </p>
-    <a name="cube-utility"></a>
-    <h4>Utility Styles</h4>
-    <!-- https://web.dev/design-system/css-utilities/ -->
-    <!-- https://every-layout.dev/layouts/ -->
-    <details>
-      <summary>about</summary>
-      From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
-      <blockquote>
-        <strong>What should Utilities do?</strong>
-        <ol>
-          <li>Apply a single CSS property, or a concise group of related properties to create re-usable helpers</li>
-          <li>Extend design tokens to maintain a single source of truth</li>
-          <li>Abstract repeatability away from the CSS and apply it in the HTML instead</li>
-        </ol>
-      </blockquote>
-    </details>
-    <p><mark>TLDR:</mark> a utility does one job and does it well.</p>
     <hr/>
+    
+    <!-- SMOL CSS -->
+    <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
+    <p>Minimal snippets for modern CSS layouts and components</p>
     <label for="visible-smol-utility"><span></span> Smol Utility Styling</label>
-    <input type="checkbox" name="visible-smol-utility" id="visible-smol-utility"/>
+    <input type="checkbox" name="visible-smol-utility" id="visible-smol-utility" checked/>
     <div data-is-visible="visible-smol-utility">
     <!-- simple grid -->
     <a name="-grid"></a>
@@ -638,7 +620,7 @@
 <!-- flexbox grid -->
 <a name="flexbox-grid"></a>
 <h4><a href="#flexbox-grid"><code>&lt;flexbox grid&gt;</code></a></h4>
-<details open>
+<details>
   <summary>Rendered<br /><small style="font-weight:400">simple (flexbox) grid</small></summary>
   <small>
     <blockquote>to see the effect use the handle in the bottom right to resize the content</blockquote>
@@ -694,7 +676,7 @@
 </style>
 <a name="centered"></a>
 <h4><a href="#centered"><code>&lt;centered&gt;</code></a></h4>
-<details open>
+<details>
   <summary>Rendered<br /><small style="font-weight:400">centered element</small></summary>
   <div data-can-resize>
     <section class="[ smol :: centered ]">
@@ -721,7 +703,7 @@
 <!-- article anchor -->
 <a name="article-anchor"></a>
 <h4><a href="#article-anchor"><code>&lt;article anchor&gt;</code></a></h4>
-<details open>
+<details>
   <summary>Rendered<br /><small style="font-weight:400">anchor nav for jumping to content</small></summary>
   <div class="[ smol :: anchor > article ]">
     <article id="smol-article-anchor-title">A Wonderful Article Headline</article>
@@ -806,7 +788,7 @@
 <!-- visited-link -->
 <a name="visited-link"></a>
 <h4><a href="#visited-link"><code>&lt;visited link&gt;</code></a></h4>
-<details open>
+<details>
   <summary>Rendered<br /><small style="font-weight:400">visited link display</small></summary>
   <ul class="[ smol :: visited ]">
     <li><a href="https://ModernCSS.dev">ModernCSS.dev<span aria-hidden="true"></span></a></li>
