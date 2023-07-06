@@ -62,3 +62,42 @@
   gap: var(--dq-cluster-sizing, var(--downquark-scale-size-s));
   justify-content: var(--dq-cluster-justify, flex-start);
 }
+
+.cube:has(>.sidebar+.not-sidebar) {
+  & .not-sidebar {
+    /* ↓ Grow from nothing */
+    flex-basis: 0;
+    flex-grow: 999;
+    /* ↓ Wrap when the elements are of equal width */
+    min-width: 50%;
+  }
+  & .sidebar {
+    /* ↓ The width when the sidebar _is_ a sidebar */
+    flex-basis: 20rem;
+    flex-grow: 1;
+  }
+}
+
+/* 
+* Included references for completeness but not implemented due to scope being too narrow for this level of abstraction:
+* - cover
+*   - https://every-layout.dev/demos/cover-html-book/
+* - frame
+*   - https://every-layout.dev/demos/frames-in-cards/
+* - grid
+*   - https://every-layout.dev/demos/grid-cards/
+* - icon
+*   - https://every-layout.dev/demos/icon-casings/
+*   - https://every-layout.dev/demos/icon-sizes/
+* - imposter
+*   - https://every-layout.dev/demos/imposter-over-text/
+* - reel
+*   - https://every-layout.dev/demos/reel-cards/
+*   - https://every-layout.dev/demos/reel-images/
+*   - https://every-layout.dev/demos/reel-links/
+* - sidebar
+*   - https://every-layout.dev/demos/sidebar-media-object/
+*   - https://every-layout.dev/demos/sidebar-input-with-button/
+* - switcher
+*   - https://every-layout.dev/demos/switcher-basic/
+ */
