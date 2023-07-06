@@ -1,3 +1,54 @@
+.smol.article.anchor {
+  display: grid;
+  grid-template-columns: min-content auto;
+  margin-top: 2em;
+  position: relative;
+  /* You could pull this property out and
+  generalize it under the selector `[id]` as
+  it won't affect flow layout or regular margins */
+  scroll-margin-top: 2em;
+
+  & a {
+    grid-row-start: 1;
+    align-self: start;
+    font-size: 1rem;
+    line-height: 1;
+    transform: translateX(-50%) translateY(25%);
+    text-decoration: none;
+    opacity: 0.75;
+  
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.25em;
+      opacity: 1;
+    }
+    
+    &:focus {
+      outline: 2px solid currentColor;
+      outline-offset: 0.15em;
+    }
+  }
+
+  &:target::before {
+    content: var(--dq-anchor-target-content, "√ viewed");
+    position: absolute;
+    font-size: .9rem;
+    top: -1.25rem;
+    left: 0;
+    font-style: italic;
+    color: currentColor;
+  }
+
+    /* Visually hidden while remaining accessible to
+  assistive tech like screen readers */
+  &.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+}
+
 .smol.centered {
   display: grid;
   place-content: center;
@@ -19,3 +70,8 @@
     flex: 1 1 var(--dq-grid-col-width-sizing,10ch);
   }
 }
+
+/* 
+* Included references for completeness but not implemented due to scope being too narrow for this level of abstraction:
+* - https://smolcss.dev/#smol-transitions
+*/
