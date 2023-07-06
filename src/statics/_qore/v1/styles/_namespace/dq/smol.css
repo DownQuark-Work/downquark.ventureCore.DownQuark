@@ -1,0 +1,6 @@
+.smol.grid {
+  display: grid;
+  grid-gap: var(--dq-grid-gap-sizing,var(--downquark-scale-size-s));
+  /* min() with 100% prevents overflow in extra narrow spaces */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--dq-grid-col-width-sizing,15ch)), 1fr));
+}
