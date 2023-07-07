@@ -63,7 +63,7 @@
   flex-wrap: wrap;
   gap: var(--dq-grid-gap-sizing,var(--downquark-scale-size-s));
   
-  & > * {
+  > * {
     flex: 1 1 var(--dq-grid-col-width-sizing,10ch);
   }
 }
