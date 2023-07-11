@@ -134,6 +134,11 @@ a:hover {
   color:var(--downquark-color-background-primary);
 }
 
+:is(h1,h2,h3,h4,h5,h6,pre) a { /* gold if lighter background */
+  color: var(--downquark-color-text-accent);
+  &:hover { background-color: var(--downquark-color-text-accent); }
+}
+
 h1,
 h2,
 h3,
