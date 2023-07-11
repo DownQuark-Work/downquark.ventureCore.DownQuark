@@ -11,14 +11,6 @@
 --downquark-color-brand-gold: var(--downquark-color-brand-secondary);
 --downquark-color-brand-purple: var(--downquark-color-brand-tertiary);
 
-/**
-	--downquark-color-background-accent: var(--downquark-color-base-gray-500);
-  --downquark-color-background-primary: var(--downquark-color-base-gray-600);
-  --downquark-color-background-secondary: var(--downquark-color-base-cinnamon-600);
-  --downquark-color-text-accent: var(--downquark-color-base-amber-200);
-  --downquark-color-text-primary: var(--downquark-color-base-gray-100);
-*/
-
 /*! reasonable colors v0.4.0 | MIT License | https://github.com/matthewhowell/reasonable-colors */
 /* ******
 Format for CSS variables: --downquark-color-base-COLORNAME-SHADE
