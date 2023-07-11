@@ -15,7 +15,7 @@
     <h3>system particles</h3>
   </hgroup>
   <p>
-    Base tokens to be extended, abscracted, overwritten when incorporated into fully fledged <mark>Design Systems</mark>
+    Base tokens to be extended, abstracted, overwritten when incorporated into fully fledged <mark>Design Systems</mark>
     <br/><br/>
     Beginning with a relatively small amount of tokens will theoretically assist in our attempt to 
     <mark>obscure obfuscation</mark> and remain true to our <em>simpler is better</em> belief.
@@ -25,13 +25,28 @@
   </p>
   <section>
     <details><summary>Color</summary>
-      <!-- ramps only at this level -->
-      <!-- next level will have Categories such as `Brand`, `Utility`, etc -->
+      <!-- Brand and Ramps only at this level -->
+      <!-- next level will have Categories such as `Utility`, etc -->
       <style>
         article {
           --items-per-line: 8
         }
       </style>
+      <p><mark><strong>Brand</strong></mark></p>
+      <article title="Primary | Red"><aside><input type="radio" name="color-hexagon" id="color-hue-primary" style="--ramp-gradient: linear-gradient(var(--downquark-color-brand-primary),var(--downquark-color-brand-red));" /><label for="color-hue-primary">Primary</label></aside>
+        <p data-title="Primary | Red" style="color:var(--downquark-color-base-gray-100); background-color: var(--downquark-color-brand-primary);">
+          &nbsp;&nbsp;--downquark-color-brand-primary<br/>--downquark-color-brand-red
+      </p></article>
+      <article title="Secondary | Gold"><aside><input type="radio" name="color-hexagon" id="color-hue-secondary" style="--ramp-gradient: linear-gradient(var(--downquark-color-brand-secondary),var(--downquark-color-brand-gold));" /><label for="color-hue-secondary">Secondary</label></aside>
+        <p data-title="Secondary | Gold" style="color:var(--downquark-color-base-gray-100); background-color: var(--downquark-color-brand-secondary);">
+          &nbsp;&nbsp;--downquark-color-brand-secondary<br/>--downquark-color-brand-gold
+      </p></article>
+      <article title="Tertiary | Purple"><aside><input type="radio" name="color-hexagon" id="color-hue-tertiary" style="--ramp-gradient: linear-gradient(var(--downquark-color-brand-tertiary),var(--downquark-color-brand-purple));" /><label for="color-hue-tertiary">Tertiary</label></aside>
+        <p data-title="Tertiary | Purple" style="color:var(--downquark-color-base-gray-600); background-color: var(--downquark-color-brand-tertiary);">
+          &nbsp;&nbsp;--downquark-color-brand-tertiary<br/>--downquark-color-brand-purple
+      </p></article>
+      <hr/>
+      <p><mark><strong>Ramps</strong></mark></p>
       <article title="Gray"><aside><input type="radio" name="color-hexagon" id="color-hue-gray" style="--ramp-gradient: linear-gradient(.25turn, var(--downquark-color-base-gray-100),var(--downquark-color-base-gray-200),var(--downquark-color-base-gray-300),var(--downquark-color-base-gray-400),var(--downquark-color-base-gray-500),var(--downquark-color-base-gray-600));" /><label for="color-hue-gray">Gray</label></aside>
         <p data-title="Gray">
         <span style="color:var(--downquark-color-base-gray-600); background-color: var(--downquark-color-base-gray-100);">--downquark-color-base-gray-100</span>

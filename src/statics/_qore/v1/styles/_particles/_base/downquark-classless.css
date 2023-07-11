@@ -13,10 +13,15 @@
   --downquark-color-base-gray-500: lch(26% 0 120);
   --downquark-color-base-gray-600: lch(13% 0 120);
 
+  --downquark-color-brand-primary: lch(10% 145 60);
+  --downquark-color-brand-secondary: lch(70% 125 80);
+  --downquark-color-brand-tertiary: lch(20% 40 315);
+
   --downquark-color-background-accent: var(--downquark-color-base-gray-500);
   --downquark-color-background-primary: var(--downquark-color-base-gray-600);
-  --downquark-color-background-secondary: var(--downquark-color-base-cinnamon-600);
-  --downquark-color-text-accent: var(--downquark-color-base-amber-200);
+  --downquark-color-background-secondary: var(--downquark-color-brand-primary);
+  --downquark-color-text-accent: var(--downquark-color-brand-secondary);
+  --downquark-color-text-interactive: var(--downquark-color-brand-tertiary);
   --downquark-color-text-primary: var(--downquark-color-base-gray-100);
 
   /* theme variables */
@@ -118,14 +123,14 @@ video {
 }
 
 a {
-  color: var(--downquark-color-text-accent);
+  color: var(--downquark-color-text-interactive);
   cursor: pointer;
   text-decoration: none;
   padding-inline: .25ch;
 }
 
 a:hover {
-  background-color: var(--downquark-color-text-accent);
+  background-color: var(--downquark-color-text-interactive);
   color:var(--downquark-color-background-primary);
 }
 
