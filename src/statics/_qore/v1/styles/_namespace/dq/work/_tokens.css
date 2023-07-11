@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Belanosima&family=Bitter&display=swap');
+
+:where(html),:root {
+  --dq-work-font-family-header: 'Aoboshi One', serif;
+  --dq-work-font-family-subheader: 'Belanosima', sans-serif;
+  --dq-work-font-family-content: 'Bitter', serif;
+
+  --downquark-font-family-sans: var(--dq-work-font-family-subheader);
+  --downquark-font-family-serif: var(--dq-work-font-family-content);
+  
+  --downquark-font-family-primary: var(--dq-work-font-family-content);
+  --downquark-font-family-headers: var(--dq-work-font-family-subheader);
+}
