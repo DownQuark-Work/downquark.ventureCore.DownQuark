@@ -54,17 +54,15 @@
 </head>
 
 <body>
-  <h1>namespace: dq</h1>
-  <blockquote>The following contains common classes that will likely be used reused in a majority of the DownQuark
-    builds.
+  <h1>namespace: dq-work</h1>
+  <blockquote>The following contains classes that are used on the main <a href="https://v1.downquark.work/">downquark.work</a> site.
     <blockquote>
-      Included classes were originally defined in the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">Cube CSS Methodology</a>, and as
-        <a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a> snippets. Most classes have been mutated from their original state to better fit DownQuarkk&rsquo;s requirements.
+      The styles included here will likely be <em>one-offs</em> for the main website.
     </blockquote>
   </blockquote>
   <p>
-    At this level of the heirarchical/namespaced styling we will be introducing our first classes!
-    <br />Our focus remains on keeping our coe as efficient as possible, nad at this level we are adhering to the <a href="https://en.wikipedia.org/wiki/Composition_over_inheritance" target="_blank" rel="noopener noreferrer"><em>Composition Over Inheritance</em></a> process.
+    This will continue to evolve as new features are added to the website.
+    <br/>Look over our <a href="/html/builds/">qurrent builds</a> to see what those may entail.
   </p>
   
   <nav style="display:none">
@@ -76,9 +74,9 @@
           <table>
             <tr><th>CUBE</th></tr>
             <tr><td><a href="#cube-composition">Composition<span>(0)</span></a></td></tr>
-            <tr><td><a href="#cube-utility">Utility <span>(5)</span></a></td></tr>
-            <tr><td><a href="#cube-block">Block<span>(n/a)</span></a></td></tr>
-            <tr><td><a href="#cube-exception">Exception<span>(n/a)</span></a></td></tr>
+            <tr><td><a href="#cube-utility">Utility <span>(0)</span></a></td></tr>
+            <tr><td><a href="#cube-block">Block<span>(0)</span></a></td></tr>
+            <tr><td><a href="#cube-exception">Exception<span>(0)</span></a></td></tr>
           </table>
         </td>
         <th>SMOL</th>
@@ -86,47 +84,18 @@
     </table>
   </nav>
   <h3><a href="https://andy-bell.co.uk/cube-css/" target="_blank" rel="noopener noreferrer">Cube CSS</a></h3>
-  <p>
-    To continue building on our namespaced organization, we will take inspiration from the Cube CSS recommendation of <a
-      href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">grouping classes</a> when they
-    are specified on <mark>HTML Elements.</mark>
-  </p>
+  <p>Only overrides and new styles will be included.</p>
   <a name="cube-composition"></a>
-  <h4>Composition Styles</h4>
+  <h4>Composition</h4>
   <!-- https://web.dev/design-system/css-compositions/ -->
-  <details>
-    <summary>about</summary>
-    From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
-    <blockquote>
-      Even if you break your design system into tiny molecules, it&rsquo;s still going to be applied in a larger context
-      at some point and that should never be forgotten, but so often is. I’ve found over many approaches, within many
-      projects over the years, that wider composition often trumps micro-optimisations and the composition layer of CUBE
-      CSS exists because of this.
-      <br />...<br />
-      Think of the composition as a skeleton.
-    </blockquote>
-    Luckily, a lot of these are inherited from the classless styling previously completed.
-  </details>
-  <p><mark>TLDR:</mark> most composition styles are handled by the classless rulesets</p>
+  <hr/>
 
   <a name="cube-utility"></a>
-  <h4>Utility Styles</h4>
+  <h4>Utility</h4>
   <!-- https://web.dev/design-system/css-utilities/ -->
   <!-- https://every-layout.dev/layouts/ -->
-  <details>
-    <summary>about</summary>
-    From the <a href="https://cube.fyi/" target="_blank" rel="noopener noreferrer">docs</a>:
-    <blockquote>
-      <strong>What should Utilities do?</strong>
-      <ol>
-        <li>Apply a single CSS property, or a concise group of related properties to create re-usable helpers</li>
-        <li>Extend design tokens to maintain a single source of truth</li>
-        <li>Abstract repeatability away from the CSS and apply it in the HTML instead</li>
-      </ol>
-    </blockquote>
-  </details>
-  <p><mark>TLDR:</mark> a utility does one job and does it well.</p>
   <hr/>
+  
   <label for="visible-cube-utility"><span></span> Cube Utility Styling</label>
   <input type="checkbox" name="visible-cube-utility" id="visible-cube-utility" checked />
   <div data-is-visible="visible-cube-utility">
@@ -506,59 +475,13 @@
   <a name="cube-block"></a>
   <h4>Block Styles</h4>
   <!-- https://cube.fyi/block.html -->
-  <details>
-    <summary>about</summary>
-    From the <a href="https://cube.fyi/block.html" target="_blank" rel="noopener noreferrer">docs</a>:
-    <blockquote>
-      <strong>What should a Block do?</strong>
-      <ol>
-        <li>Extend the work already done by the global CSS, composition and utility layers</li>
-        <li>Apply a collection of design tokens within a concise group</li>
-        </li>Create a namespace or specificity boost to control a specific context</li>
-      </ol>
-      <strong>What shouldn&rsquo;t a Block do?</strong>
-      <ol>
-        <li>Grow to anything larger than a handful of CSS rules (max 80-100 lines)</li>
-        <li>Solve more than one contextual problem. For example: styling a card and a button in one file</li>
-      </ol>
-    </blockquote>
-    Think of the composition as a skeleton.
-  </details>
-  <p><mark>TLDR:</mark> A <strong>block</strong> is a <strong>skeletal component or organisational structure</strong>.
-    <br/>Making it too linear for the <code>dq</code> namespace, but including the description for completeness.</strong></p>
-
+  <hr/>
+  
   <a name="cube-exception"></a>
   <h4>Exception Styles</h4>
   <!-- https://cube.fyi/exception.html -->
-  <details>
-    <summary>about</summary>
-    From the <a href="https://cube.fyi/exception.html" target="_blank" rel="noopener noreferrer">docs</a>:
-    <blockquote>
-      Exceptions are often caused by outside influences (such as JavaScript),
-      and using <em>only</em> <code>data attribute</code> selectors
-      (that both CSS and JavaScript can use efficiently) makes sense.
-      <br/>For example: you might have a &ldquo;reversed&rdquo; state or an &ldquo;inactive&rdquo; state.
-      We use data attributes because an exception should only occur in exceptional circumstances (the clue is in the name).
-      <br />...<br />
-      <strong>What should an exception do?</strong>
-      <ol>
-        <li>Provide a concise variation to a block</li>
-        <li>Use data attributes</li>
-      </ol>
-      <strong>What shouldn&rsquo;t an exception do?</strong>
-      <ol>
-        <li>Variate a block to the point where it isn&rsquo;t recognisable anymore.
-          <ul><li>This is where a new block should be created</li></ul>
-        </li>
-        <li>Use CSS classes</li>
-      </ol>
-    </blockquote>
-    Usually, an exception is related to a state change
-  </details>
-  <p><mark>TLDR:</mark>  An exception is a deviation from the rules outlined in a block.
-    <br/>Making it too linear for the <code>dq</code> namespace, but including the description for completeness.</strong></p>
-
-    <hr/>
+  <hr/>
+  <hr/>
 
     <!-- SMOL CSS -->
     <h3><a href="https://smolcss.dev/" target="_blank" rel="noopener noreferrer">SmolCSS</a></h3>
