@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dq namespace</title>
+  <link rel="stylesheet" href="/styles/_namespace/dq-work.css" />
+  <style>
+    /* 
+    * Overrides for the styleguide page to render correctly.
+    * These are specific to this page alone and
+    * _should **NOT**_ be included in any heirarchical import 
+    */
+    [data-can-resize] {
+      position: relative; resize: horizontal; overflow: auto;
+      &::after { bottom:-.5rem; color:var(--downquark-color-base-amber-200); content: "↔︎"; font-size:x-large; padding:0 .1rem; position:absolute; right:.2rem; }
+    }
+    h4:has(code) {
+      &::after {
+        border-width: 2.5ch 1.5ch 0 0;
+      }
+      &::before {
+        border-width: 0 0 2.5ch 1.5ch;
+      }
+    }
+    details blockquote code { background-color: var(--downquark-color-background-primary); }
+    details:has(code:nth-child(2)):not(:has(blockquote)) code {
+      background-color: var(--downquark-color-background-primary);
+      display: inline-block;
+      inline-size: calc(50% - .25rem);
+      max-block-size: 12rem;
+      overflow: auto;
+      white-space: pre;
+    }
+    details:has(code:nth-child(4)):not(:has(blockquote)) code:last-child { inline-size: 100%; }
+    details[open]:has(summary small) details:not([open]) { margin-bottom: 0 }
+    input[name^="visible"] { visibility: hidden; pointer-events: none;}
+    input[name^="visible"]:checked { margin-bottom:2.75rem; }
+    input[name^="visible"]:checked + div[data-is-visible^="visible"] { display: none; }
+    label[for^="visible"] {
+      background-color: var(--downquark-color-base-gray-300);
+      border-radius: .25rem;
+      display: inline;
+      padding:.5rem;
+    }
+    label[for^="visible"] span::before { content: "Hide "; }
+    label[for^="visible"]:has(+ input[name^="visible"]:checked) span::before { content: "Show "; }
+    nav table a {
+      & span { float:right; margin-right:1rem; }
+      &:hover span { color: var(--downquark-color-text-primary)}
+    }
+  </style>
+</head>
+
+<body>
+  <h1>namespace: dq-work</h1>
+  <blockquote>The following contains classes that are used on the main <a href="https://v1.downquark.work/">downquark.work</a> site.
+    <blockquote>
+      The styles included here will likely be <em>one-offs</em> for the main website.
+    </blockquote>
+  </blockquote>
+  <p>
+    In addition to the styles outlined on this page there are also some new <a href="./tokens.html">Design Tokens</a> that will be integrated.
+  </p>
+
+  <h3><a href="https://andy-bell.co.uk/cube-css/" target="_blank" rel="noopener noreferrer">Cube CSS</a></h3>
+  <p>Only overrides and new styles will be included.</p>
+  
+  <a name="cube-block"></a>
+  <h4>Block</h4>
+  <!-- https://cube.fyi/block.html -->
+  
+  <label for="visible-cube-block"><span></span> Cube Block Styling</label>
+  <input type="checkbox" name="visible-cube-block" id="visible-cube-block" checked />
+  <div data-is-visible="visible-cube-block">
+  <!-- wrapper -->
+  <a name="wrapper"></a>
+  <h4><a href="#wrapper"><code>&lt;wrapper&gt;</code></a></h4>
+  <details>
+    <summary>display</summary>
+    <section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]">
+      <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with default padding
+      </div>
+    </section>
+    &nbsp;
+    <hr />
+    <style>
+      details section:last-child.cube.wrapper {
+        --dq-wrapper-sizing: .25rem
+      }
+    </style>
+    <section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]">
+      <div style="background-color: var(--downquark-color-base-raspberry-600);">A wrapped element with custom padding
+      </div>
+    </section>
+  </details>
+  <details>
+    <summary><small>show code</small></summary>
+    <code>/* CSS */
+.wrapper {
+  max-inline-size: 75rem;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  padding: var(--dq-wrapper-sizing, var(--downquark-scale-size-m));
+}   </code>
+    <code>&lt;!--HTML--&gt;
+      &lt;section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]"&gt;
+      &lt;div style="background-color: var(--downquark-color-base-raspberry-600);"&gt;A wrapped element with default padding&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;hr/&gt;
+    &lt;style&gt;
+      details section:last-child.cube.wrapper { --dq-wrapper-sizing: .25rem }
+    &lt;/style&gt;
+    &lt;section style="background-color: var(--downquark-color-base-gray-400);" class="[ cube :: wrapper ]"&gt;
+      &lt;div style="background-color: var(--downquark-color-base-raspberry-600);"&gt;A wrapped element with custom padding&lt;/div&gt;
+    &lt;/section&gt;
+    </code>
+    <code>* Allows custom props:
+      * --dq-wrapper-sizing
+        * adjusts padding
+    </code>
+  </details>
+
+  </div><!-- end block wrapper -->
+  
+  <a name="cube-exception"></a>
+  <h4>Exception</h4>
+  <!-- https://cube.fyi/exception.html -->
+
+  <hr/>
+  <hr/>
+
+  <!-- Atomic Design -->
+  <h3><a href="https://atomicdesign.bradfrost.com/table-of-contents/" target="_blank" rel="noopener noreferrer">Atomic</a></h3>
+  <p>Atomic Design Patterns<br/><small>(From atoms to organisms)</small></p>
+
+  <a name="atomic-atom"></a>
+  <h4>Atoms</h4>
+  <!-- https://atomicdesign.bradfrost.com/chapter-2/#atoms -->
+  <!-- atomic atoms wrapper -->
+  <label for="visible-atomic-atoms"><span></span> Atomic Design Atoms</label>
+  <input type="checkbox" name="visible-atomic-atoms" id="visible-atomic-atoms" checked/>
+  <div data-is-visible="visible-atomic-atoms">
+  <!-- simple grid -->
+  <a name="simple-grid"></a>
+  <h4><a href="#simple-grid"><code>&lt;simple grid&gt;</code></a></h4>
+  <details>
+    <style>
+      .smol.grid li {
+        background-color: var(--downquark-color-base-gray-300);
+        border: 1px dashed;
+        border-radius: 0.15em;
+        color: purple;
+        display: grid;
+        font-size: clamp(1.5rem,4vw,2rem);
+        font-weight: 700;
+        padding: 1rem;
+        text-align: center;
+      }
+    </style>
+    <summary>Rendered<br /><small style="font-weight:400">simple grid</small></summary>
+    <small>
+      <blockquote>to see the effect use the handle in the bottom right to resize the content</blockquote>
+    </small>
+    <div data-can-resize>
+      <ul class="[ smol :: grid ]">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </details>
+  <details>
+    <summary><small>show code</small></summary>
+    <code>/* CSS */
+      .smol.grid:not(.flexbox) {
+        display: grid;
+        grid-gap: var(--dq-grid-gap-sizing,var(--downquark-scale-size-s));
+        /* min() with 100% prevents overflow in extra narrow spaces */
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--dq-grid-col-width-sizing,15ch)), 1fr));
+      }</code>
+    <code>&lt;!--HTML--&gt;
+      &lt;ul class="[ smol :: grid ]"&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code>
+<code>* Allows custom props:
+* --dq-grid-gap-sizing    * --dq-grid-col-width-sizing
+  * adjusts gap amount      * adjusts width before &ldquo;breakpoint&rdquo;
+</code>
+  </details>
+</div><!-- end atomic atoms wrapper -->
+
+  <a name="atomic-molecule"></a>
+  <h4>Molecules</h4>
+  <!-- https://atomicdesign.bradfrost.com/chapter-2/#molecules -->
+
+  <a name="atomic-organism"></a>
+  <h4>Organisms</h4>
+  <!-- https://atomicdesign.bradfrost.com/chapter-2/#organisms -->
+  <hr>
+  <hr/>
+<footer><small>
+  This will continue to evolve as new features are added to the website.
+  <br/>Look over our <a href="/html/builds/">qurrent builds</a> to see what those may entail.
+</small></footer>
+</body>
+
+</html>

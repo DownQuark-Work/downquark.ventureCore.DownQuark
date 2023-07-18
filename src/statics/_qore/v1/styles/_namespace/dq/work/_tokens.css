@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Belanosima&family=Bitter&display=swap');
+
+:where(html),:root {
+  --dq-work-font-family-header: 'Aoboshi One', serif;
+  --dq-work-font-family-subheader: 'Belanosima', sans-serif;
+  --dq-work-font-family-content: 'Bitter', serif;
+
+  --downquark-font-family-sans: var(--dq-work-font-family-subheader);
+  --downquark-font-family-serif: var(--dq-work-font-family-content);
+  
+  --downquark-font-family-primary: var(--dq-work-font-family-content);
+  --downquark-font-family-headers: var(--dq-work-font-family-subheader);
+
+  /* extended CTI+ Naming Convention: [NameSpace > Category > Type > Item > Subitem > State] */
+  --dq-work-color-filter-design: var(--downquark-color-base-orange-200);
+  --dq-work-color-filter-development: var(--downquark-color-base-lime-400);
+  --dq-work-color-filter-post-blog: var(--downquark-color-base-yellow-200);
+  --dq-work-color-filter-post-forum: var(--downquark-color-base-pink-600);
+  --dq-work-color-filter-stealth: var(--downquark-color-base-powder-500);
+  --dq-work-color-filter-foss: var(--downquark-color-base-purple-500);
+  --dq-work-color-filter-miscellaneous: var(--downquark-color-base-red-500);
+}
