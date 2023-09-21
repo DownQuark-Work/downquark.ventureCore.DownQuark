@@ -151,4 +151,3 @@ const curledColors = [
 {"hexCode":"4b0030","name":null}]
 
 const namedColors = curledColors.filter(cc => cc.name)
-console.log('namedCo: ', namedColors.length)

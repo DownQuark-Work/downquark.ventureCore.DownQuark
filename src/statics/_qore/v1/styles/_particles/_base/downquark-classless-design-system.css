@@ -82,7 +82,7 @@ section>details>fieldset {
 
     & input[type="radio"] { 
       aspect-ratio: 1;
-      clip-path: var(--downquark-clip-path-polygon);
+      clip-path: var(--downquark-shape-hexagon-clip-path);
       cursor: pointer;
       position: relative;
       width: calc(100% / var(--items-per-line));
@@ -149,7 +149,7 @@ section>details>article {
 
     & input[type="radio"] { 
       aspect-ratio: 1;
-      clip-path: var(--downquark-clip-path-polygon);
+      clip-path: var(--downquark-shape-hexagon-clip-path);
       cursor: pointer;
       position: relative;
       width: 100%;
@@ -228,7 +228,7 @@ section>details>table>tbody {
   }
   & div { 
     background-color: var(--downquark-color-text-accent);
-    clip-path: var(--downquark-clip-path-polygon);
+    clip-path: var(--downquark-shape-hexagon-clip-path);
     margin: 0 auto;
   }
 }

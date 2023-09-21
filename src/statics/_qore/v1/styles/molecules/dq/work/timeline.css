@@ -1,0 +1,42 @@
+/* :host {} */
+:host(dq_work-molecule-timeline:hover) { --host-test:45ch !important; }
+
+ul.dq-work {
+  &.molecule {
+    &.timeline { /* timeline molecule */
+      &.wrapper { /* ul element */
+        block-size: inherit;
+        overflow: scroll;
+        padding: 0;
+        position: absolute;
+        inline-size: 160px;
+        &:has(li:hover){
+          width: 100%;
+        }
+        & li {
+          list-style-type: none;
+          &:nth-child(even) {
+            block-size: calc(var(--dq-work-size-width-element-hex-tile) / 1.8);
+            left: calc(var(--dq-work-size-width-element-hex-tile) / 1.85);
+            position: relative;
+            top: calc(var(--dq-work-size-width-element-hex-tile) / -2.85);
+          }
+        }
+
+        [as-a*="tile"] {
+          &:hover,.selected{
+            filter: brightness(1.4);
+          }
+          & mark[slot="tile-title"]{
+            pointer-events: none;
+            &::after{ border-width: 2.7ch 1.5ch 0 0; }
+            
+            .timeline-external-prefix {
+              padding-right:.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
