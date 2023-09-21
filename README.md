@@ -1,2 +1,2 @@
-# DownQuark Open Source Template
-## Release: v0.0.1-alpha
+# DownQuark Client Content Site
+## Release: v0.1.0-alpha
