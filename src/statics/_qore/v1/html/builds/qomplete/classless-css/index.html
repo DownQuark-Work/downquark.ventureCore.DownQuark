@@ -5,6 +5,12 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="/styles/_particles/_base/downquark-classless.css" />
+		<style>
+			a { /* gold looks better on this instance */
+				color: var(--downquark-color-text-accent);
+				&:hover { background-color: var(--downquark-color-text-accent); }
+			}
+		</style>
 	</head>
 	<body>
 		<main>
@@ -1966,8 +1972,9 @@
 				<section>
 					<figure>
 						<video controls preload="none" poster="./media/muybridge-horse-in-motion.jpg">
-							<source src="./media/muybridge-horse-in-motion.webm" type="video/webm">
-							<source src="./media/muybridge-horse-in-motion.mp4" type="video/mp4">
+							<source src="https://upload.wikimedia.org/wikipedia/commons/1/18/Muybridge_race_horse.webm" type="video/webm">
+							<source src="https://upload.wikimedia.org/wikipedia/commons/1/18/Muybridge_race_horse.mp4" type="video/mp4">
+							<!-- mp4 source may not exist -->
 							Sorry, your browser doesn't support embedded videos.
 						</video>
 						<figcaption>An video element with controls</figcaption>

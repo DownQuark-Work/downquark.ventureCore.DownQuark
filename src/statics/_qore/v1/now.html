@@ -70,6 +70,23 @@
 
   <script src="scripts/vendor/modernizr-3.12.0.min.js"></script>
   <script src="scripts/dq.js"></script>
+  <script>
+    /* Adds SupportsCSS into base DownQuark - not sure what we'll use it on yet.
+    But good to have.
+    TODO: Make this into its own component
+  window.SupportsCSS && SupportsCSS.init({ tests:'all' });
+  const resultsList = document.createDocumentFragment();
+  const list = document.createElement("ol");
+  resultsList.appendChild(list);
+  for (const name in SupportsCSSTests.results) {
+    const li = document.createElement("li");
+    const result = SupportsCSSTests.results[name];
+    li.textContent = `${name}: ${result ? "✅" : "❌"}`;
+    list.appendChild(li);
+  }
+  document.body.appendChild(resultsList);
+  */
+  </script>
 </body>
 
 </html>

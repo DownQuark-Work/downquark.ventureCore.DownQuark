@@ -10,7 +10,7 @@
   --downquark-scale-size-s: clamp(var(--downquark-size-base), calc(0.96rem + 0.22vi), 1.13rem);
   --downquark-scale-size-m: clamp(1.50rem, calc(1.43rem + 0.33vi), 1.69rem);
   --downquark-scale-size-l: clamp(2.00rem, calc(1.91rem + 0.43vi), 2.25rem);
-  --downquark-scale-size-xl: clamp(3.00rem, calc(2.87rem + 0.65vi), 3.38rem);
+  --downquark-scale-size-xl: clamp(3.00rem, calc(2.87rem + 0.65vi) , 3.38rem);
   --downquark-scale-size-2xl: clamp(4.00rem, calc(3.83rem + 0.87vi), 4.50rem);
   --downquark-scale-size-3xl: clamp(6.00rem, calc(5.74rem + 1.30vi), 6.75rem);
 
@@ -27,4 +27,15 @@
   /* Custom pairs */
   --downquark-scale-size-s-l: clamp(var(--downquark-size-base), calc(0.57rem + 2.17vi), 2.25rem);
   --downquark-scale-size-3xs-3xl: clamp(0.25rem, calc(-2.01rem + 11.30vi), 6.75rem);
+
+  /* As a Percentage
+      0 -> .25rem -> 4px
+      100 -> 6.75rem -> 108px
+      single percent: ((1 / 100) * (6.75-.25)) -> 0.065
+  */
+  /* clamp should not matter but included as failsafe */
+  --downquark-scale-size-single-percent: calc(calc(6.75rem - .25rem) / 100);
+  --downquark-scale-size-to-percent: 11.54; /* 16.0016px ~ 1rem */
+  --downquark-scale-size-percentage-clamp-value: calc(calc(var(--downquark-scale-size-to-percent) * var(--downquark-scale-size-single-percent)) + .25rem);
+  --downquark-scale-size-percentage: var(--downquark-scale-size-percentage-clamp-value);
 }

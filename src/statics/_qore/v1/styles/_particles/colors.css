@@ -2,9 +2,17 @@
 /* DownQuark brand base colors */
 
 /* Heirarchy */
---downquark-color-brand-primary: lch(10% 145 60);
---downquark-color-brand-secondary: lch(70% 125 80);
---downquark-color-brand-tertiary: lch(60% 40 315);
+--downquark-color-brand-primary: lch(21.55% 44.92 33.94);
+--downquark-color-brand-secondary: #b58037; /* #c78538 */
+--downquark-color-brand-tertiary: lch(35.784% 39.551 337.598);
+
+/*
+// secondary shades
+red: lch(10% 145 60);
+Gold: lch(72.008%, 41.219%, 69.147%) #e9a043 rgb(233,160,67)
+#ba8a45; #f2ab46; lch(70% 125 80); lch(80.77% 75.4 76.84);
+Purple: /*lch(60% 40 315);
+*/
 
 /* Semantics */
 --downquark-color-brand-red: var(--downquark-color-brand-primary);

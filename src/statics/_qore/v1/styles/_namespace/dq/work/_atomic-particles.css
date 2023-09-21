@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Belanosima&family=Bitter:wght@400;600&display=swap');
+
+:where(html),:root {
+  --dq-work-font-family-header: 'Aoboshi One', serif;
+  --dq-work-font-family-subheader: 'Belanosima', sans-serif;
+  --dq-work-font-family-content: 'Bitter', serif;
+
+  --downquark-color-background-primary: var(--downquark-color-background-primary);
+  --downquark-font-family-sans: var(--dq-work-font-family-subheader);
+  --downquark-font-family-serif: var(--dq-work-font-family-content);
+  
+  --downquark-font-family-primary: var(--dq-work-font-family-content);
+  --downquark-font-family-headers: var(--dq-work-font-family-subheader);
+
+  /* relative color values */
+  /* background: lch(from red l calc(c + 15) h / 0.25); */
+  /* --dq-work-color-filter-design: lch(from red calc(l - 15%) c h); */
+  /* https://drafts.csswg.org/css-color-5/#example-e5e90948 */
+  /* https://drafts.csswg.org/css-color-5/#relative-colors */
+  /* https://www.stefanjudis.com/notes/new-in-css-relative-colors/  - bottom of age shows browser support*/
+
+  
+  /* extended CTI+ Naming Convention: [NameSpace > Category > Type > Item > Subitem > State] */
+  --downquark-color-background-primary: lch(9.26% 0 0);
+  
+  --dq-work-color-filter-design: lch(59.69 58.67 42.32);
+  --dq-work-color-filter-development: lch(40.01 14.529 154.361);
+  --dq-work-color-filter-blog: lch(65 62 92);
+  --dq-work-color-filter-forum: lch(33 62 347);
+  --dq-work-color-filter-stealth: lch(21 45 200);
+  --dq-work-color-filter-foss: lch(28 95 317);
+  --dq-work-color-filter-miscellaneous: lch(25 62 30);
+  --dq-work-color-filter-clear: var(--downquark-color-base-gray-200);
+
+  --dq-work-color-header-design: lch(59.69 58.67 42.32 / .6);
+  --dq-work-color-header-development: lch(40.01 14.529 154.361 / .6);
+  --dq-work-color-header-blog: lch(65 62 92 / .6);
+  --dq-work-color-header-forum: lch(33 62 347 / .6);
+  --dq-work-color-header-stealth: lch(21 45 200 / .3);
+  --dq-work-color-header-foss: lch(28 95 317 / .6);
+  --dq-work-color-header-miscellaneous: lch(25 62 30 / .3); 
+  
+  --dq-work-color-tile-design: lch(59.69 58.67 42.32);
+  --dq-work-color-tile-development: lch(40.01 14.529 154.361);
+  --dq-work-color-tile-blog: lch(65 62 92);
+  --dq-work-color-tile-forum: lch(33 62 347);
+  --dq-work-color-tile-stealth: lch(21 45 200);
+  --dq-work-color-tile-foss: lch(28 95 317);
+  --dq-work-color-tile-miscellaneous: lch(25 62 30);
+}
+
+/* still not 100% decided on this - keeping in case I revert later
+--dq-work-color-tile-design:  lch(52 52 47);
+--dq-work-color-tile-development: lch(20 31.16 124.59);
+--dq-work-color-tile-blog: lch(45 62 92);
+--dq-work-color-tile-forum: lch(33 45 347);
+--dq-work-color-tile-stealth: lch(31 22 200);
+--dq-work-color-tile-foss: lch(28 55 317);
+--dq-work-color-tile-miscellaneous: lch(25 52 30);
+*/
