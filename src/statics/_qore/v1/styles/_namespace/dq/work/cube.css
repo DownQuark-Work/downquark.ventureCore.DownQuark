@@ -62,6 +62,11 @@ h1,:is(h2,h3,h4,h5,h6) {
           top: -.5ch;
           width: calc(var(--dq-work-size-first-letter) * .85);
         }
+
+        & mark {
+          &::after{ border-width: 2.65ch 1.5ch 0px 0px; }
+          &::before{ border-width: 0px 0px 2.65ch 1.5ch; }
+        }
       }
     }
 

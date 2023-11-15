@@ -87,6 +87,7 @@ class DqWorkUtilParseMarkdown extends LitElement {
       const mdComponent = this.parentElement.querySelector('dq_work-util-parse-markdown')
                             .shadowRoot.querySelector('.apply-unsafe-html')
       mdComponent.innerHTML = that._convertedMarkdown
+        DownQuark.singularity().mediate.contentLoaded(that._markdownMetadata)
     }
 
     const convertOpts = {

@@ -16,8 +16,8 @@
         position: absolute;
 
         &.loading {
-          pointer-events: none;
           animation: animrotation 5s infinite alternate;
+          pointer-events: none;
         }
 
         & dq_work-atom-hexagon {
@@ -41,6 +41,8 @@
           filter: brightness(.6);
           margin:0 1.25ch;
           position: absolute;
+          text-align: center;
+          width:12ch;
           z-index: 10;
         
           &::after {
@@ -69,9 +71,9 @@
       }
       /* filter on main page */
       & mark {
-        left: calc(-18.75rem/3);
-        rotate: -45deg;
-        top: 17rem;
+        left:-7rem;
+        top:8.25rem;
+        rotate:-90deg;
       }
       /* end filter on main page */
     }

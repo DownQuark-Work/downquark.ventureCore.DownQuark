@@ -3,7 +3,7 @@
   --dq-work-size-width-filter-molecule: var(--dq-work-size-width-max-filter-element);
 }
 .dq-work { 
-  --dq-work-size-width-element-hex-tile: 6.25rem;
+  --dq-work-size-width-element-hex-tile: 4.75rem;
   &.atom {
     &.element{
       &.hex { /* Basic hexagon with solid color background */
@@ -293,7 +293,8 @@
       block-size: 200%;
       font-weight: 600;
       justify-content: center;
-      opacity: 0;
+      opacity: 0; 
+      /*opacity: 1; /* DEBUG - comment this line when finished */
       position: absolute;
       top: calc(var(--dq-work-size-width-element-hex-tile) * -.29);
       transition: opacity left 0.25s;
@@ -325,9 +326,5 @@
     position: absolute;
     &::after{ border-color: var(--dq-work-color-fill-element-hex) transparent transparent transparent;}
     &::before{ border: none;}
-
-    /* .timeline-external-prefix {
-      color:red;
-    } */
   }
 }

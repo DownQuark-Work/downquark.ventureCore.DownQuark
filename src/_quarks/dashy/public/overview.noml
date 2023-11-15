@@ -1,0 +1,59 @@
+# Dashy Dashboard
+
+## styles
+#.app: align=center body=center fill=#990000aa stroke=black visual=transceiver
+#.web: align=center body=center fill=slateblue stroke=white visual=sender
+#.widget: align=center body=center fill=#006600aa stroke=black visual=receiver
+
+## content
+[OctoCat|
+  [profiles|org|user]
+  [Actions|Workflows]
+  [Repositories]
+  [<widget>stats]
+]
+[Make|
+  [ideation]
+  [architect]
+  [design]
+  [develop]
+]
+[Monitor|
+  [logs]
+  [stats]
+  [connect|
+    [<note>db gui|etc]
+  ]
+]
+
+[<abstract>[<app>Capacities]]oversees--:>
+[Application|
+  [<table>Make|
+	ideation|[<web>moodboard|references|init documentation]||
+    architect|[<app>noml|mindnoed|miro|system designer]||
+    design|[<app>pixso|curve]||
+    develop|[<app>vscode]
+  ]
+  [<table>Monitor|
+  	logs|[[<web>tbd]|[<app>tbd]]||
+    stats|[<web>matomo]||
+    connect|[<app>arangodb|dbeaver|questdb]
+  ]
+]
+
+[Write|
+  [vrite]
+  [scrivener]
+]
+
+[...tbd]
+
+[Style Key|
+	[<app>Desktop Application]|
+    [<web>Website]|
+    [<widget>Widget]
+]
+## relations
+[OctoCat]Repository->[<choice>current status]
+[current status]->in-progress[ Make] ->[Application]
+[current status]->deployed[ Monitor]->[Application]

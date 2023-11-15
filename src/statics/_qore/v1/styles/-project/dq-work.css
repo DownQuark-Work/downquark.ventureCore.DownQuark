@@ -1,3 +1,5 @@
+dq_work-molecule-timeline{ transition:top 1s ease-out 2s; top:198vh; }
+
 body.project.dq-work {
   min-height: 100vh;
   position: relative;
@@ -13,16 +15,17 @@ body.project.dq-work {
   }
 
   & dq_work-molecule-timeline {
-    --host-test:155px;
+    --hit-area-hover-timeline:155px;
     /* border: 1px solid; /* FOR DEBUG */
-    left: 1vi;
+    left: 3vi;
     position: fixed;
     block-size: 100vh;
     overflow: auto;
-    inline-size: var(--host-test);
+    inline-size: var(--hit-area-hover-timeline);
     z-index: 10;
     &:hover {
-      inline-size: var(--host-test);
+      --size-top-timeline:0
+      inline-size: var(--hit-area-hover-timeline);
       + main {
         transition: opacity .2s ease;
         opacity: .3;
