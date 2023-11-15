@@ -40,8 +40,8 @@ class DqWorkMoleculeFilter extends LitElement {
     this.requestUpdate()
   }
   showFilterType(e) {
-    this._label = e.target.attributes[0].value
-    const category = this._label.split(' ')[0]
+    this._label = e.target.attributes[0].value.split(' ')[0] // e.target.attributes[0].value
+    const category = this._label // .split(' ')[0]
     this._hovercolor = `--dq-work-color-feature-category-rollover: var(--dq-work-color-filter-${category}, black);
     ${(category === 'stealth' || category === 'development') ? '--dq-work-color-feature-category-label-text: var(--downquark-color-base-gray-200, red)' : ''}`
   }
@@ -66,7 +66,7 @@ class DqWorkMoleculeFilter extends LitElement {
           color: var(--dq-work-color-feature-category-label-text);
         }
       </style>
-      <div class="[ dq-work filter molecule ][ layout wrapper ]">
+      <div class="[ dq-work filter molecule ][ layout wrapper ][ onload :: loading ]">
         ${this.generateFilterHexagons()}
         <dq_work-atom-hexagon @click="${this.applyFilter}" @mouseover="${this.showFilterType}" ?selected=${this._selected.clear} as-a="clear filter" style="--dq-work-position-offset-feature-hexagon:7"></dq_work-atom-hexagon>
         <mark>${this._label}</mark>

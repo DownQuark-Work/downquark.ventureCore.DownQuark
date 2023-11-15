@@ -12,7 +12,7 @@ accessibleVia: file:dq.parse.markdown.js, | accessor:this._markdownMetadata
   <h2>develop the experience</h2>
 </hgroup>
 
-_**Developer Experience**_ (or <mark>devx</mark>) is all about making the life of a software developer easier and more productive.
+_**Developer Experience**_ (or <mark>devx</mark> for short) is all about making the life of a software developer easier and more productive.
 
 <dq_work-util-parse-markdown
   md="todos"
