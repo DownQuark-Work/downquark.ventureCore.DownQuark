@@ -1,0 +1,47 @@
+# Tagged and released versioning data
+#   for DownQuark products
+
+dq='DownQuark'
+version.prefix='dq'
+version.semver='0.0.1-alpha'
+
+[owner]
+id='@mlnck'
+
+# DownQuark Product and Versioning information
+[[products]]
+id='qore'
+parent=[]
+tags=['dq','qore']
+created=2023-11-28T19:15:00
+edited=2023-11-28T19:15:00
+desc="""\
+downquark's qore version.
+Does not directly reflect anything tangible."""
+version.prefix='dq'
+version.semver='0.0.1-alpha'
+
+[[products]]
+id='qlient'
+parent=['qore']
+tags=['content','company','browser']
+created=2023-11-28T19:23:00
+edited=2023-11-28T19:23:00
+desc="""\
+client content site.
+version should reflect tagged github release."""
+version.prefix='dq'
+version.semver.development='0.2.0-alpha'
+version.semver.release='0.1.1-alpha'
+
+# DownQuark Product Information for internal use
+[[products.internals]]
+product.id='qlient'
+url.repository='https://github.com/DownQuark-Work/downquark.ventureCore.DownQuark.git'
+url.development='https://localhost:1313'
+url.staging='https://localhost'
+
+# DownQuark Product Information for external use
+[[products.externals]]
+product.id='qlient'
+url.production='https://v1.downquark.work/'

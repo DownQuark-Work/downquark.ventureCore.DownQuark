@@ -47,20 +47,32 @@ class DqWorkUtilParseMarkdown extends LitElement {
   ]
 
   static properties = {
-    _markdownMetadata: {state: false},
+    _classcategory: {state: false},
     _convertedMarkdown: {state: true},
+    _markdownMetadata: {state: false},
     _slottedText: {state: false},
+    classwrapper: {attribute: 'with-class', type:String},
     markdown: {attribute: 'md', type:String},
-    wrapperclass: {attribute: 'with-class', type:String},
   }
 
   constructor() {
     super()
+    this._classcategory = ''
     this._convertedMarkdown = ''
-    this._slottedText = ''
-    this.markdown = ''
     this._markdownMetadata = {}
-    this.wrapperclass = ''
+    this._slottedText = ''
+    this.classwrapper = ''
+    this.markdown = ''
+  }
+
+  handleHashChange(that){
+    if(window.location.hash === '#menu-default') {
+      const tableSelectorComponent = that.parentElement.querySelector('dq_work-util-parse-markdown')
+                        .shadowRoot.querySelector('dq_work-util-parse-markdown'),
+            newMenu = tableSelectorComponent.getAttribute('with-class')
+                        .replace(/table-selected > [\w-]+/i,'table-selected > default')
+      tableSelectorComponent.setAttribute('with-class',newMenu)
+    }
   }
 
   loadShowdown(){
@@ -68,6 +80,8 @@ class DqWorkUtilParseMarkdown extends LitElement {
       document.querySelector('data-markdownparser')
       || typeof showdown !== 'undefined'
     ){ return } // sanity
+
+    addEventListener("hashchange", (_) => this.handleHashChange(this));
 
     const scriptEle = document.createElement("script")
     scriptEle.setAttribute("data-markdownparser", "showdown")
@@ -84,6 +98,9 @@ class DqWorkUtilParseMarkdown extends LitElement {
      * This is a short term hacky fix:
      */
     const applyConvertedMarkdown = () => {
+      const selectedCategory = this._markdownMetadata.category?.toLowerCase()
+      if(selectedCategory) this._classcategory = `[ dq-work :: selected-category > ${selectedCategory} ]`
+
       const mdComponent = this.parentElement.querySelector('dq_work-util-parse-markdown')
                             .shadowRoot.querySelector('.apply-unsafe-html')
       mdComponent.innerHTML = that._convertedMarkdown
@@ -147,15 +164,16 @@ class DqWorkUtilParseMarkdown extends LitElement {
 
   connectedCallback() {
     super.connectedCallback()
+    if(/^#menu/i.test(window.location.hash))
+      window.location.hash = ''
     if(!document.querySelector('data-markdownparser'))
       this.loadShowdown()
   }
   
   render() {
     // console.log('this._: ', this._markdownMetadata) // reference
-
     return html`
-    <div class="${this.wrapperclass}[ apply-unsafe-html ]">
+    <div class="${this.classwrapper}${this._classcategory}[ apply-unsafe-html ]" style="text-wrap:pretty">
       <slot @slotchange=${this.handleSlotchange} class="[ dq-work ][ util > inline-md ]"></slot>
       <!-- there is an issue when initializing current directives -->
       <!-- using a direct DOM mutation for now until the issue is resolved and -->

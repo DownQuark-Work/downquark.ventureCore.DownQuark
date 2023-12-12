@@ -84,7 +84,7 @@
     content: '';
     flex-grow: 1;
     height: var(--dq-liner-size, 1px);
-    background: var(--dq-liner-color, var(--downquark-color-brand-secondary));
+    background: var(--dq-liner-color, var(--downquark-color-text-interactive));
     min-width: 1rem;
     margin: auto;
     margin-left: var(--dq-liner-spacing, 1rem);

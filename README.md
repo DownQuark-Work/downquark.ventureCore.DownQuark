@@ -1,2 +1,5 @@
+<!-- below is deprecated
 # DownQuark Client Content Site
-## Release: v0.1.1-alpha
+## Release: dq0.1.1-alpha
+Versioning is now handled in `./.downquark.products` -->
+

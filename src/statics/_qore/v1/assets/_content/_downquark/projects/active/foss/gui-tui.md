@@ -1,3 +1,11 @@
+«««
+METADATA: document metadata
+Title: (G|T)UI
+Author: @mlnck
+created: 1701160633780
+edited: 1701160633780
+category: FOSS
+»»»
 <hgroup>
   <h1>(G|T)UI</h1>
   <h2>pronounced "gooey tooey"</h2>
@@ -32,12 +40,19 @@ You can now write customized shell scripts just as you would without involving a
 - A much more thorough writeup is available on our [blog](https://qrx.downquark.work/qore/g-t-ui).
 - The current, working version, of the source code is available in [github](https://github.com/DownQuark-Work/downquark.applicationFoss.GuiTui)
 
-<hr><hr>
+### Product Progression
+TODO
+
+
+---
 
 We always attempt to update the status of projects as they proceed through our development process. But we make no guarantees. In this instance please refer to the github link provided above for the most accurate information.
 
 <dq_work-util-parse-markdown
   md="navigation"
-  with-class="[ dq-work cube > block ][ post ][ table-selected-project-foss ]" />
+  with-class="[ dq-work cube > block ][ post ][ table-selected > project-foss ]" />
+  <hr><hr>
 
-  ---
+  <footer>
+  <h6>/[gt]ui/</h6>
+</footer>

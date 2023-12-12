@@ -35,4 +35,15 @@ What does this entail? It implies that certain projects remain veiled in mystery
 
 Eager to peek behind the curtain and discover what's currently in the works?
 
-_we are just as eager to show you ... unfortunately this bit is currently in the works_
+Choose from an _active_ or _queued_ option below!
+
+---
+
+<dq_work-util-parse-markdown
+  md="navigation"
+  with-class="[ dq-work cube > block ][ post ][ table-selected > default ]" />
+<hr><hr>
+
+<footer>
+  <h6>downquark's quirks</h6>
+</footer>

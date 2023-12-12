@@ -34,12 +34,15 @@ Explore the entaglements.
 Use the links on the left to read our latest blog and forum postings.
 Or those below to learn more about us and our creations.
 
-<small><em>I would recommend the `Design System` link below if  you're not sure where to start</em></small>
+---
 
-<dq_work-util-parse-markdown
+<small style="display:block;margin:0 0 0 1rem;padding:0"><em>I would recommend the `Design System` link below if  you're not sure where to start</em></small><dq_work-util-parse-markdown
   md="navigation"
-  with-class="[ dq-work cube > block ][ post ][ table-selected-default ]" />
-
+  with-class="[ dq-work cube > block ][ post ][ table-selected > default ]" />
 <hr><hr>
 
 <small>hint: use the hexagon in the bottom right to filter the blog &amp; forum posts.</small>
+
+<footer>
+  <h6>develop the experience</h6>
+</footer>

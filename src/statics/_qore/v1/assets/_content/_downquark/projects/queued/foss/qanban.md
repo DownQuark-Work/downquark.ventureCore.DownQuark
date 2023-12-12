@@ -1,3 +1,11 @@
+«««
+METADATA: document metadata
+Title: Qanban
+Author: @mlnck
+created: 1701160633788
+edited: 1701160633788
+category: FOSS
+»»»
 <hgroup>
   <h1>qanban</h1>
   <h2>without the plan</h2>
@@ -27,20 +35,15 @@ Addressing the above issues by focusing not on well thought out, and sporadicall
 It’s made to track real-time progress without extra overhead to the developers.
 Well, that’s the goal anyway. Focus on everything that does get done, instead of the cards that are eventually going to wind up dormant in the backlog for years anyway.
 
-<hr/><hr/>
+---
 
 We always attempt to update the status of projects as they proceed through our development process. But we make no guarantees. In this instance please refer to the form link above for the most accurate information.
 
 <dq_work-util-parse-markdown
   md="navigation"
-  with-class="[ dq-work cube > block ][ post ][ table-selected-project-foss ]" />
+  with-class="[ dq-work cube > block ][ post ][ table-selected > project-foss ]" />
+<hr/><hr/>
 
-
-
-<!-- <hr/><hr/>
-
-<dq_work-util-parse-markdown
-  md="navigation"
-  with-class="[ dq-work cube > block ][ post ][ table-selected-default ]" />
-
---- -->
+<footer>
+  <h6>productivity production</h6>
+</footer>

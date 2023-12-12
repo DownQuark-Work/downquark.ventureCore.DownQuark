@@ -72,3 +72,14 @@ We stand committed to a distinct set of core beliefs that not only fuel our inno
 We recognize that within the dynamic realm of coding, opinions about the best solutions to problems may differ. We celebrate this diversity of thought, understanding that the magnitude of these differences is proportional to the complexity of the problems we aim to solve. It is through embracing and respecting diverse perspectives that we foster an environment of continual improvement.
 
 Our commitment to a developer-centric approach is at the heart of our values. We firmly believe in replacing dependencies with opinions, granting developers the autonomy to sculpt their code according to their unique vision. By doing so, we empower a community where creativity flourishes, and solutions are as diverse as the talented individuals shaping them.
+
+---
+
+<dq_work-util-parse-markdown
+  md="navigation"
+  with-class="[ dq-work cube > block ][ post ][ table-selected > default ]" />
+  <hr><hr>
+
+<footer>
+  <h6>qore beliefs</h6>
+</footer>

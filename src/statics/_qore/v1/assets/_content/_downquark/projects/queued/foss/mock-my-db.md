@@ -1,3 +1,11 @@
+«««
+METADATA: document metadata
+Title: Mock My Db
+Author: @mlnck
+created: 1701160633796
+edited: 1701160633796
+category: FOSS
+»»»
 <hgroup>
   <h1>mock my db</h1>
   <h2>the missing db dev step</h2>
@@ -25,12 +33,15 @@ Mock My DB automates the steps required to fill all databases with content that 
 
 As an added incentive, users of Mock My DB have the ability to add weights and restrictions to the data being inserted during the automatic population step.
 
-<hr/><hr/>
+---
 
 We always attempt to update the status of projects as they proceed through our development process. But we make no guarantees. In this instance please refer to the form link above for the most accurate information.
 
 <dq_work-util-parse-markdown
   md="navigation"
-  with-class="[ dq-work cube > block ][ post ][ table-selected-project-foss ]" />
+  with-class="[ dq-work cube > block ][ post ][ table-selected > project-foss ]" />
+<hr/><hr/>
 
-  ---
+<footer>
+  <h6>mock 'n roll</h6>
+</footer>
