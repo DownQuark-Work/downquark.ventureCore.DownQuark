@@ -3,7 +3,7 @@
 
 dq='DownQuark'
 version.prefix='dq'
-version.semver='0.0.1-alpha'
+version.semver='1.0.0'
 
 [owner]
 id='@mlnck'
@@ -19,7 +19,7 @@ desc="""\
 downquark's qore version.
 Does not directly reflect anything tangible."""
 version.prefix='dq'
-version.semver='0.0.1-alpha'
+version.semver='1.0.0'
 
 [[products]]
 id='qlient'
@@ -31,8 +31,8 @@ desc="""\
 client content site.
 version should reflect tagged github release."""
 version.prefix='dq'
-version.semver.development='0.2.0-alpha'
-version.semver.release='0.1.1-alpha'
+version.semver.development='0.1.1'
+version.semver.release='0.1.0'
 
 # DownQuark Product Information for internal use
 [[products.internals]]
