@@ -36,13 +36,28 @@
     details:has(code:nth-child(4)):not(:has(blockquote)) code:last-child { inline-size: 100%; }
     details[open]:has(summary small) details:not([open]) { margin-bottom: 0 }
     input[name^="visible"] { visibility: hidden; pointer-events: none;}
-    input[name^="visible"]:checked { margin-bottom:2.75rem; }
+    input[name^="visible"]:checked { margin-bottom:.75rem; }
+    input[name^="visible"] + div[data-is-visible^="visible"] {
+      border-left: 1px dashed var(--downquark-color-text-accent);
+      border-top: 1px dashed var(--downquark-color-text-accent);
+      padding:1rem 0 0 1rem;
+    }
     input[name^="visible"]:checked + div[data-is-visible^="visible"] { display: none; }
     label[for^="visible"] {
-      background-color: var(--downquark-color-base-gray-300);
+      background-color: var(--downquark-color-background-primary);
       border-radius: .25rem;
-      display: inline;
+      border: 1px solid var(--downquark-color-text-accent);
+      color: var(--downquark-color-text-accent);
+      display: inline-block;
+      font-weight: bold;
+      margin: 0 5% 0;
       padding:.5rem;
+      text-align: center;
+      width: 90%;
+      &:hover {
+        background-color: var(--downquark-color-text-accent);
+        color: var(--downquark-color-background-primary);
+      }
     }
     label[for^="visible"] span::before { content: "Hide "; }
     label[for^="visible"]:has(+ input[name^="visible"]:checked) span::before { content: "Show "; }

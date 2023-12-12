@@ -292,17 +292,19 @@
     </details>
     <details class="markdown-wrapper">
       <summary>Markdown<br/><small style="font-weight:400">load file and inline</small></summary>
-      <div style="display:inline-block;width:45%;border:1px solid rgba(255,255,255,.2);padding:.5rem">
-        <dq_work-util-parse-markdown
-          md="_sample"
-          with-class="[ dq-work cube > block ] [ post ]"
-        >Loading...</dq_work-util-parse-markdown>
-      </div>
-      <div style="display:inline-block;width:45%;border:1px solid rgba(255,255,255,.2);padding:.5rem">
+      <div style="display:block;border:1px solid rgba(255,255,255,.2);padding:.5rem">
         <dq_work-util-parse-markdown 
           with-class="[ dq-work cube > block ] [ post ]"
-          > &gt; or .. _with_ some **inline** `md`
+          > &gt; _with_ some **inline** `md` or from a dynamic load (as seen below)
         </dq_work-util-parse-markdown>
+      </div>
+      <p>&nbsp;</p>
+      <hr><hr>
+      <div style="display:block;border:1px solid rgba(255,255,255,.2);padding:.5rem">
+        <dq_work-util-parse-markdown
+          md="_template"
+          with-class="[ dq-work cube > block ] [ post ]"
+        >Loading...</dq_work-util-parse-markdown>
       </div>
     </details>
     <details class="footer-wrapper">

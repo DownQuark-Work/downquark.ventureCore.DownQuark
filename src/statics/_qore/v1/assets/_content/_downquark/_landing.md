@@ -9,61 +9,40 @@ accessibleVia: file:dq.parse.markdown.js, | accessor:this._markdownMetadata
 »»»
 <hgroup>
   <h1>DownQuark</h1>
-  <h2>develop the experience</h2>
+  <h2>why downquark</h2>
 </hgroup>
 
-_**Developer Experience**_ (or <mark>devx</mark> for short) is all about making the life of a software developer easier and more productive.
+Our work philosophy shares a kinship with the subatomic particle.
 
-<dq_work-util-parse-markdown
-  md="todos"
-  with-class="[ dq-work cube > block ] [ post ]" />
+Much like many others, we thrive on juggling multiple projects simultaneously. However, our commitment takes a unique turn. We decide which project to dive into at the very moment we commence our work. If the allure of the chosen project captures our attention, we persist until we reach a fitting pause. This could be after completing a singular task in a day or crafting multiple features over a span of weeks.
 
-This is what we do.
+And that's perfectly fine. That's the rhythm of DownQuark... at work.
 
-<small>todo: rewrite</small>
-We aim to create **Open Source**, _opinionless_ products using _opiniated_ code.
+### why this approach?
 
-Our first product, [(G|T)UI](/?projects_foss_gui-tui) is a prime example of this.
-By using an opinionated `GUI` a developer can create a ready to use `TUI` that accepts any `.sh` or `.ts` file that the developer has created.
-<small>\[[read more](https://qrx.downquark.work/qore/g-t-ui)] on our blog</small>
+Simply put, because it suits us.
 
-### entangled opinions
+DownQuark has no clients, no pressing deadlines. We delve into our ideas because we believe in them. Our commitment runs deep, and we strive to bring these ideas to life with utmost excellence. Success in this endeavor hinges significantly on avoiding burnout.
 
-Opinionated by design.
+However, steering clear of burnout is a delicate balance. Focusing solely on internal projects demands ongoing progress, limiting downtime even when burnout looms. The remedy we've discovered is to keep a variety of projects in motion, ensuring that progress is consistently achievable in captivating realms. It's not uncommon to dive into database queries at the start of the day and find ourselves immersed in the act of pushing pixels within a design application by day's end.
 
-Often we see libraries, frameworks, etc that are _Opinionless_. 
-Allowing them to be used right out of the box in a way that attempts to cover almost all use cases.
+<a name="intrigued"></a>
+#### intrigued?
 
----
-For inspiration:
+Explore the entaglements.
 
-It's basically software that works the way its authors think it should work, instead of trying to please everybody. That means a lot of people will not like it, but the ones that do will love it.
-
-Rails is probably the canonical example of an opinionated framework: you do things their way, and everything is smooth. If you don't, you're in for some pain. But that's OK -- if you don't want to do things their way, you don't want to use Rails.
+Use the links on the left to read our latest blog and forum postings.
+Or those below to learn more about us and our creations.
 
 ---
 
----
+<small style="display:block;margin:0 0 0 1rem;padding:0"><em>I would recommend the `Design System` link below if  you're not sure where to start</em></small><dq_work-util-parse-markdown
+  md="navigation"
+  with-class="[ dq-work cube > block ][ post ][ table-selected > default ]" />
+<hr><hr>
 
-For balance's sake I will provide a (rather opinionated) description that is more favourable to the opinionated approach (in contrast to some of the other answers).
+<small>hint: use the hexagon in the bottom right to filter the blog &amp; forum posts.</small>
 
-Opinionated frameworks provide a "golden path", which is supposed to be the best practice for most people and most scenarios (in the eyes of the authors).
-
-This however doesn't necessarily mean lock-in. It means that it may require some extra effort to do things differently.
-
-Less opinionated frameworks provide a number of different options and leave it up to you to decide.
-
-Opinionated frameworks usually remove the burden from developer to reinvent the wheel or rethink the same problem again and again and thus help focus on the real problem at hand.
-
-In the open-source world you can find many opinionated yet competing frameworks, so you still have a choice. You just have to choose your own golden path.
-
----
-
-
-And that is exactly what is required for many projects. But 
-
-We enhance this ideology by ensuring future developers can seamlessly adjust or refine our opinions. Replacing what worked for us, with what works for them, ensuring a continuously adaptable coding landscape.
-
-<!-- Our community of developers is not just a collection of contributors. We are collaborators, creating a thriving ecosystem of opinionated views. Together, we are crafting a dynamic library of products that empower developers to drive innovative solutions and redefine the Developer Experience. -->
-
-Join us on this exciting journey as we reshape the Developer Experience, making it more accessible, dynamic, and open to creativity than ever before.
+<footer>
+  <h6>develop the experience</h6>
+</footer>

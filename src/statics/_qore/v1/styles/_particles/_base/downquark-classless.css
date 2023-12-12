@@ -384,6 +384,7 @@ pre {
   font-family: var(--downquark-font-family-mono);
   line-height: 1rem;
   margin: 1rem 0;
+  overflow: auto;
   padding: 1rem;
   white-space: pre;
 }
@@ -433,7 +434,7 @@ tr {
   border-bottom: 1px solid var(--downquark-color-text-accent)
 }
 tr:nth-child(even) { background-color: var(--downquark-color-background-primary);}
-tr:nth-child(odd) { background-color: var(--downquark-color-background-accent);}
+tr:nth-child(odd) { background-color: var(--downquark-color-base-gray-600); }
 
 table thead tr:nth-child(odd) { background-color: var(--downquark-color-background-secondary); }
 table thead th { color: var(--downquark-theme-color-text-headers); }
@@ -448,6 +449,10 @@ th { text-align: left }
 td:first-child,
 th:first-child {
   padding-left: 1ch;
+}
+
+td a {
+  --downquark-color-text-interactive:var(--downquark-color-text-accent);
 }
 
 tfoot { background-color: var(--downquark-color-text-primary); }

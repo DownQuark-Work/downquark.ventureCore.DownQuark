@@ -12,14 +12,13 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
 
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 
-  <link rel="stylesheet" href="/styles/_particles/_dq.css" />
+  <link rel="stylesheet" href="/styles/_namespace/dq-work.css?0" />
+  <link rel="stylesheet" href="/styles/-project/dq-work.css?0" />
 
     <!-- Polyfill CSS/JSON module imports -->
     <script>window.esmsInitOptions = { polyfillEnable: ['css-modules', 'json-modules'] }</script>
@@ -30,13 +29,18 @@
     <script type="importmap">
       {
         "imports": {
-          "lit": "https://ga.jspm.io/npm:lit@2.2.3/index.js"
+          "lit": "https://ga.jspm.io/npm:lit@2.2.3/index.js",
+          "lit/directives/style-map.js":"https://ga.jspm.io/npm:lit-html@2.2.3/directives/style-map.js",
+          "lit/directives/class-map.js":"https://ga.jspm.io/npm:lit-html@2.2.3/directives/class-map.js",
+          "lit/directives/map.js":"https://ga.jspm.io/npm:lit-html@2.2.3/directives/map.js",
+          "lit/directives/unsafeHtml": "https://ga.jspm.io/npm:lit-html@2.2.3/directives/unsafe-html.js"
         },
         "scopes": {
           "https://ga.jspm.io/": {
             "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.3.2/development/reactive-element.js",
             "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.2.0/development/lit-element.js",
-            "lit-html": "https://ga.jspm.io/npm:lit-html@2.2.3/development/lit-html.js"
+            "lit-html": "https://ga.jspm.io/npm:lit-html@2.2.3/development/lit-html.js",
+            "directive.js": "https://ga.jspm.io/npm:lit-html@2.2.3/directive.js"
           }
         }
       }
@@ -45,48 +49,23 @@
     <script src="components/_dq.js" type="module"></script>
 </head>
 
-<body>
+<!-- <body class="[ project :: dq-work ] [ selected-category design ]"> -->
+<body class="[ project :: dq-work ]">
 
-  <hgroup>
-    <h1>DownQuark</h1>
-    <h3>now</h3>
-  </hgroup>
+  <dq_work-molecule-timeline class="[ dq-work molecule ][ has-animation ]" content-path="/assets/_content/__externals/timeline.json"></dq_work-molecule-timeline>
 
-  <main>
-    <p>TODO</p>
-
-    <lit-comp style="margin-block-end: 15px">🎉</lit-comp>
-
-    <vanilla-comp>🙌</vanilla-comp>
-    
-  </main>
-
-  <footer>
-    <p>
-      <a href="https://nownownow.com/">About the NOW page</a>
-    </p>
-  </footer>
-
+  <main class="[ cube :: wrapper > main-content ]">
+    <div>
+      NOW
+    </div>
+    </main>
+  
+  <dq_work-molecule-filter data-project="dq-work"></dq_work-molecule-filter>
 
   <script src="scripts/vendor/modernizr-3.12.0.min.js"></script>
   <script src="scripts/dq.js"></script>
-  <script>
-    /* Adds SupportsCSS into base DownQuark - not sure what we'll use it on yet.
-    But good to have.
-    TODO: Make this into its own component
-  window.SupportsCSS && SupportsCSS.init({ tests:'all' });
-  const resultsList = document.createDocumentFragment();
-  const list = document.createElement("ol");
-  resultsList.appendChild(list);
-  for (const name in SupportsCSSTests.results) {
-    const li = document.createElement("li");
-    const result = SupportsCSSTests.results[name];
-    li.textContent = `${name}: ${result ? "✅" : "❌"}`;
-    list.appendChild(li);
-  }
-  document.body.appendChild(resultsList);
-  */
-  </script>
+
+  <script src="./scripts/vendor/supports-css.js"></script>
 </body>
 
 </html>
