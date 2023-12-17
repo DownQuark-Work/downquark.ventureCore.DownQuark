@@ -11,7 +11,7 @@ category: DEVELOPMENT
   <h2>a maze submodule</h2>
 </hgroup>
 
-Browse the <a href="https://github.com/DownQuark-Work/downquark.ventureCore.SubatomicModules/blob/feature/proc-gen/maze-carved-sidewinder/_dq/algorithms/procedural-generation/maze/algorithms/sidewinder.ts" target="_blank">repository</a>.
+Browse the <a href="https://github.com/DownQuark-Work/downquark.ventureCore.SubatomicModules/tree/main/_dq/algorithms/procedural-generation/maze/algorithms/sidewinder.ts" target="_blank">repository</a>.
 
 ### why:
 Amazed Amusement

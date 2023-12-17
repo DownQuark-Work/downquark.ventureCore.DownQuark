@@ -17,10 +17,15 @@ Kanban boards are great!
 
 That being said, they work by structuringn stories, tickets, tasks, etc _before_ work begins. Which is exactly the opposite of how <mark>DownQuark</mark> functions.
 
-### Queued Status
- Ongoing concepting can be found on our [forum](https://devigner.downquark.work/d/4-qanban-board).
+### Current Status
+Initial repository and documentation created.
 
- The forum should be reated as the <mark>Source of Truth</mark> for this project.
+We have loosely documented the user flow, and simple mockups which can be found on our [forum](https://devigner.downquark.work/d/13-qanban-board)
+And the initial concepting is still avaliable [here](https://devigner.downquark.work/d/4-qanban-board).
+
+The forum should be reated as the <mark>Source of Truth</mark> for this project.
+
+The source code is in the [downquark.applicationFoss.QanbanBoard](https://github.com/DownQuark-Work/downquark.applicationFoss.QanbanBoard) repository.
 
 ### Project Causation
 <p><small>excerpt from forum:</small></p>

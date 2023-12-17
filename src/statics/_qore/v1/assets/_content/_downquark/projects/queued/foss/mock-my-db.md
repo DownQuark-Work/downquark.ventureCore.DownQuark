@@ -5,6 +5,9 @@ Author: @mlnck
 created: 1701160633796
 edited: 1701160633796
 category: FOSS
+reference: https://mqttx.app/features [pubsub]
+- https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison
+- https://www.emqx.com/en/blog/mqtt-5-introduction-to-publish-subscribe-model
 »»»
 <hgroup>
   <h1>mock my db</h1>

@@ -20,6 +20,25 @@
   <link rel="stylesheet" href="/styles/_namespace/dq-work.css?0" />
   <link rel="stylesheet" href="/styles/-project/dq-work.css?0" />
 
+    <!-- cache dynamically loaded content -->
+    <script>
+      const registerWorker = async () => {
+        if ('serviceWorker' in navigator) {
+          try {
+            const registration =
+              await navigator.serviceWorker.register( 'sw.js', { scope: './', } );
+              // if (registration.installing) { console.log('Service worker installing') }
+              // else if (registration.waiting) { console.log('Service worker installed') }
+              // else if (registration.active) { console.log('Service worker active') }
+          } catch (error) {
+            console.error(`Registration failed with ${error}`);
+          }
+        }
+      }
+      window.location.host.includes('downquark.work')
+        && registerWorker() // do not activate in development
+    </script>
+
     <!-- Polyfill CSS/JSON module imports -->
     <script>window.esmsInitOptions = { polyfillEnable: ['css-modules', 'json-modules'] }</script>
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.4/dist/es-module-shims.js"></script>

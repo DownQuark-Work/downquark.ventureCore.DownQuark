@@ -14,7 +14,7 @@ _**DownQuark**_ can be reached:
 
 ### Directly:
 Feel free to shoot an email to:
-&nbsp;&nbsp;&nbsp;&nbsp;[_dq](mailto:website@downquark.work)
+&nbsp;&nbsp;&nbsp;&nbsp;[website@downquark.work](mailto:website@downquark.work)
 
 The response may not be immediate, but if your email is received, we will be in touch as quick as we can!
 
@@ -31,8 +31,8 @@ It is accessible at [qrx.downquark.work](https://qrx.downquark.work/).
 > This is one of the top priorities listed on our [roadmap](/?about_website-tasks).
 
 #### wiki
-We also have a non-federated company [wiki](https://en.wikipedia.org/wiki/Wiki) hosted at [devigner.downquark.work](https://devigner.downquark.work).
-> **Note:** a federated wiki is in the works.
+We also have a non-federated company forum hosted at [devigner.downquark.work](https://devigner.downquark.work).
+> **Note:** a federated [wiki](https://en.wikipedia.org/wiki/Wiki) is in the works.
 > We are working on making it much more of a _stream-of-consciousness_ ideation station than your typical wiki.
 
 One reason we are building out the commenting system for the federated blog is so that we can apply it to the wiki and have a federated comment system that crosses the borders of the products themselves.
