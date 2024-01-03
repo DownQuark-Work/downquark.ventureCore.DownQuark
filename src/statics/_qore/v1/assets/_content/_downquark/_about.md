@@ -33,9 +33,9 @@ What does this entail? It implies that certain projects remain veiled in mystery
 
 ### Current
 
-Eager to peek behind the curtain and discover what's currently in the works?
+Projects in active development.
 
-Choose from an _active_ or _queued_ option below!
+The most up to date information about our projects that are currently being worked on can be found in our [forum](https://devigner.downquark.work/t/qurrent).
 
 ---
 

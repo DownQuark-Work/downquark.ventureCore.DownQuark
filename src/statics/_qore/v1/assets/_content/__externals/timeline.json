@@ -12,7 +12,7 @@
       "external": "//devigner.downquark.work/d/13-qanban-board",
       "slug": "qanban-board"
     },
-    "categories": ["forum","foss"],
+    "categories": ["foss","forum"],
     "tags": [],
     "parent": null
   },
@@ -46,7 +46,7 @@
       "external": "//qrx.downquark.work/qore/an-unofficial-release",
       "slug": "an-unofficial-release"
     },
-    "categories": ["blog"],
+    "categories": ["blog","miscellaneous"],
     "tags": [],
     "parent": null
   },
@@ -63,7 +63,7 @@
       "external": "//qrx.downquark.work/qore/namespace-dq-reusable-high-level-styling",
       "slug": "namespace-dq-reusable-high-level-styling"
     },
-    "categories": ["design","blog"],
+    "categories": ["design","blog","design"],
     "tags": [],
     "parent": null
   },
@@ -80,7 +80,7 @@
       "external": "//qrx.downquark.work/qore/g-t-ui",
       "slug": "g-t-ui"
     },
-    "categories": ["development","blog"],
+    "categories": ["development","blog","development"],
     "tags": [],
     "parent": null
   },
@@ -97,7 +97,7 @@
       "external": "//qrx.downquark.work/qore/downquark-work-t7ts",
       "slug": "downquark-work-t7ts"
     },
-    "categories": ["miscellaneous","blog"],
+    "categories": ["miscellaneous","blog","miscellaneous"],
     "tags": [],
     "parent": null
   },
@@ -114,7 +114,7 @@
       "external": "//qrx.downquark.work/qore/build-less-island-making-the-right-choice",
       "slug": "build-less-island-making-the-right-choice"
     },
-    "categories": ["development","blog"],
+    "categories": ["development","blog","development"],
     "tags": [],
     "parent": null
   },
@@ -131,7 +131,7 @@
       "external": "//qrx.downquark.work/qore/design-system",
       "slug": "design-system"
     },
-    "categories": ["design","blog"],
+    "categories": ["development","blog","design"],
     "tags": [],
     "parent": null
   },
@@ -165,7 +165,7 @@
       "external": "//qrx.downquark.work/qore/qore-qoncepts",
       "slug": "qore-qoncepts"
     },
-    "categories": ["miscellaneous","blog"],
+    "categories": ["miscellaneous","blog","miscellaneous"],
     "tags": [],
     "parent": null
   },

@@ -21,32 +21,33 @@
 
   
   /* extended CTI+ Naming Convention: [NameSpace > Category > Type > Item > Subitem > State] */
-  --downquark-color-background-primary: lch(9.26% 0 0);
+  --downquark-color-background-primary: oklch(.22 0 0);
   
-  --dq-work-color-filter-design: lch(59.69 58.67 42.32);
-  --dq-work-color-filter-development: lch(40.01 14.529 154.361);
-  --dq-work-color-filter-blog: lch(65 62 92);
-  --dq-work-color-filter-forum: lch(33 62 347);
-  --dq-work-color-filter-stealth: lch(21 45 200);
-  --dq-work-color-filter-foss: lch(28 95 317);
-  --dq-work-color-filter-miscellaneous: lch(25 62 30);
+  --dq-work-color-filter-design: oklch(0.77 0.1 27.14);
+  --dq-work-color-filter-development: oklch(0.88 0.07 76.86);
+  --dq-work-color-filter-blog: oklch(0.44 0.12 28.18);
+  --dq-work-color-filter-forum: oklch(0.41 0.07 244.66);
+  --dq-work-color-filter-stealth: oklch(0.47 0.06 286.63);
+  --dq-work-color-filter-foss: oklch(0.88 0.04 270.49);
+  --dq-work-color-filter-miscellaneous: oklch(0.37 0.17 21.48);
   --dq-work-color-filter-clear: var(--downquark-color-base-gray-200);
 
-  --dq-work-color-header-design: lch(59.69 58.67 42.32 / .6);
-  --dq-work-color-header-development: lch(40.01 14.529 154.361 / .6);
-  --dq-work-color-header-blog: lch(65 62 92 / .6);
-  --dq-work-color-header-forum: lch(33 62 347 / .6);
-  --dq-work-color-header-stealth: lch(21 45 200 / .3);
-  --dq-work-color-header-foss: lch(28 95 317 / .6);
-  --dq-work-color-header-miscellaneous: lch(25 62 30 / .3); 
-  
-  --dq-work-color-tile-design: lch(59.69 58.67 42.32);
-  --dq-work-color-tile-development: lch(40.01 14.529 154.361);
-  --dq-work-color-tile-blog: lch(65 62 92);
-  --dq-work-color-tile-forum: lch(33 62 347);
-  --dq-work-color-tile-stealth: lch(21 45 200);
-  --dq-work-color-tile-foss: lch(28 95 317);
-  --dq-work-color-tile-miscellaneous: lch(25 62 30);
+  --dq-work-color-header-design: oklch(0.43 0.1 299.99);
+  --dq-work-color-header-development: oklch(0.5 0.09 330.52);
+  --dq-work-color-header-blog: oklch(0.93 0.04 79.97);
+  --dq-work-color-header-forum: oklch(0.84 0.14 80.58);
+  --dq-work-color-header-stealth: oklch(0.78 0.15 87.37);
+  --dq-work-color-header-foss: oklch(0.5 0.09 295.37);
+  --dq-work-color-header-miscellaneous: oklch(0 0 0);
+
+  /* allows for scalability/overrides */
+  --dq-work-color-tile-design: var(--dq-work-color-filter-design);
+  --dq-work-color-tile-development: var(--dq-work-color-filter-development);
+  --dq-work-color-tile-blog: var(--dq-work-color-filter-blog);
+  --dq-work-color-tile-forum: var(--dq-work-color-filter-forum);
+  --dq-work-color-tile-stealth: var(--dq-work-color-filter-stealth);
+  --dq-work-color-tile-foss: var(--dq-work-color-filter-foss);
+  --dq-work-color-tile-miscellaneous: var(--dq-work-color-filter-miscellaneous);
 }
 
 /* still not 100% decided on this - keeping in case I revert later
