@@ -66,14 +66,13 @@
     </tr>
     <tr><td colspan="4"><p class="[ cube :: liner ]">FOSS</p></td></tr>
     <tr><td><strong><mark>active</mark><strong></td>
-      <td><a href="/?projects_active_foss_gui-tui">(G|T)UI</a></td>
-      <td>&nbsp;</td>
+      <td><a href="/?projects_active_foss_devqon">devqon</a></td>
+      <td><a href="/?projects_active_foss_qanban">qanban</a></td>
       <td>&nbsp;</td>
     </tr>
     <tr><td><strong><mark>queued</mark></strong></td>
       <td><a href="/?projects_queued_foss_mock-my-db">mock my db</a></td>
-      <td><a href="/?projects_queued_foss_qanban">qanban</a></td>
-      <td>&nbsp;</td>
+      <td><a href="/?projects_queued_foss_gui-tui">(G|T)UI</a></td>
     </tr>
     <!--coming soon-->
     <tr style="display:none"><td colspan="4"><p class="[ cube :: liner ]">- gaming</p></td></tr>

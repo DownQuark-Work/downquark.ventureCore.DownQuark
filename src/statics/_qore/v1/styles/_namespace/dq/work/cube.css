@@ -7,7 +7,7 @@ CUBE CSS METHODOLOGY
 hgroup + h2 {display: none;}
 h1,:is(h2,h3,h4,h5,h6) {
 .dq-work.selected-category.design & { --dq-work-color-header-background: var(--dq-work-color-header-design); --dq-work-color-header-text: var(--dq-work-color-filter-design); }
-.dq-work.selected-category.development & { --dq-work-color-header-background: var(--dq-work-color-header-development); --dq-work-color-header-text: lch(10 31.16 124.59 / 1); }
+.dq-work.selected-category.development & { --dq-work-color-header-background: var(--dq-work-color-header-development); --dq-work-color-header-text: var(--dq-work-color-filter-development); }
 .dq-work.selected-category.foss & { --dq-work-color-header-background: var(--dq-work-color-header-foss); --dq-work-color-header-text: var(--dq-work-color-filter-foss); }
 .dq-work.selected-category.miscellaneous & { --dq-work-color-header-background: var(--dq-work-color-header-miscellaneous); --dq-work-color-header-text: var(--dq-work-color-filter-miscellaneous); }
 .dq-work.selected-category.blog & { --dq-work-color-header-background: var(--dq-work-color-header-blog); --dq-work-color-header-text: var(--dq-work-color-filter-blog); }
@@ -17,7 +17,7 @@ h1,:is(h2,h3,h4,h5,h6) {
 
 .dq-work {
   &.selected-category.design { --downquark-color-text-accent: var(--dq-work-color-filter-design); --downquark-color-text-interactive: var(--dq-work-color-filter-design); }
-  &.selected-category.development { --downquark-color-text-accent: lch(30 31.16 124.59); --downquark-color-text-interactive: lch(30 31.16 124.59); }
+  &.selected-category.development { --downquark-color-text-accent: var(--dq-work-color-filter-development);  --downquark-color-text-interactive: var(--dq-work-color-filter-development); }
   &.selected-category.foss { --downquark-color-text-accent: var(--dq-work-color-filter-foss); --downquark-color-text-interactive: var(--dq-work-color-filter-foss); }
   &.selected-category.miscellaneous { --downquark-color-text-accent: var(--dq-work-color-filter-miscellaneous); --downquark-color-text-interactive: var(--dq-work-color-filter-miscellaneous); }
   &.selected-category.blog { --downquark-color-text-accent: var(--dq-work-color-filter-blog); --downquark-color-text-interactive: var(--dq-work-color-filter-blog); }

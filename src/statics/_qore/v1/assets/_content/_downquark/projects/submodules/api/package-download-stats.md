@@ -11,7 +11,7 @@ category: DEVELOPMENT
   <h2>an npm submodule</h2>
 </hgroup>
 
-Browse the <a href="https://github.com/DownQuark-Work/downquark.ventureCore.SubatomicModules/blob/feature/proc-gen/maze-carved-sidewinder/_dq/_run/npm.stats-package.ts" target="_blank">repository</a>.
+Browse the <a href="https://github.com/DownQuark-Work/downquark.ventureCore.SubatomicModules/tree/main/_dq/_run/npm.stats-package.ts" target="_blank">repository</a>.
 
 ### why:
 Historical Accumulation.

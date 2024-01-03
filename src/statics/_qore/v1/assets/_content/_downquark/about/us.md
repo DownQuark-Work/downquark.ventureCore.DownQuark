@@ -20,9 +20,9 @@ There may be times when an application is fully designed before the first line o
 Defined by an analogy.
 
 Comparable to a <a href="https://en.wikipedia.org/wiki/Wave_function_collapse" target="_blank">collapsed wave function</a>, there is no _"we"_.
-Currently _**DownQuark**_ is being created solely by [myself](https://www.mlnck.me/).
+For [now](/now.html) _**DownQuark**_ is being created solely by [myself](https://www.mlnck.me/).
 
-Also on [github](https://github.com/dq-mlnck), with most active work being applied to the [DownQuark Organization Page](https://github.com/orgs/DownQuark-Work/repositories?type=all)
+Also on [github](https://github.com/dq-mlnck), with most active work being applied to the [DownQuark Organization Page](https://github.com/orgs/DownQuark-Work/repositories?type=all).
 
 #### why the _&ldquo;we&rdquo;_
 A Default? Scalability?

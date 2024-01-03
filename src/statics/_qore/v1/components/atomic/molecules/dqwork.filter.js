@@ -43,7 +43,7 @@ class DqWorkMoleculeFilter extends LitElement {
     this._label = e.target.attributes[0].value.split(' ')[0] // e.target.attributes[0].value
     const category = this._label // .split(' ')[0]
     this._hovercolor = `--dq-work-color-feature-category-rollover: var(--dq-work-color-filter-${category}, black);
-    ${(category === 'stealth' || category === 'development') ? '--dq-work-color-feature-category-label-text: var(--downquark-color-base-gray-200, red)' : ''}`
+    --dq-work-color-feature-category-label-text: var(--dq-work-color-header-${category}, black);`
   }
 
   generateFilterHexagons() {

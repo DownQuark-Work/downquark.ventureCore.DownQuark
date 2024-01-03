@@ -38,7 +38,7 @@
         & mark {
           display: none;
           color: var(--dq-work-color-feature-category-label-text);
-          filter: brightness(.6);
+          height: 2.9ch;
           margin:0 1.25ch;
           position: absolute;
           text-align: center;
@@ -53,7 +53,7 @@
             border-width: 3ch 1.5ch 0 0;
             top: 0;
             content: " ";
-            right: -1.5ch;
+            right: -1.4ch;
             position: absolute;
           }
           &::before {
@@ -64,7 +64,7 @@
             border-width: 0 0 3ch 1.5ch;
             bottom: 0;
             content: " ";
-            left: -1.5ch;
+            left: -1.4ch;
             position: absolute;
           }
         }

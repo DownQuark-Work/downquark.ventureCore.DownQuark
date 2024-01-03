@@ -12,13 +12,11 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+  <link rel="icon" href="/assets/img/favicon/favicon.ico">
 
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
 
-  <link rel="stylesheet" href="/styles/_namespace/dq-work.css?0" />
-  <link rel="stylesheet" href="/styles/-project/dq-work.css?0" />
+  <link rel="stylesheet" href="/styles/_particles/_dq.css" />
 
     <!-- Polyfill CSS/JSON module imports -->
     <script>window.esmsInitOptions = { polyfillEnable: ['css-modules', 'json-modules'] }</script>
@@ -29,43 +27,71 @@
     <script type="importmap">
       {
         "imports": {
-          "lit": "https://ga.jspm.io/npm:lit@2.2.3/index.js",
-          "lit/directives/style-map.js":"https://ga.jspm.io/npm:lit-html@2.2.3/directives/style-map.js",
-          "lit/directives/class-map.js":"https://ga.jspm.io/npm:lit-html@2.2.3/directives/class-map.js",
-          "lit/directives/map.js":"https://ga.jspm.io/npm:lit-html@2.2.3/directives/map.js",
-          "lit/directives/unsafeHtml": "https://ga.jspm.io/npm:lit-html@2.2.3/directives/unsafe-html.js"
+          "lit": "https://ga.jspm.io/npm:lit@2.2.3/index.js"
         },
         "scopes": {
           "https://ga.jspm.io/": {
             "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.3.2/development/reactive-element.js",
             "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.2.0/development/lit-element.js",
-            "lit-html": "https://ga.jspm.io/npm:lit-html@2.2.3/development/lit-html.js",
-            "directive.js": "https://ga.jspm.io/npm:lit-html@2.2.3/directive.js"
+            "lit-html": "https://ga.jspm.io/npm:lit-html@2.2.3/development/lit-html.js"
           }
         }
       }
     </script>
     
     <script src="components/_dq.js" type="module"></script>
+    <style>
+      a:not([class]) { color:var(--downquark-color-text-interactive); }
+      a:not([class]):hover { color:var(--downquark-color-background-primary); }
+      footer a:not([class]) { color:var(--downquark-color-background-primary); }
+    </style>
 </head>
 
-<!-- <body class="[ project :: dq-work ] [ selected-category design ]"> -->
-<body class="[ project :: dq-work ]">
+<body>
 
-  <dq_work-molecule-timeline class="[ dq-work molecule ][ has-animation ]" content-path="/assets/_content/__externals/timeline.json"></dq_work-molecule-timeline>
+  <main>
+    <hgroup>
+      <h1>DownQuark</h1>
+      <h2 style="font-size:xx-large; text-align: right;">@mlnck</h2>
+    </hgroup>
+    <p>This is <a href="https://nownownow.com/about" target="_blank">a now page</a>, 
+      and if you have your own site, 
+      <a href="https://nownownow.com/about" target="_blank">you should make one</a>, too.
+    </p>
+    <h4>2024.01.02 ~ Bolton, MA</h4>
+    <h5 style="text-align-last: right;">work</h5>
+    <p>
+      After spending the previous 2+ years working for a singular client through 
+      <a href="https://www.atlantistech.com/" target="_blank">Atlantis Technology</a> 
+      I have transitioned to be a full time employee of 
+      <a href="https://www.prepmd.com/" target="_blank">PrepMD</a>  
+      (the aforementioned company).
+    </p>
+    <h5 style="text-align-last: right;">life</h5>
+    <p>With three children aged 4, 6, and 8, freetime to adult is pretty non-existant.
+      <br/>And I wouldn&rsquo;t change it for the world.
+    </p>
+    <ul>
+      <li>I am working with our oldest to create a board game</li>
+      <li>Constant artistic explorations with our middle kiddo helps ensure I&rsquo;m constantly sporting some colorful stain</li>
+      <li>Being the head coach for the soccer team our youngest is involved with lets me close all 3 rings at least once a week</li>
+    </ul>
+    <h5 style="text-align-last: right;">anticipated</h5>
+    <p>
+      I&rsquo;m looking forward to becoming more involved with the <b>open source</b> community.
+      <br/> A passion project which you can find much more information about <a href="/?projects_foss">here</a>.
+    </p>
+  </main>
 
-  <main class="[ cube :: wrapper > main-content ]">
-    <div>
-      NOW
-    </div>
-    </main>
-  
-  <dq_work-molecule-filter data-project="dq-work"></dq_work-molecule-filter>
+  <footer>
+    <h6>
+      <a href="https://nownownow.com" target="_blank">nownownow</a>
+    </h6>
+  </footer>
+
 
   <script src="scripts/vendor/modernizr-3.12.0.min.js"></script>
   <script src="scripts/dq.js"></script>
-
-  <script src="./scripts/vendor/supports-css.js"></script>
 </body>
 
 </html>

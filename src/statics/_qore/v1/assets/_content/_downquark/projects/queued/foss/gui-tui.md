@@ -41,10 +41,7 @@ You can now write customized shell scripts just as you would without involving a
 - The current, working version, of the source code is available in [github](https://github.com/DownQuark-Work/downquark.applicationFoss.GuiTui)
 
 ### Product Progression
-TODO
-
-
----
+Source Code:
 
 We always attempt to update the status of projects as they proceed through our development process. But we make no guarantees. In this instance please refer to the github link provided above for the most accurate information.
 

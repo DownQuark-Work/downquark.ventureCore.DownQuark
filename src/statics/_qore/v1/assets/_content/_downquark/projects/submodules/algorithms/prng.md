@@ -11,7 +11,7 @@ category: DEVELOPMENT
   <h2>an algorithmic submodule</h2>
 </hgroup>
 
-Browse the <a href="https://github.com/DownQuark-Work/downquark.ventureCore.SubatomicModules/tree/feature/proc-gen/maze-carved-sidewinder/_dq/algorithms/procedural-generation/prng" target="_blank">repository</a>.
+Browse the <a href="https://github.com/DownQuark-Work/downquark.ventureCore.SubatomicModules/tree/main/_dq/algorithms/procedural-generation/prng" target="_blank">repository</a>.
 
 ### why:
 
