@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>downquark</title>
+  <title>nowquark</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,29 +22,31 @@
     <script>window.esmsInitOptions = { polyfillEnable: ['css-modules', 'json-modules'] }</script>
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.5.4/dist/es-module-shims.js"></script>
     <script async src="https://unpkg.com/construct-style-sheets-polyfill@3.1.0/dist/adoptedStyleSheets.js"></script>
-
-    <!-- Add import for Lit, etc. -->
-    <script type="importmap">
-      {
-        "imports": {
-          "lit": "https://ga.jspm.io/npm:lit@2.2.3/index.js"
-        },
-        "scopes": {
-          "https://ga.jspm.io/": {
-            "@lit/reactive-element": "https://ga.jspm.io/npm:@lit/reactive-element@1.3.2/development/reactive-element.js",
-            "lit-element/lit-element.js": "https://ga.jspm.io/npm:lit-element@3.2.0/development/lit-element.js",
-            "lit-html": "https://ga.jspm.io/npm:lit-html@2.2.3/development/lit-html.js"
-          }
-        }
-      }
-    </script>
     
-    <script src="components/_dq.js" type="module"></script>
     <style>
       a:not([class]) { color:var(--downquark-color-text-interactive); }
       a:not([class]):hover { color:var(--downquark-color-background-primary); }
       footer a:not([class]) { color:var(--downquark-color-background-primary); }
     </style>
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.downquark.work"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() { if(window.location?.port === '1313') return // don't track local
+    var u="//analytics.downquark.work/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//analytics.downquark.work/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
 </head>
 
 <body>
