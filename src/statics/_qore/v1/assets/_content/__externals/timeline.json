@@ -1,5 +1,21 @@
 [
   {
+    "id": "67ad99a1-db00-4587-9e92-ab84aa3be4d3",
+    "type": "BLOG",
+    "title": "Three Rounds with Tauri",
+    "author": "dq",
+    "created": {
+      "dateTime": "2024-02-09T23:54:42Z",
+      "timestamp": 1707540871488
+    },
+    "url": {
+      "external": "//qrx.downquark.work/qore/three-rounds-with-tauri",
+      "slug": "three-rounds-with-tauri"
+    },
+    "categories": ["blog"],
+    "tags": [],
+    "parent": null
+  },{
     "id": "03378d63-4f50-4323-ad3e-e706280bc1c7",
     "type": "FORUM",
     "title": "Development Qonsole",
