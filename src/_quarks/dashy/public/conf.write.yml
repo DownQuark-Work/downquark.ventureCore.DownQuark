@@ -1,0 +1,39 @@
+---
+# Page meta info, like heading, footer text and nav links
+pageInfo:
+  title: "DownQuark : write"
+  description: develop the experience
+  navLinks:
+  - title: dq
+    path: https://www.downquark.work
+  # - title: gh
+  #   path: https://github.com/DownQuark-Work
+
+# Optional app settings and configuration
+# appConfig:
+#   cssThemes: [dq]
+# theme: dq
+# pages: only need to be defined in `conf.yml`
+
+# Main content - An array of sections, each containing an array of items
+sections:
+- name: Blog
+  icon: fa fa-pencil
+  items:
+  - title: vrite
+    description: Vrite App
+    url: https://app.vrite.io/
+    icon: https://avatars.githubusercontent.com/u/40064868?s=200&v=4
+- name: Stories
+  sectionNote: this should be dynamic depending on which `repo-list` was selected
+  icon: fas fa-book
+  items:
+  - title: scrivener
+    icon: fas fa-lightbulb
+
+  # widgets:
+  # - type: clock
+  # - type: weather
+  #   options:
+  #     apiKey: efdbade728b37086877a5e83442004db
+  #     city: London

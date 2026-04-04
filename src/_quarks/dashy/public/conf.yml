@@ -1,0 +1,73 @@
+---
+# Page meta info, like heading, footer text and nav links
+pageInfo:
+  title: "DownQuark"
+  description: develop the experience
+  navLinks:
+  - title: dq
+    path: https://www.downquark.work
+  # - title: gh
+  #   path: https://github.com/DownQuark-Work
+
+# Optional app settings and configuration
+# appConfig:
+#   cssThemes: [dq]
+# theme: dq
+
+pages:
+- name: gh
+  path: conf.gh.yml # relative to `/public/` - or `//full.url.for-external`
+- name: 🖉abc
+  path: conf.write.yml # relative to `/public/` - or `//full.url.for-external`
+
+# Main content - An array of sections, each containing an array of items
+sections:
+- name: Repositories
+  icon: fa fa-github-alt
+  displayData:
+    # itemSize: small
+  items:
+  - title: org
+    description: DownQuark-Work's organization landing page
+    url: https://github.com/DownQuark-Work
+    icon: https://avatars.githubusercontent.com/u/40064868?s=200&v=4
+  - title: user
+    description: "@mlnck's github profile"
+    icon: https://avatars.githubusercontent.com/u/40064794?v=4
+    url: https://github.com/dq-mlnck
+  - title: repo list
+    description: full list of DownQuark-Work repositories
+    todo: "make this into a widget that fetches the url list: https://github.com/Lissy93/dashy/commit/3da76ce2999f57f76a97454c0276301e39957b8e"
+    url: https://github.com/orgs/DownQuark-Work/repositories
+    icon: favicon
+- name: make
+  sectionNote: this should be dynamic depending on which `repo-list` was selected
+  icon: fas fa-shapes
+  itemsNote: these should all be widgets as well
+  items:
+  - title: ideation
+    icon: fas fa-brain
+  - title: architect
+    icon: fas fa-trowel-bricks
+  - title: design
+    icon: fas fa-palette
+  - title: develop
+    icon: fas fa-code
+- name: monitor
+  sectionNote: this should be dynamic depending on which `repo-list` was selected
+  icon: fas fa-eye
+  itemsNote: at least some of these should be widgets as well
+  items:
+  - title: logs
+    icon: fas fa-book-dead
+  - title: stats
+    icon: fas fa-chart-pie
+  - title: connect
+    icon: fas fa-plug
+
+  # widgets:
+  # - type: clock
+  # - type: weather
+  #   options:
+  #     apiKey: efdbade728b37086877a5e83442004db
+  #     city: London
