@@ -3,14 +3,27 @@ METADATA: document metadata
 Title: Landing Page
 Author: @mlnck
 created: 1694997815134
-edited: 1694997815134
+edited: 1775274323836
 note: not exactly sure what this could be used for, but would prefer to set it up initially instead of having to add later.
 accessibleVia: file:dq.parse.markdown.js, | accessor:this._markdownMetadata
 »»»
+
 <hgroup>
   <h1>DownQuark</h1>
-  <h2>why downquark</h2>
+  <h2>version 2 entanglement</h2>
 </hgroup>
+
+Wavefunction still collapsing.
+
+<aside style="background-color: var(--downquark-color-base-gray-600);">
+  <blockquote style="border-left-color:var(--downquark-color-text-accent); color:oklch(0.55 0.12 339.55 / 1);">
+    <p> While this site’s new version is coming online, a few features may still be missing, glitchy, or not fully entangled with the rest of the experience. </p>
+    <p> Please bear with us while we work on helping a few stray qubits settle into a more stable experience. </p>
+    <!-- Please bear with us while we help a few stray qubits settle into a more stable experience. -->
+  </blockquote>
+</aside>
+
+### why downquark
 
 Our work philosophy shares a kinship with the subatomic particle.
 
