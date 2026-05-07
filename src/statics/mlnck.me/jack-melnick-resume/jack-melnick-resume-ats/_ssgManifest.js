@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F404","\u002Finternal\u002Ftracking-events"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
