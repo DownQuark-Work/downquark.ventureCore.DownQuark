@@ -1,0 +1,142 @@
+Jack Melnick
+Senior Front-End Engineer | React · TypeScript · Node · Vue · Svelte
+Remote · Massachusetts · Rhode Island · New Hampshire
+jack.d.melnick@gmail.com
+
+================================================================================
+
+Senior Front-End Engineer with 20+ years building React, Vue, Svelte, and Angular applications for startups to mid-size companies. Comfortable working full-stack with Node.js, Python, and PostgreSQL when needed. Remote-first. Based in MA/RI/NH.
+
+================================================================================
+
+SKILLS
+
+Front-End: React 18+, Next.js, TypeScript, JavaScript (ES2024+), Svelte, Vue 2/3, Angular, Tailwind CSS, SCSS, Storybook, Vite, Web Components, PWAs, lit.dev, Chrome Extension API
+
+Back-End & Databases: Node.js, Express, Python (FastAPI), Ruby on Rails, C#, Deno, PostgreSQL, MySQL, MariaDB, MongoDB, Graph Databases
+
+Testing & Tooling: Vitest, Jest, Playwright, Web Vitals, VS Code Extension API, Shell Scripts, 12-Factor App Methodology
+
+Other: REST APIs, GraphQL, HIPAA-compliant systems, Domain-Driven Design (DDD), MicroServices, Gamification Architecture, Qlik Sense/View, Elastic Search, Apache Solr, Lucene
+
+================================================================================
+
+CURRENT WORK EXPERIENCE
+
+DownQuark (https://www.downquark.work)
+Freelance / Contract Software Developer
+Jan 2018 ~ present
+
+Provide end-to-end web and application development services as a solo developer, with a strong focus on early-stage and startup environments. Typical engagements include requirements discovery, technical architecture, implementation, testing, and deployment for greenfield products, legacy refactors, and third-party API integrations.
+
+================================================================================
+
+RECENT PROJECTS
+
+Many of the most recent projects are pre-launch startup products and are therefore covered by strict NDAs. I am happy to discuss in more detail, and can provide representative code samples or project summaries upon request.
+
+LevelShare
+
+Architected and built a multi-faceted internal gamification platform for enterprise HR use, designed to integrate with any existing internal tooling — from SurveyMonkey to proprietary in-house systems. The platform collected user results, applied customizable scoring algorithms, and distributed rewards to employees, while ensuring zero question or answer data was ever accessible to the LevelShare layer itself — a hard privacy and security requirement enforced at the front-end boundary via Chrome Extension.
+
+The front-end solution combined a Google Chrome Extension (for seamless host-system integration without requiring deep API access), a PWA, and a framework-less internal dashboard built on lit.dev, strictly adhering to 12-Factor App methodology. Completed before the era of AI-assisted development.
+
+Google Chrome Extension • PWA • TypeScript • HTML • CSS • lit.dev • 12-Factor App Methodology • Deno
+
+
+Hightainment
+
+Architected and built a next-generation entertainment review and content discovery platform targeting Gen Z and Millennial audiences across North America. The platform uses data-driven insights and curated recommendations to surface relevant movies, shows, and media experiences — eliminating the friction of endless browsing for users who value their time. Designed with a lifestyle brand sensibility, Hightainment extends beyond content discovery into community building, curated shopping recommendations, and cultural engagement around entertainment, food, and accessories.
+
+Svelte • HTML • CSS • AWS • C# • PostgreSQL • Python • Jupyter Notebook • bash
+
+================================================================================
+
+PREVIOUS WORK EXPERIENCE
+
+PrepMD RMS — Senior Software Engineer (Nov 2021 ~ Oct 2025)
+
+Led front-end architecture for a HIPAA-compliant telemedicine platform scaling from solo physicians to 2,000+ providers. Integrated an acquired overseas codebase (React + Vue) into a single codebase, reducing duplicated effort by 40%. Built UI/UX using Vue 2/3, Vite, React, React Native, Storybook, Ruby on Rails, Node, MySQL, and Chrome/VS Code extension APIs.
+
+HTML5 • CSS3 • SCSS • JavaScript • TypeScript • Vue 2/3 • Vite • React • React Native • Storybook • Ruby • Rails • Node • MySQL • Chrome Extension API • VS Code Extension API
+
+-----------------------------------------
+
+CarGurus — Senior JavaScript Engineer, DevX (Web) (Sep 2020 ~ Dec 2021)
+
+Built custom tooling to enhance developer productivity across multiple teams. Created VS Code extensions, Chrome extensions, and shell scripts used by 80+ engineers. Worked with React, Storybook, Node, Web Components, PWAs, Freemarker, and various shell scripts.
+
+HTML5 • CSS3 • SCSS • JavaScript • React • Storybook • Node • Chrome Extension API • VS Code Extension API • Web Components • PWAs • Freemarker • Shell Scripts
+
+-----------------------------------------
+
+Madaket Health — Senior Software Engineer (Aug 2018 ~ Sep 2020)
+
+Worked full-stack on a healthcare payer-provider automation platform using Domain-Driven Design (DDD) and microservices. Reduced processing time for eligibility checks by 30% through optimized API orchestration.
+
+HTML5 • CSS3 • SCSS • JavaScript • Angular • Java • Freemarker • MySQL • Hibernate • DDD • MicroServices
+
+-----------------------------------------
+
+Circulation, Inc — Senior Front End Developer (Nov 2017 ~ Aug 2018)
+
+Led a 5-person front-end team from pre-MVP to launch for an on-demand ride-ordering solution integrated with Twilio, Lyft, and Uber across browser and mobile devices.
+
+HTML5 • CSS3 • SCSS • JavaScript • React • React Native • Python3 • Meteor
+
+-----------------------------------------
+
+Thinkful — Mentor (Oct 2015 ~ Apr 2018)
+
+Mentored students in front-end programming and web design, covering HTML5, CSS3, JavaScript, React, Redux, Node, and MongoDB.
+
+HTML5 • CSS3 • SCSS • LESS • JavaScript • jQuery • Angular • React • Redux • Node • MongoDB
+
+-----------------------------------------
+
+Bardess Group — Management and Technology Consultant (Oct 2016 ~ Oct 2017)
+
+Integrated Qlik Sense and QlikView BI tools into web interface applications. Worked with Elastic Search, Apache Solr, and Lucene to improve data visualization performance.
+
+HTML5 • CSS3 • SCSS • LESS • JavaScript • jQuery • React • Qlik Sense • QlikView • Elastic Search • Apache Solr • Apache Lucene
+
+-----------------------------------------
+
+KleerMail — Web Developer (Jun 2015 ~ Aug 2016)
+
+Sole front-end developer on the initial startup team, creating the MVP from scratch using Angular and Ruby on Rails.
+
+HTML5 • CSS3 • SCSS • JavaScript • CoffeeScript • jQuery • Angular • Ruby on Rails
+
+-----------------------------------------
+
+Shoebuy.com [shoes.com] — Web Developer (May 2014 ~ May 2015)
+
+First in-house front-end developer; led a team that grew to 3 during a complete rebrand from shoebuy.com to shoes.com.
+
+HTML5 • CSS3 • SCSS • JavaScript • jQuery • Backbone • Underscore • Handlebars • Java • Perl
+
+-----------------------------------------
+
+Boathouse Group — Lead Web Developer (Apr 2012 ~ Apr 2014)
+
+HTML5 • CSS3 • SCSS • JavaScript • jQuery • PHP • MySQL • ActionScript 2/3
+
+-----------------------------------------
+
+Earlier Experience (2006–2012)
+
+KHJ Brand Activation (Lead Developer), Createthe Group (Senior Presentation Layer Developer), Rockstar Games (Web Developer), Code and Theory (Web Developer), Domani Studios (Interactive Developer), BuzzBizz Studios (Print/Web Designer & Developer)
+
+HTML, CSS, JavaScript, jQuery, PHP, MySQL, ActionScript 2/3, Perl, Java
+
+================================================================================
+
+EDUCATION
+
+University of Florida — Gainesville, FL (2002–2004)
+
+Santa Fe College — Gainesville, FL (2004–2006)
+
+BuzzBizz.biz — Anchorage, AK (2006–2007)
+First job out of school; when the startup dwindled from 5 people to 2, honed sales skills and self-taught solutions to keep the business alive. This experience instilled the belief that with enough passion, anything can be achieved.

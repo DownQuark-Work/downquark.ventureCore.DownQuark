@@ -1,0 +1,125 @@
+Jack Melnick
+Senior Interactive Developer | TypeScript · React · Web APIs · PWAs · ActionScript
+Remote · Massachusetts · Rhode Island · New Hampshire
+jack.d.melnick@gmail.com
+
+================================================================================
+
+Senior Interactive Developer with 20+ years building engaging, systems-driven web experiences — from Flash-era game interfaces and ActionScript applications to modern browser-based gamification platforms, PWAs, and Chrome Extension APIs. Holds a design degree and brings a rare combination of visual sensibility, systems thinking, and full-stack execution to interactive products. Has shipped production work for one of the most recognized gaming brands in the world and architected gamification infrastructure from the ground up. Remote-first. Based in MA/RI/NH.
+
+================================================================================
+
+SKILLS
+
+Interactive Development: ActionScript 2/3, Chrome Extension API, PWAs, Web Components, Browser APIs, lit.dev, Gamification Architecture, Graph Databases, 12-Factor App Methodology
+
+Front-End: TypeScript, JavaScript (ES2024+), React 18+, Svelte, Vue 2/3, Angular, Tailwind CSS, SCSS, Storybook, Vite, Next.js
+
+Back-End & Databases: Node.js, Deno, Python, C#, Ruby on Rails, PostgreSQL, MySQL, MariaDB, MongoDB, Graph Databases
+
+Testing & Tooling: Vitest, Jest, Playwright, VS Code Extension API, Shell Scripts, Elastic Search
+
+================================================================================
+
+CURRENT WORK EXPERIENCE
+
+DownQuark (https://www.downquark.work)
+Freelance / Contract Interactive Developer
+Jan 2018 ~ present
+
+Provide end-to-end web and application development services as a solo developer, with a strong focus on early-stage and startup environments. Engagements frequently involve complex interactive systems, browser extension development, and non-standard architecture challenges.
+
+================================================================================
+
+RECENT PROJECTS
+
+Many of the most recent projects are pre-launch startup products and are therefore covered by strict NDAs. I am happy to discuss in more detail, and can provide representative code samples or project summaries upon request.
+
+LevelShare
+
+Architected and built a multi-faceted internal gamification platform for enterprise HR use, designed to integrate with any existing internal tooling — from SurveyMonkey to proprietary in-house systems. The platform collected user results, applied customizable scoring algorithms, and distributed rewards to employees, all while ensuring that zero question or answer data was ever accessible to the LevelShare layer itself (a hard privacy and security requirement).
+
+The technical solution combined Google Chrome Extensions (for seamless host-system integration without requiring deep API access), relational and graph databases (to model both structured scoring data and complex employee/team relationships), and a framework-less internal dashboard built on lit.dev, strictly following 12-Factor App methodology. Completed before the era of AI-assisted development.
+
+Google Chrome Extension • PWA • TypeScript • HTML • CSS • MariaDB • Graph Database • lit.dev • 12-Factor App Methodology • Deno
+
+Hightainment
+
+Architected and built a next-generation entertainment review and content discovery platform targeting Gen Z and Millennial audiences across North America. The platform uses data-driven insights and curated recommendations to surface relevant movies, shows, and media experiences — eliminating the friction of endless browsing for users who value their time. Designed with a lifestyle brand sensibility, Hightainment extends beyond content discovery into community building, curated shopping recommendations, and cultural engagement around entertainment, food, and accessories.
+
+AWS • C# • PostgreSQL • Python • Svelte • HTML • CSS • Jupyter Notebook • bash
+
+
+================================================================================
+
+PREVIOUS WORK EXPERIENCE
+
+PrepMD RMS — Senior Software Engineer (Nov 2021 ~ Oct 2025)
+
+Led front-end architecture for a HIPAA-compliant telemedicine platform. Integrated an acquired overseas codebase into a unified system, reducing duplicated effort by 40%. Built Chrome Extension and VS Code Extension integrations to extend platform functionality within existing clinical workflows.
+
+HTML5 • CSS3 • SCSS • JavaScript • TypeScript • Vue 2/3 • Vite • React • React Native • Storybook • Ruby • Rails • Node • MySQL • Chrome Extension API • VS Code Extension API
+
+-----------------------------------------
+
+CarGurus — Senior JavaScript Engineer, DevX (Web) (Sep 2020 ~ Dec 2021)
+
+Built interactive developer tooling — including VS Code extensions, Chrome extensions, and PWAs — adopted by 80+ engineers. Focused on pushing the boundaries of what browser and editor APIs could do in a developer productivity context.
+
+HTML5 • CSS3 • SCSS • JavaScript • React • Storybook • Node • Chrome Extension API • VS Code Extension API • Web Components • PWAs • Freemarker • Shell Scripts
+
+-----------------------------------------
+
+Madaket Health — Senior Software Engineer (Aug 2018 ~ Sep 2020)
+
+Full-stack development on a healthcare automation platform using Domain-Driven Design and microservices. Reduced processing time for eligibility checks by 30% through optimized API orchestration.
+
+HTML5 • CSS3 • SCSS • JavaScript • Angular • Java • Freemarker • MySQL • Hibernate • DDD • MicroServices
+
+-----------------------------------------
+
+Circulation, Inc — Senior Front End Developer (Nov 2017 ~ Aug 2018)
+
+Led a 5-person front-end team from pre-MVP to launch for an on-demand ride-ordering platform integrating Twilio, Lyft, and Uber APIs across browser and mobile.
+
+HTML5 • CSS3 • SCSS • JavaScript • React • React Native • Python3 • Meteor
+
+-----------------------------------------
+
+Rockstar Games — Web Developer (Jul 2009 ~ May 2011)
+
+Worked within a tight-knit web team of 9 at one of the most iconic and high-profile gaming companies in the world. Operated as a full-stack developer responsible for public-facing web properties watched closely by a massive global fanbase — where every deployment carried real stakes. The environment demanded rigorous deploy processes, cross-functional coordination, and the ability to execute at scale under pressure. Built and maintained interactive web experiences using PHP, MySQL, JavaScript, jQuery, and ActionScript 2/3.
+
+HTML • CSS3 • JavaScript • jQuery • PHP • MySQL • ActionScript 2 • ActionScript 3
+
+-----------------------------------------
+
+Thinkful — Mentor (Oct 2015 ~ Apr 2018)
+
+Mentored students in front-end programming and web design, covering HTML5, CSS3, JavaScript, React, Redux, Node, and MongoDB.
+
+-----------------------------------------
+
+Bardess Group — Management and Technology Consultant (Oct 2016 ~ Oct 2017)
+
+Integrated Qlik Sense and QlikView BI tools into web applications; improved data visualization performance using Elastic Search, Apache Solr, and Lucene.
+
+-----------------------------------------
+
+Earlier Experience (2006–2012)
+
+KHJ Brand Activation (Lead Developer), Createthe Group (Senior Presentation Layer Developer), Code and Theory (Web Developer), Domani Studios (Interactive Developer — Flash/ActionScript-first studio), BuzzBizz Studios (Print/Web Designer & Developer)
+
+HTML, CSS, JavaScript, jQuery, PHP, MySQL, ActionScript 2/3
+
+================================================================================
+
+EDUCATION
+
+University of Florida — Gainesville, FL (2002–2004)
+
+Santa Fe College — Gainesville, FL (2004–2006)
+Degree in Print Design — a foundation that informs every interactive and visual experience built since.
+
+BuzzBizz.biz — Anchorage, AK (2006–2007)
+First job out of school; when the startup dwindled from 5 people to 2, honed client and project management skills under real-world pressure. This experience instilled the belief that with enough passion, anything can be achieved.

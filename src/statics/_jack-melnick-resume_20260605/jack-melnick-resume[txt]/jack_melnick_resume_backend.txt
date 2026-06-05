@@ -1,0 +1,138 @@
+Jack Melnick
+Senior Back-End Engineer | Python · Node.js · C# · PostgreSQL · APIs · Microservices
+Remote · Massachusetts · Rhode Island · New Hampshire
+jack.d.melnick@gmail.com
+
+================================================================================
+
+Senior Back-End Engineer with 20+ years of experience designing and building server-side systems, APIs, data pipelines, and database architectures. Specialized in Python, Node.js, C#, and Ruby on Rails, with deep experience integrating third-party APIs, designing microservice architectures, and working with relational and graph databases. Brings a full-stack background that ensures back-end decisions are always made with the consuming client in mind. Remote-first. Based in MA/RI/NH.
+
+================================================================================
+
+SKILLS
+
+Back-End & Languages: Python (FastAPI, Jupyter), Node.js, Express, C#, Ruby on Rails, Java, Deno, PHP, Perl, bash / Shell Scripts
+
+Databases: PostgreSQL, MySQL, MariaDB, MongoDB, Graph Databases
+
+APIs & Integrations: REST APIs, GraphQL, OpenAI API, Google Places API, Twilio, Zoom/Gong APIs, Lyft/Uber APIs, Embeddings & Vector Similarity, Elastic Search, Apache Solr, Apache Lucene
+
+Architecture & Patterns: Microservices, Domain-Driven Design (DDD), 12-Factor App Methodology, HIPAA-compliant systems, Hibernate, Qlik Sense/View
+
+Tooling: VS Code Extension API, Chrome Extension API, Shell Scripts, Vitest, Jest, Playwright
+
+Front-End (Supporting): React, TypeScript, Svelte, Vue 2/3, Angular, Web Components
+
+================================================================================
+
+CURRENT WORK EXPERIENCE
+
+DownQuark (https://www.downquark.work)
+Freelance / Contract Back-End Developer
+Jan 2018 ~ present
+
+Provide end-to-end development services as a solo developer with a strong focus on early-stage and startup environments. Back-end work spans API design and implementation, database architecture, third-party service integrations, pipeline development, and deployment — primarily in Python, Node.js, and C#.
+
+================================================================================
+
+RECENT PROJECTS
+
+Many of the most recent projects are pre-launch startup products and are therefore covered by strict NDAs. I am happy to discuss in more detail, and can provide representative code samples or project summaries upon request.
+
+DistillCloud
+
+Designed and implemented a server-side data pipeline to retrieve pre-recorded meeting data (Zoom, Gong, etc.), generate custom prompts for transcript analysis, detect high-level topics and granular points of interest, apply embeddings to compute cross-meeting similarity scores, and persist the highest-scoring matches to a PostgreSQL database. The system transformed large volumes of unstructured data into a semantically queryable knowledge base scoped to user-defined teams — enabling meaningful search where none previously existed.
+
+Python • C# • bash • TypeScript • PostgreSQL
+
+
+LevelShare
+
+Architected and built a multi-faceted internal gamification platform for enterprise HR use, designed to integrate with any existing internal tooling — from SurveyMonkey to proprietary in-house systems. The platform collected user results, applied customizable scoring algorithms, and distributed rewards to employees, while ensuring zero question or answer data was ever accessible to the LevelShare layer itself — a hard privacy and security requirement enforced at the front-end boundary via Chrome Extension.
+
+The front-end solution combined a Google Chrome Extension (for seamless host-system integration without requiring deep API access), a PWA, and a framework-less internal dashboard built on lit.dev, strictly adhering to 12-Factor App methodology. Completed before the era of AI-assisted development.
+
+Google Chrome Extension • PWA • PostgreSQL • Python • Jupyter Notebook • Deno • Service Workers • 12-Factor App Methodology
+
+================================================================================
+
+PREVIOUS WORK EXPERIENCE
+
+PrepMD RMS — Senior Software Engineer (Nov 2021 ~ Oct 2025)
+
+Contributed back-end and full-stack development on a HIPAA-compliant telemedicine platform scaling from solo physicians to 2,000+ providers. Worked across Ruby on Rails, Node, and MySQL, and built Chrome and VS Code extension integrations. Led the technical integration of an acquired overseas codebase, reducing duplicated back-end effort by 40%.
+
+Ruby • Rails • Node • MySQL • JavaScript • TypeScript • Chrome Extension API • VS Code Extension API
+
+-----------------------------------------
+
+CarGurus — Senior JavaScript Engineer, DevX (Web) (Sep 2020 ~ Dec 2021)
+
+Built back-end tooling and developer productivity infrastructure used by 80+ engineers across multiple team silos. Developed Node.js services, shell scripts, VS Code and Chrome extensions, and PWA infrastructure to reduce friction in internal engineering workflows.
+
+Node • JavaScript • Shell Scripts • Chrome Extension API • VS Code Extension API • Freemarker
+
+-----------------------------------------
+
+Madaket Health — Senior Software Engineer (Aug 2018 ~ Sep 2020)
+
+Worked full-stack with a focus on back-end Java services and MySQL database design for a healthcare automation platform. Applied Domain-Driven Design (DDD) and microservice architecture to streamline payer-provider transactions. Reduced eligibility-check processing time by 30% through optimized API orchestration and service-layer refactoring.
+
+Java • MySQL • Hibernate • Freemarker • DDD • MicroServices • Angular
+
+-----------------------------------------
+
+Circulation, Inc — Senior Front End Developer (Nov 2017 ~ Aug 2018)
+
+Contributed Python back-end development alongside front-end work for an on-demand ride-ordering platform integrating Twilio, Lyft, and Uber APIs. Led a 5-person team from pre-MVP to launch.
+
+Python3 • Meteor • JavaScript • React • React Native
+
+-----------------------------------------
+
+Bardess Group — Management and Technology Consultant (Oct 2016 ~ Oct 2017)
+
+Integrated Qlik Sense and QlikView BI tools into web applications. Improved data retrieval and visualization performance through Elastic Search, Apache Solr, and Lucene implementations.
+
+Qlik Sense • QlikView • Elastic Search • Apache Solr • Apache Lucene • JavaScript • jQuery
+
+-----------------------------------------
+
+KleerMail — Web Developer (Jun 2015 ~ Aug 2016)
+
+Sole developer on the founding team, building the MVP back end using Ruby on Rails from scratch.
+
+Ruby on Rails • JavaScript • Angular • jQuery
+
+-----------------------------------------
+
+Shoebuy.com [shoes.com] — Web Developer (May 2014 ~ May 2015)
+
+First in-house developer at an established e-commerce company; worked across Java and Perl back-end systems during a full platform rebrand.
+
+Java • Perl • JavaScript • jQuery • Backbone
+
+-----------------------------------------
+
+Boathouse Group — Lead Web Developer (Apr 2012 ~ Apr 2014)
+
+PHP • MySQL • JavaScript • jQuery • ActionScript 2/3
+
+-----------------------------------------
+
+Earlier Experience (2006–2012)
+
+KHJ Brand Activation (Lead Developer), Createthe Group (Senior Presentation Layer Developer), Rockstar Games (Web Developer), Code and Theory (Web Developer), Domani Studios (Interactive Developer), BuzzBizz Studios (Print/Web Designer & Developer)
+
+PHP, MySQL, JavaScript, jQuery, ActionScript 2/3, Perl, Java
+
+================================================================================
+
+EDUCATION
+
+University of Florida — Gainesville, FL (2002–2004)
+
+Santa Fe College — Gainesville, FL (2004–2006)
+
+BuzzBizz.biz — Anchorage, AK (2006–2007)
+First job out of school; when the startup dwindled from 5 people to 2, honed client management and problem-solving skills under real-world pressure. This experience instilled the belief that with enough passion, anything can be achieved.
